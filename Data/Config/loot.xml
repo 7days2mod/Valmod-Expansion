@@ -1596,9 +1596,7 @@
 		<item name="toolAndDieSet"/>
         <item name="clawHammer"/>  
         <item name="wrench"/>  
-        <item name="shovelIron"/>  
-        <item name="padlock"/>  	
-        <item name="hoeIron"/>  			
+        <item name="shovelIron"/>		
         <item name="nailgun"/>
 		<item name="weedCleaver"/>
 	</lootgroup>
@@ -1633,10 +1631,10 @@
 		<item group="SupplyShotgun"/>
 		<item group="SupplyMP5"/>
 		<item group="SupplySniper"/>
+		<item group="SupplyWeaponSchematics"/>
 	</lootgroup>
 	<lootgroup name="SupplyGroups" count="1">
     	<item group="SupplyWeapons"/>
-		<item group="SupplyWeaponSchematics"/>
 		<item group="SupplyAutomotive"/>
 		<item group="SupplyAmmo"/>
 		<item group="SupplyTools"/>
@@ -1755,7 +1753,7 @@
 <lootgroup name="gunsafeMisc">
 	<item name="repairKit" count="3,5" prob="0.7" />
 </lootgroup>
-<lootcontainer id="42" count="2,5" size="10,4" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="1" loot_quality_template="baseTemplate">
+<lootcontainer id="42" count="2,5" size="10,5" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="1" loot_quality_template="baseTemplate">
 	<item group="guns+ammo" prob="0.3"/>
 	<item group="ammo" prob="0.45"/>
 	<item group="gunmods" prob="0.05"/>
