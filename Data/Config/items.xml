@@ -1273,7 +1273,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Group" value="Tools/Traps" />
 	<property class="Attributes">
 		<property name="EntityDamage" value="6,20" />
-		<property name="BlockDamage" value="60,120" />
+		<property name="BlockDamage" value="60,145" />
 		<property name="DegradationMax" value="500,1400" />
 	</property>
 </item>
@@ -2665,6 +2665,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DegradationMax" value="3000,6000" />
 	</property>
 	<property name="Group" value="Resources" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </item>
 
 <item id="261" name="partsChainsaw_parts">
