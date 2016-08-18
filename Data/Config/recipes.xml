@@ -999,6 +999,20 @@ tooltip?
 	<ingredient name="ductTape" count="1"/>
 </recipe>
 
+<recipe name="firstAidKit" count="1" scrapable="False">
+	<ingredient name="healingAgent" count="1"/>
+	<ingredient name="Peroxide" count="1"/>
+	<ingredient name="firstAidBandage" count="1"/>
+	<ingredient name="painkillers" count="1"/>
+</recipe>
+
+<recipe name="firstAidKit" count="1" scrapable="False">
+	<ingredient name="healingAgent" count="1"/>
+	<ingredient name="grainAlcohol" count="1"/>
+	<ingredient name="firstAidBandage" count="1"/>
+	<ingredient name="painkillers" count="1"/>
+</recipe>
+
 <recipe name="flagstoneBlock" count="1" scrapable="False">
 <!--	<ingredient name="cobblestones" count="3"/>-->
 	<ingredient name="cobblestones" count="10"/>
