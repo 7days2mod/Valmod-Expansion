@@ -1160,7 +1160,7 @@
 		<recipe name="workstationOven" unlock_level="1"/>
 	</perk>
 
-	<perk name="Lockpicks" icon="run" description_key="Learn how to make lockpicks to unlock gun safes." title_key="Safecracker" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
+	<perk name="Lockpicks" icon="run" description_key="Learn how to make lockpicks to unlock gun safes. Doesn't work on doors." title_key="Safecracker" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
 		<recipe name="Lockpick" unlock_level="1"/>
 	</perk>
 
