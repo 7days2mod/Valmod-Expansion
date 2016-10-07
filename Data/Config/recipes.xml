@@ -2655,12 +2655,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     </recipe>
 	<recipe name="vegetableStew" count="1" craft_area="campfire" craft_tool="cookingPot">
 	<ingredient name="bowlWater" count="1" />
-    <ingredient name="potato" count="1" />
-    <ingredient name="corn" count="1" />
-	<ingredient name="Leek" count="1"/>
-  </recipe>
-	<recipe name="vegetableStew" count="1" craft_area="campfire" craft_tool="cookingPot">
-	<ingredient name="bowlWater" count="1" />
     <ingredient name="assortedVegetables" count="6" />
   </recipe>
 <recipe name="biscuit" count="1" craft_area="campfire" craft_tool="bowlWater">
@@ -2694,11 +2688,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="assortedVegetables" count="4"/>
 	<ingredient name="dinnerPlate" count="1"/>
 </recipe>
-<recipe name="beer" count="1" craft_area="chemistryStation">
-	<ingredient name="Wheat" count="1"/>
-	<ingredient name="bottledWater" count="1"/>
-	<ingredient name="Hops" count="1"/>
-</recipe>
 <recipe name="tunaSandwich" count="1">
 	<ingredient name="canTuna" count="1"/>
 	<ingredient name="Bread" count="2"/>
@@ -2715,15 +2704,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
   </recipe>
 
 		<!-- Expanded Farming Mod --> 
-	<recipe name="seedYucca" count="1" >
-        <ingredient name="foodYuccaFruit" count="1" />
-    </recipe>
-    <recipe name="seedAloe" count="2" >
-        <ingredient name="aloe" count="1" />
-    </recipe>
-    <recipe name="seedChrysanthemum" count="2" >
-        <ingredient name="chrysanthemum" count="1" />
-    </recipe>
 	<recipe name="seedLeek" count="1" >
         <ingredient name="Leek" count="1" />
     </recipe>
@@ -2733,20 +2713,18 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="seedGrape" count="1" >
         <ingredient name="Grapes" count="1" />
     </recipe>
-	<recipe name="seedHops" count="1" >
-        <ingredient name="Hops" count="1" />
-    </recipe>
 	<recipe name="seedApple" count="1" >
         <ingredient name="Apple" count="1" />
     </recipe>
+	
 		<!-- Seed Pack --> 
-	<recipe name="seedYucca" count="1" >
+	<recipe name="yuccaSeed" count="1" >
         <ingredient name="seedPack" count="1" />
     </recipe>
-    <recipe name="seedAloe" count="1" >
+    <recipe name="aloeSeed" count="1" >
         <ingredient name="seedPack" count="1" />
     </recipe>
-    <recipe name="seedChrysanthemum" count="1" >
+    <recipe name="chrysanthemumSeed" count="1" >
         <ingredient name="seedPack" count="1" />
     </recipe>
 	<recipe name="seedLeek" count="1" >
@@ -2758,7 +2736,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="seedGrape" count="1" >
         <ingredient name="seedPack" count="1" />
     </recipe>
-	<recipe name="seedHops" count="1" >
+	<recipe name="hopSeed" count="1" >
         <ingredient name="seedPack" count="1" />
     </recipe>
 	<recipe name="seedApple" count="1" >
@@ -2840,9 +2818,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     </recipe>
 
 		<!-- Misc Recipes Mod -->
-<recipe name="aloeCream" count="1" craft_area="chemistryStation" craft_time="5">
-	<ingredient name="aloe" count="4"/>
-</recipe>
     <recipe name="workstationDecor" count="1" >
         <ingredient name="wood" count="30"/>
     </recipe>
@@ -2924,7 +2899,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="potassiumNitratePowder" count="1" />
 	<ingredient name="painkillers" count="1" />
 	<ingredient name="mushrooms" count="1" />
-	<ingredient name="goldenrod" count="1" />
+	<ingredient name="goldenrodPlant" count="1" />
 </recipe>
 <recipe name="minersTNT" count="1">
 	<ingredient name="yuccaFibers" count="1" />
@@ -2986,20 +2961,23 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 	
 		<!-- Hidden Door Mod -->
-<recipe name="Remote" count="1">
-	<ingredient name="forgedIron" count="5"  />
+	<recipe name="Remote" count="1" >
+  <ingredient name="forgedIron" count="5"  />
 </recipe>
-<recipe name="hiddenWoodDoor" count="1">
+	<recipe name="gearMechanism" count="1" >
+	<ingredient name="mechanicalParts" count="2"/>
+</recipe>
+	<recipe name="hiddenWoodDoor" count="1" craft_area="workbench">
 	<ingredient name="wood" count="180"/>
-	<ingredient name="scrapCable" count="2" />
+	<ingredient name="mechanicalParts" count="2" />
 	<ingredient name="spring" count="4"/>
-	<ingredient name="mechanicalParts" count="1" />
+  <ingredient name="gearMechanism" count="1" />
 </recipe>
-<recipe name="hiddenConcreteDoor" count="1">
+	<recipe name="hiddenConcreteDoor" count="1" craft_area="workbench">
 	<ingredient name="concreteBlock" count="4"/>
-	<ingredient name="scrapCable" count="2" />
+	<ingredient name="mechanicalParts" count="2" />
 	<ingredient name="spring" count="4"/>
-	<ingredient name="mechanicalParts" count="1" />
+  <ingredient name="gearMechanism" count="1" />
 </recipe>
 		
 		
@@ -3396,7 +3374,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="Class - Veteran (Locked)" count="1">
   <ingredient name="classSelection" count="1" />
 	</recipe>
-	<recipe name="Class - Bruiser(Locked)" count="1">
+	<recipe name="Class - Bruiser (Locked)" count="1">
   <ingredient name="classSelection" count="1" />
 	</recipe>
 	<recipe name="Class - Gunman (Locked)" count="1">
@@ -4362,17 +4340,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="genericAmmoBox" count="1"/>
 </recipe>
 
-<recipe name="arrow" count="1" craft_area="workbench" craft_exp_gain="0">
-	<ingredient name="crossbowBolt" count="1"/>
-</recipe>
 <recipe name="ironArrow" count="1" craft_area="workbench" craft_exp_gain="0">
 	<ingredient name="ironCrossbowBolt" count="1"/>
 </recipe>
 <recipe name="steelArrow" count="1" craft_area="workbench" craft_exp_gain="0">
 	<ingredient name="steelCrossbowBolt" count="1"/>
-</recipe>
-<recipe name="crossbowBolt" count="1" craft_area="workbench" craft_exp_gain="0">
-	<ingredient name="arrow" count="1"/>
 </recipe>
 <recipe name="ironCrossbowBolt" count="1" craft_area="workbench" craft_exp_gain="0">
 	<ingredient name="ironArrow" count="1"/>
