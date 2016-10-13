@@ -4401,10 +4401,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="unit_iron" count="100"/>
 	<ingredient name="unit_clay" count="20"/>
 </recipe>
-<recipe name="scrapCable" count="1" craft_area="forge" material_based="true">
-	<ingredient name="unit_iron" count="100"/>
-	<ingredient name="unit_clay" count="20"/>
-</recipe>
 <recipe name="Carpet1WoodPainted2Block" count="1" craft_area="workstationDecor">
 	<ingredient name="woodFrameBlock" count="1"/>
 </recipe>

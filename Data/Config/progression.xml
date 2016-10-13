@@ -251,7 +251,6 @@
 		<recipe name="forgedSteel" unlock_level="1"/>
 		<recipe name="steelArrowHead" unlock_level="1"/>
 		<recipe name="calipers" unlock_level="1"/>
-		<recipe name="scrapCable" unlock_level="1"/>
 		<requirement skill_level="2" required_skill_name="Construction Tools" required_skill_level="50"/>
 		<requirement skill_level="2" required_skill_name="Tool Smithing" required_skill_level="30"/>
 		<recipe name="spring" unlock_level="2"/>
