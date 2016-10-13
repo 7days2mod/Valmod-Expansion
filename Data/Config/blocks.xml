@@ -1338,6 +1338,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="woodMaster" />
 	<property name="Shape" value="Plate" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodPlate" /> </property>
+	<drop event="Destroy" name="nail" count="0" prob="1" />
 </block>
 
 <block id="165" name="rWoodPlate">
@@ -7016,6 +7017,7 @@ kind of free
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 	<property name="EconomicValue" value="10" />
 	<property name="EconomicBundleSize" value="10" />
+	<drop event="Destroy" name="nail" count="0" prob="1" />
 </block>
 
 <block id="795" name="woodShinglesBlock">
@@ -8465,6 +8467,7 @@ kind of free
 	<property name="Extends" value="woodMaster" />
 	<property name="Shape" value="Pole" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodPole" /> </property>
+	<drop event="Destroy" name="nail" count="0" prob="1" />
 </block>
 
 <block id="989" name="woodPainted1Pole">
@@ -10066,6 +10069,7 @@ kind of free
 	<property name="Extends" value="houseFrontDoor1_v1" />
 	<property name="Model" value="Entities/Doors/house_frontDoor2_v1Prefab" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="houseFrontDoor2_v2" /> </property>
+	<property name="DowngradeBlock" value="Broken Door" />
 </block>
 
 <block id="1227" name="houseFrontDoor2_v2">
@@ -15314,36 +15318,6 @@ kind of free
 		<property name="IsRandom" value="false" />
 	</property>
 	</block>
-	<block id="2031" name="seedLeek">
-    <property name="Class" value="PlantGrowing" />
-    <property name="Material" value="plants" />
-    <property name="Shape" value="BillboardPlant" />
-    <property name="Mesh" value="grass" />
-    <property name="Texture" value="393" />
-    <property name="Collide" value="melee" />
-    <property name="IsTerrainDecoration" value="true" />
-    <property class="PlantGrowing">
-      <property name="Next" value="LeekPlant" />
-      <property name="GrowthRate" value="180" />
-      <property name="FertileLevel" value="5" />
-      <property name="IsRandom" value="false" />
-    </property>
-	<property name="Group" value="Food/Cooking" />
-	<property name="MaxDamage" value="2" />
-  </block>
-	<block id="2032" name="LeekPlant">
-	<property name="Class" value="CropsGrown" />
-    <property name="Material" value="leaves" />
-	<property name="StabilitySupport" value="false" />
-	<property name="Shape" value="BillboardPlant" />
-	<property name="Mesh" value="grass" />
-	<property name="Texture" value="393" />
-	<property name="Collide" value="melee" />
-    <property name="IsTerrainDecoration" value="true" />
-	<property name="DowngradeBlock" value="seedLeek" />
-    <drop event="Destroy" name="Leek" count="0" />
-    <drop event="Harvest" name="Leek" tool_category="Pluck" count="2" />
-  </block>
 	<block id="2033" name="seedWheat">
     <property name="Class" value="PlantGrowing" />
     <property name="Material" value="plants" />
@@ -15414,7 +15388,7 @@ kind of free
     <property name="Collide" value="melee" />
     <property name="IsTerrainDecoration" value="true" />
 	<property name="Group" value="Food/Cooking" />
-	<property name="PlaceAltBlockValue" value="plantedCorn1,plantedPotato1,plantedBlueberry1,plantedCoffee1,plantedCotton1,plantedGoldenrod1,plantedHop1,seedGrape,seedWheat,seedLeek,plantedChrysanthemum1,plantedAloe1,plantedYucca1,seedApple" />
+	<property name="PlaceAltBlockValue" value="plantedCorn1,plantedPotato1,plantedBlueberry1,plantedCoffee1,plantedCotton1,plantedGoldenrod1,plantedHop1,seedGrape,seedWheat,plantedChrysanthemum1,plantedAloe1,plantedYucca1,seedApple" />
   </block>
 <block id="2041" name="sandbagsBlockReinforced">
 	<property name="Group" value="Building" />

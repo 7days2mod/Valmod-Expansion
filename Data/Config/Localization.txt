@@ -728,7 +728,7 @@ sandbagCornerDMG1,blocks,Block,KgNone,Sandbag Corner DMG1,Angle de sac de sable 
 sandbagEnd,blocks,Block,KgNone,Sandbag End,Extrémité de sac de sable,Sandsäcke – Ende,,Extremo de bolsa de arena
 sandbagEnd2,blocks,Block,KgNone,Sandbag End2,Extrémité de sac de sable 2,Sandsack – Ende 2,,Extremo 2 de bolsa de arena
 sandbagsBlock,blocks,Block,KgNone,Sandbags,Sacs de sable,Sandsäcke,,Bolsas de arena
-sandbagsGroupDesc,blocks,Block,KgNone,Sandbags are not very sturdy but can be put down quickly and provide decent protection from bullets.,"Les sacs de sable ne sont pas très robustes, mais ils s'installent rapidement et protègent assez bien des balles.","Sandsäcke sind nicht sehr robust, können aber schnell platziert werden und bieten ganz guten Schutz gegen Kugeln.",,"Las bolsas de arena no son muy robustas, pero se pueden colocar rápido y brindan buena protección contra las balas."
+sandbagsGroupDesc,blocks,Block,KgNone,Sandbags are not very sturdy but can be put down quickly and provide decent protection from bullets. Can upgrade further with cobblestones.,"Les sacs de sable ne sont pas très robustes, mais ils s'installent rapidement et protègent assez bien des balles.","Sandsäcke sind nicht sehr robust, können aber schnell platziert werden und bieten ganz guten Schutz gegen Kugeln.",,"Las bolsas de arena no son muy robustas, pero se pueden colocar rápido y brindan buena protección contra las balas."
 schoolDesk,blocks,Block,KgNone,School Desk,Table d'école,Schultisch,,Escritorio escolar
 scrapFrameGroupDesc,blocks,Block,EnChanged,Used for bases. Upgrade & repair with iron and construction tool. Upgrade more with concrete mix & forged steel.,,Wird für Basen verwendet. Kann mit Eisen und Bauwerkzeugen aufgewertet und repariert werden. Kann mit Betonmischung und geschmiedetem Stahl weiter aufgewertet werden.,,
 scrapHatch_v1,blocks,Block,KgNone,Scrap Iron Hatch,Trappe en ferraille,Alteisenklappe,,Escotilla de chatarra de hierro
@@ -5448,6 +5448,38 @@ skillbookShotguns,items,Item Book,,Evil Dead,,
 skillbookShotgunsDesc,items,Item Book,,"Learn from the best.",,
 skillbookGunSmith,items,Item Book,,Gun Maintenance,,
 skillbookGunSmithDesc,items,Item Book,,"This magazine explains some of the basics of proper gun cleaning and repair.",,
+skillbookSniper,items,Item Book,,"Sniper: Long Range",,
+skillbookSniperDesc,items,Item Book,,"A book on long-range combat, authored by Garrus Vakarian.",,
+skillbookSMG,items,Item Book,,"Tommy: The Mafia Story",,
+skillbookSMGDesc,items,Item Book,,"A fascinating tale of mafia gangsters and an iconic submachine gun.",,
+skillbookAssaultRifle,items,Item Book,,"AK47: Oiled Barrels",,
+skillbookAssaultRifleDesc,items,Item Book,,"Reads more like a romance than anything else, but still has some useful information. Comes with a discount coupon!",,
+skillbookRocket,items,Item Book,,"Rocket Launcher Schematics",,
+skillbookRocketDesc,items,Item Book,,"These schematics are torn and difficult to make out but they seem to explain how to assemble a rocket launcher.",,
+skillbookCrossbow,items,Item Book,,"Crossbow Book",,
+skillbookCrossbowDesc,items,Item Book,,"These book explains the history and origin of the medieval crossbow.",,
+chainsawSchematicDesc2,items,Book,KgNone,"Pages from chainsaw manual. Most are covered in oil or torn but if you'll eventually be able to assemble a chainsaw.",Apprenez à assembler et réparer les tronçonneuses en lisant ce schéma.,"In diesem Bauplan erfährst du, wie Kettensägen zusammengesetzt und repariert werden.",,Lee este esquema para aprender a armar y reparar motosierras.
+augerSchematicDesc2,items,Book,KgNone,"Pages from an auger manual. Most are illegible but if you read enough you'll eventually be able to assemble an auger.",Apprenez à assembler et réparer les foreuses en lisant ce schéma.,"In diesem Bauplan erfährst du, wie Erdbohrer zusammengesetzt und repariert werden.",,Lee este esquema para aprender a reparar y armar taladros.
+recipebookNailgun,items,Item Book,,"Nailgun Schematics",,
+recipebookNailgunDesc,items,Item Book,,"Pages from an nailgun manual. Most are illegible but if you read enough you'll eventually be able to assemble a nailgun.",,
+minibikesForDumbshitsDesc2,items,Book,KgNone,"Pages from an minibike manual. Most are illegible from oil stains but if you read enough you'll eventually be able to assemble an minibike.",Même les demeurés finis peuvent construire une mini-moto en suivant les étapes présentées dans ce guide... Vroum... Vroum !,"Selbst komplette Vollidioten können ein Taschenmotorrad bauen, wenn sie dieser einfachen Anleitung folgen … Brumm, brumm!",,"Hasta el más idiota puede construir una minimoto si sigue los pasos de esta sencilla guía. ¡Brum, brum!"
+skillbookBlades,items,Item Book,,"Halloween: The Myers Experience",,
+skillbookBladesDesc,items,Item Book,,"A horror story that sold many Kirk masks.",,
+recipebookSecurity,items,Item Book,,Security Measures,,
+recipebookSecurityDesc,items,Item Book,,"Reading this will give you levels in Security which will eventually let you craft secure chests, crates, iron doors and drawbridges.",,
+skillbookForgedArmor,items,Item Book,,Armorsmith,,
+skillbookForgedArmorDesc,items,Item Book,,"You're pretty sure this book was never meant to be taken seriously, given that it speaks of magic defenses, but there could be some practical real-world applications some of it's contents.",,
+recipebookGardenTools,items,Item Book,,"Garden Tools Schematics",,
+recipebookGardenToolsDesc,items,Item Book,,"These schematics level your skill in garden tools which will eventually teach you how to craft shovels, hoe and weed cleaver.",,
+skillbookAxes,items,Item Book,,Paul Bunyan Adventures,,
+skillbookAxesDesc,items,Item Book,,"This story follows the adventures of Paul Bunyan and his fabled ox.",,
+skillbookKnight,items,Item Book,,The Knight,,
+skillbookKnightDesc,items,Item Book,,"This story follows the a brave, dragon-slaying knight and Grey Warden on their quest to save a kingdom from Dark Spawn forces.",,
+skillbookMining,items,Item Book,,Mining Engineering,,
+skillbookMiningDesc,items,Item Book,,"An educational book that explains various mining techniques.",,
+skillbookHunter,items,Item Book,,Turok Comic,,
+skillbookHunterDesc,items,Item Book,,"This comic book fantasy follows the adventures of a indian tribe as they fight for survival in a world full of dangerous beasts.",,
+
 
 simpleForge,blocks,Station,,Simple Forge,,
 simpleForgeDesc,blocks,Station,,"Used to smelt metals into tools and weapons. Unlock more recipes by adding an anvil, calipers or tool and die set. The Simple forge has a limited number of recipes compared to the normal forge in order to help improve performance.",,
@@ -5456,3 +5488,5 @@ trapFall,blocks,Traps,,Fall Trap,,
 trapFallDesc,blocks,Traps,,This block looks solid but will give way the moment you walk on it. Very handy for making pitfall traps,,
 
 concreteMixing2Desc,progression,Perk,,Unlocks the ability to make concrete and cement.,,
+
+coldDrinkDesc,items,Food,KgNone,This drink has been chilled. Left-Click on a fridge or cooler to make it warmer.,,

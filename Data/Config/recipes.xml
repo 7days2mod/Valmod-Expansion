@@ -2704,9 +2704,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
   </recipe>
 
 		<!-- Expanded Farming Mod --> 
-	<recipe name="seedLeek" count="1" >
-        <ingredient name="Leek" count="1" />
-    </recipe>
 	<recipe name="seedWheat" count="1" >
         <ingredient name="Wheat" count="1" />
     </recipe>
@@ -2725,9 +2722,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
         <ingredient name="seedPack" count="1" />
     </recipe>
     <recipe name="chrysanthemumSeed" count="1" >
-        <ingredient name="seedPack" count="1" />
-    </recipe>
-	<recipe name="seedLeek" count="1" >
         <ingredient name="seedPack" count="1" />
     </recipe>
 	<recipe name="seedWheat" count="1" >

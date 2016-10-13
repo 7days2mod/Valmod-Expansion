@@ -10964,42 +10964,6 @@ which does not exist, yet. -->
         </property>
         <property name="Group" value="Food/Cooking" />
     </item>
-<item id="1819" name="Cabbage">
-		<property name="Weight" value="5" />
-        <property name="Meshfile" value="Items/Misc/parcel" />
-        <property name="Material" value="assortedVegetables" />
-        <property name="HoldType" value="15" />
-		<property name="CraftingIngredientTime" value="5" />
-		<property name="Stacknumber" value="500" /> <!-- STK food -->
-        <property class="Action1">
-            <property name="Class" value="Eat" />
-            <property name="Delay" value="1.0" />
-            <property name="Use_time" value="..." />
-            <property name="Gain_health" value="0" />
-            <property name="Gain_food" value="3" />
-            <property name="Gain_water" value="0" />
-            <property name="Sound_start" value="UseActions/player_eating" />
-        </property>
-        <property name="Group" value="Food/Cooking" />
-    </item>
-<item id="1820" name="Leek">
-		<property name="Weight" value="5" />
-        <property name="Meshfile" value="Items/Misc/parcel" />
-        <property name="Material" value="assortedVegetables" />
-        <property name="HoldType" value="15" />
-		<property name="CraftingIngredientTime" value="5" />
-		<property name="Stacknumber" value="500" /> <!-- STK food -->
-        <property class="Action1">
-            <property name="Class" value="Eat" />
-            <property name="Delay" value="1.0" />
-            <property name="Use_time" value="..." />
-            <property name="Gain_health" value="0" />
-            <property name="Gain_food" value="3" />
-            <property name="Gain_water" value="0" />
-            <property name="Sound_start" value="UseActions/player_eating" />
-        </property>
-        <property name="Group" value="Food/Cooking" />
-    </item>
 <item id="1822" name="coldbottledWater">
 	<property name="CustomIcon" value="bottledWater" />
 	<property name="Extends" value="bottledWater" />
@@ -11021,6 +10985,7 @@ which does not exist, yet. -->
 	<property class="Action1">
 		<property name="Buff" value="yuccaJuiceCooling" />
 	</property>
+	<property name="DescriptionKey" value="coldDrinkDesc"/>
 </item>
 <item id="1823" name="coldgoldenRodTea">
 	<property name="CustomIcon" value="goldenRodTea" />
@@ -11028,6 +10993,7 @@ which does not exist, yet. -->
 	<property class="Action1">
 		<property name="Buff" value="yuccaJuiceCooling" />
 	</property>
+	<property name="DescriptionKey" value="coldDrinkDesc"/>
 </item>
 <item id="1824" name="coldredTea">
 	<property name="CustomIcon" value="redTea" />
@@ -11035,6 +11001,7 @@ which does not exist, yet. -->
 	<property class="Action1">
 		<property name="Buff" value="yuccaJuiceCooling" />
 	</property>
+	<property name="DescriptionKey" value="coldDrinkDesc"/>
 </item>
 <item id="1825" name="coldcoffee">
 	<property name="CustomIcon" value="coffee" />
@@ -11042,6 +11009,7 @@ which does not exist, yet. -->
 	<property class="Action1">
 		<property name="Buff" value="yuccaJuiceCooling" />
 	</property>
+	<property name="DescriptionKey" value="coldDrinkDesc"/>
 </item>
 <item id="1826" name="colddrinkEnergy">
 	<property name="CustomIcon" value="drinkEnergy" />
@@ -11049,6 +11017,7 @@ which does not exist, yet. -->
 	<property class="Action1">
 		<property name="Buff" value="yuccaJuiceCooling" />
 	</property>
+	<property name="DescriptionKey" value="coldDrinkDesc"/>
 </item>
 <item id="1827" name="waterPurified">
 		<property name="Meshfile" value="Items/Food/honeyPrefab" />
@@ -11096,6 +11065,7 @@ which does not exist, yet. -->
 	<property class="Action1">
 		<property name="Buff" value="yuccaJuiceCooling" />
 	</property>
+	<property name="DescriptionKey" value="coldDrinkDesc"/>
 </item>
 <item id="1839" name="flour">
 	<property name="DescriptionKey" value="flourDesc"/>
@@ -11822,6 +11792,7 @@ which does not exist, yet. -->
 		<property name="Gain_water" value="40" />
 		<property name="Buff" value="yuccaJuiceCooling" />
 	</property>
+	<property name="DescriptionKey" value="coldDrinkDesc"/>
 </item>
 <item id="1975" name="moleSandwich">
 	<property name="Extends" value="shamSandwich" />
