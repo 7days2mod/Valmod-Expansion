@@ -1341,7 +1341,6 @@
 	<lootgroup name="workingStiffsMisc" >
 	<item name="repairKit" count="1,4"/>
 	<item name="Lightbulb" count="1,3" />
-	<item name="bulletTumbler" />
 	<item name="nail" count="10,40"/>
 	<item name="electricParts" count="4,8" />
 	<item name="electronicParts" count="1,3" />
@@ -1673,7 +1672,6 @@
 <lootcontainer id="11" count="1,3" size="5,4" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="1" loot_quality_template="baseTemplate">
 	<item group="guns+ammo"/>
 	<item group="books"/>
-	<item name="bulletTumbler" count="1" prob="0.05"/>
 	<item name="oldCash" count="10,35" prob="0.1"/>
 	<item group="rareOres" prob="0.05"/>
 </lootcontainer>
@@ -1912,7 +1910,6 @@
 		<item name="762mmBulletHP" count="10,15"/>
 		<item name="10mmBulletHP" count="10,15"/>
 		<item name="9mmBulletHP" count="10,15"/>
-		<item name="bulletTumbler" count="1" prob="0.05"/>
 	</lootgroup>
 	<lootgroup name="SupplyWeapons" count="1">
     	<item group="SupplyRocket"/>
@@ -2042,7 +2039,6 @@
 	<item group="militaryArmor" prob="0.1"/>
 </lootgroup>
 <lootgroup name="gunsafeMisc">
-	<item name="bulletTumbler" prob="0.2"/>
 	<item name="repairKit" count="3,5" prob="0.6" />
 	<item name="oldCash" count="10,45" prob="0.2"/>
 </lootgroup>
@@ -2120,7 +2116,6 @@
 
 <!-- shotgun Messiah -->
 <lootgroup name="gunscraps" count="1">
-	<item name="bulletTumbler" count="1" prob="0.2"/>
 	<item name="repairKit" count="10,15" prob="0.7"/>
 	<item name="mechanicalParts" count="1,5" prob=".05"/>
 	<item name="scrapPlastics" count="1,6" prob=".05"/>
