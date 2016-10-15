@@ -4384,13 +4384,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="woodCrossCtr" count="1" craft_area="workstationDecor">
 	<ingredient name="wood" count="10"/>
 </recipe>
-<recipe name="woodStairsBoard" count="1" craft_area="workstationDecor">
-	<ingredient name="wood" count="10"/>
-</recipe>
-<recipe name="burningBarrel" count="1" craft_area="workstationDecor">
-	<ingredient name="scrapIron" count="10"/>
-	<ingredient name="wood" count="10"/>
-</recipe>
 <recipe name="cntPurse01" count="1">
 	<ingredient name="cloth" count="5"/>
 </recipe>
