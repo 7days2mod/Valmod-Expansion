@@ -7916,6 +7916,8 @@ kind of free
 	<property name="Texture" value="529" />
 	<drop event="Harvest" name="corn" count="1" />
 	<property name="CropsGrown.BonusHarvestDivisor" value="8" />
+	<drop event="Destroy" name="corn" count="0" prob="1" />
+	<property name="DowngradeBlock" value="plantedCorn1" />
 </block>
 
 <block id="903" name="plantedCornDead"> <!-- dead corn for prefab use -->
