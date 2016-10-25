@@ -2890,7 +2890,6 @@
 	<item name="skillbookRogue"/>
 	<item name="recipebookElectronics"/>
 	<item name="skillbookWasteland"/>
-	<item name="skillbookForgedArmor"/>
 	<item name="skillbookShotguns"/>
 </lootgroup>
 <lootcontainer id="127" count="0,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="baseTemplate">
