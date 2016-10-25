@@ -676,6 +676,7 @@
 		<recipe name="oil" unlock_level="10"/>
 		<recipe name="fuelLog" unlock_level="10"/>
 		<recipe name="chemicalAgent" unlock_level="10"/>
+		<recipe name="steelPolish" unlock_level="80"/>
 	</crafting_skill>
 	<crafting_skill name="Tailoring" icon="tailoring" description_key="tailoringDesc" title_key="tailoring" group="clothing">
 		<effect name="CraftingTime">
@@ -841,6 +842,33 @@
 			<multiply skill_level="49,70" value=".668,.44" />
 			<multiply skill_level="70,100" value=".44,.167" />
 		</effect>
+	</crafting_skill>
+	<crafting_skill name="Cooking" exp_to_level="130" icon="run" description_key="The higher your skill in cooking the faster you can craft meals. You also gradually unlock new cooking recipes as you level." title_key="Cooking" group="crafting">
+		<effect name="CraftingTime">
+			<multiply skill_level="1,5" value="1,.931" />
+			<multiply skill_level="5,11" value=".931,.871" />
+			<multiply skill_level="11,19" value=".871,.813" />
+			<multiply skill_level="19,32" value=".813,.741" />
+			<multiply skill_level="32,49" value=".741,.667" />
+			<multiply skill_level="49,70" value=".667,.591" />
+			<multiply skill_level="70,100" value=".591,.5" />
+		</effect>
+		<recipe name="scrambledEggs" unlock_level="5"/>
+		<recipe name="creamedCorn" unlock_level="5"/>
+		<recipe name="Omelet" unlock_level="10"/>
+		<recipe name="baconEggSandwich" unlock_level="10"/>
+		<recipe name="redTea" unlock_level="15"/>
+		<recipe name="biscuit" unlock_level="15"/>
+		<recipe name="applePie" unlock_level="20"/>
+		<recipe name="fishPie" unlock_level="20"/>
+		<recipe name="Bread" unlock_level="20"/>
+		<recipe name="Hamburger" unlock_level="25"/>
+		<recipe name="honeyHam" unlock_level="25"/>
+		<recipe name="steakSandwich" unlock_level="40"/>
+		<recipe name="grillSteak" unlock_level="40"/>
+		<recipe name="stewChunkyMeat" unlock_level="50"/>
+		<recipe name="mealDinner" unlock_level="50"/>
+		<recipe name="mealBreakfast" unlock_level="50"/>
 	</crafting_skill>
 	<crafting_skill name="Miscellaneous Crafting" exp_to_level="300" icon="misc_crafting" description_key="miscCraftingDesc" title_key="miscCrafting" group="crafting">
 		<effect name="CraftingTime">
@@ -1176,11 +1204,6 @@
 
 	<perk name="Lockpicks" icon="run" description_key="Max out this perk to learn how to make lockpicks to unlock gun safes. Doesn't work on doors." title_key="Safecracker" max_level="10" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="tools">
 		<recipe name="Lockpick" unlock_level="10"/>
-	</perk>
-
-	<perk name="Animal Traps" icon="misc_crafting" description_key="Max out this perk to learn how to craft animal snares and coops to capture animals." title_key="Animal Trapping" max_level="10" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="tools">
-		<recipe name="animalSnare" unlock_level="10"/>
-		<recipe name="chickenCoop" unlock_level="10"/>
 	</perk>
 
 	<perk name="Pottery" icon="misc_crafting" description_key="Max out this perk to learning pottery can teach you how to craft clay bowls, plates and clay Amphora which are all essential for cooking recipes." title_key="Pottery" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="crafting">

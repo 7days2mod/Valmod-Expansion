@@ -1,4 +1,4 @@
-Key,Source,Context,Changes,English,French,German,Klingon,Spanish
+﻿Key,Source,Context,Changes,English,French,German,Klingon,Spanish
 adobeGroupDesc,blocks,Block,KgNone,In desert regions adobe is easy to make and it requires no special tools.,"Dans les régions désertes, l'adobe est simple à fabriquer. Vous n'avez besoin d'aucun outil en particulier.",Adobe ist in Wüstenregionen einfach herzustellen und es erfordert keine besonderen Werkzeuge.,,"En regiones desérticas, el adobe es fácil de hacer. Además, no se necesitan herramientas especiales."
 adobePeachBlock,blocks,Block,KgNone,Adobe Peach Block,Bloc d'adobe pêche,Pfirsich-Adobe – Block,,Bloque de adobe color melocotón
 adobePeachCNRFull,blocks,Block,KgNone,Adobe Peach Full Corner,Angle complet en adobe pêche,Pfirsich-Adobe – Komplette Ecke,,Esquina de adobe color melocotón
@@ -1635,7 +1635,7 @@ playersBackpack,entityclasses,Entity Info,KgNone,{0}'s backpack,Sac à dos de {0
 9mmBulletDesc,items,Ammo,KgNone,A 9mm round used as firearm ammunition. Can be crafted once you've purchased the perk.,Une cartouche de calibre 9 mm servant de munition pour arme à feu. Peut être fabriquée après l'achat de l'avantage correspondant.,"Eine 9 mm Patrone, die als Munition für Schusswaffen dient. Kann gefertigt werden, nachdem du die Fertigkeit erworben hast.",,Balas de 9mm usadas como munición de arma de fuego. Puedes fabricarlas una vez que hayas comprado el beneficio.
 arrow,items,Ammo,KgNone,Arrow,Flèche,Pfeil,,Flecha
 arrowDesc,items,Ammo,KgNone,Ammunition for a bow. Hold reload to use alternate ammo.,Munition d'un arc. Maintenez le bouton de rechargement enfoncé pour utiliser un autre type de munition.,"Munition für einen Bogen. Nachladen gedrückt halten, um zwischen Munitionsarten zu wechseln.",,Munición para el arco. Mantén presionado recargar para usar munición alternativa.
-blunderbussAmmoDesc,items,Ammo,EnChanged,Blunderbuss ammo can be made with paper and gun powder plus small rocks.,,"Munition für die Donnerbüchse kann mit Papier, Schießpulver und kleinen Steinen gefertigt werden.",,
+blunderbussAmmo,items,Ammo,KgNone,Blunderbuss Ammo,Munition de tromblon,Donnerbüchsenmunition,,Munición de trabuco
 blunderbussAmmoDesc,items,Ammo,KgNone,Blunderbuss ammo can be made with paper and gun powder plus small rocks.,"La munition de tromblon peut être fabriquée avec du papier et de la poudre à canon, associés à de la ferraille ou des petits cailloux.","Munition für die Donnerbüchse kann mit Papier, Schießpulver und Alteisen (oder kleinen Steinen) gefertigt werden.",,"La munición de trabuco se puede fabricar con papel y pólvora, además de chatarra de hierro o pequeñas rocas."
 buckshot,items,Ammo,KgNone,Buckshot,Chevrotine,Grober Schrot,,Perdigón
 buckshotDesc,items,Ammo,KgNone,Buckshot used to make shotgun ammo can be crafted at a forge with clay and lead after buying the shotgun shell perk.,La chevrotine utilisée pour créer des munitions de fusil à pompe peut être fabriquée à la forge avec de l'argile et du plomb une fois que vous avez acheté l'avantage de cartouches de fusil à pompe.,"Nach dem Kauf der Eigenschaft „Flintenmunition“ erfährst du, wie grober Schrot, der für die Fertigung von Schrotflintenmunition nötig ist, in der Schmiede mit Lehm und Blei gefertigt wird.",,"Una vez que hayas comprado el beneficio de cartuchos de escopeta, podrás fabricar perdigones como munición para escopetas a partir de arcilla y plomo en la fragua."
@@ -4557,7 +4557,7 @@ animalFeedDesc,items,Item Food,,Animal feed is used in crafting animal snares an
 maniacPowder,items,Item Food,,Maniac Powder,,
 maniacPowderDesc,items,Item Food,,A dangerous drug that can temporarily make you a fearless killing machine.,,
 
-RemoteDesc,items,Item Tool,,These are used to toggle hidden doors or bridges.,,
+RemoteDesc,items,Item Tool,,These are used to toggle hidden doors by clicking on them.,,
 
 survivorNotes,items,Item Tool,,Survivor Notes,,
 survivorNotesDesc,items,Item Tool,,Gather enough of these to craft skill books at the Study Desk.,,
@@ -4583,7 +4583,7 @@ ClingwrapDesc,items,Item Food,,You can turn clingwrap into strips to seal up raw
 stripsClingwrap,items,Item Food,,Clingwrap Strips,,
 stripsClingwrapDesc,items,Item Food,,You can use these to seal up raw meat to preserve it and mask the smell.,,
 sealedMeat,items,Item Food,,Sealed Meat,,
-SealedMeatDesc,items,Item Food,,This raw meat has been sealed with clingfilm to preserve it and mask the smell.,,
+sealedMeatDesc,items,Item Food,,This raw meat has been sealed with clingfilm to preserve it and mask the smell.,,
 
 gearMechanism,items,Item Tool,,Gear Mechanism,,
 gearMechanismDesc,items,Item Tool,,"These gears are required for making hidden doors, bridges, vaults and safes.",,
@@ -5059,6 +5059,53 @@ challengeSurvivorJournal,items,Zombie Challenge Note,,Survivor Journal Page,,
 challengeSurvivorJournalDesc,items,Zombie Challenge Note,,"This is a a torn page from a survivor's journal. If you had more maybe it could lead you to something.",,
 challengeLockpick,items,Zombie Challenge Note,,Breaking and Entering,,
 challengeLockpickDesc,items,Zombie Challenge Note,,"A challenge to test your lockpicking skill.",,
+challengeJock,items,Zombie Challenge Note,,Challenge - Jock,,
+challengeReaper,items,Zombie Challenge Note,,Challenge - Reaper,,
+challengeWalmart,items,Zombie Challenge Note,,Challenge - Walmart Shopers,,
+challengeWedding,items,Zombie Challenge Note,,Challenge - Wedding Vow,,
+challengeWallet,items,Zombie Challenge Note,,Challenge - Fancy Wallet,,
+challengeBooks,items,Zombie Challenge Note,,Challenge - Old Novels,,
+challengeChildsHappiness,items,Zombie Challenge Note,,Challenge - Child's Happiness,,
+challengeToilet,items,Zombie Challenge Note,,Challenge - Clean Wipe,,
+challengeWalkman,items,Zombie Challenge Note,,Challenge - Radio Head,,
+challengeCondoms,items,Zombie Challenge Note,,Challenge - Planned Parenthood,,
+challengeBaseball,items,Zombie Challenge Note,,Challenge - Baseball Slugger,,
+challengeCards,items,Zombie Challenge Note,,Challenge - Texas Holdem,,
+challengeCigarettes,items,Zombie Challenge Note,,Challenge - Cancerous Addiction,,
+challengeArtist,items,Zombie Challenge Note,,Challenge - Misunderstood Artist,,
+challengeSoap,items,Zombie Challenge Note,,Challenge - Cleanliness Equals Godliness,,
+challengeBong,items,Zombie Challenge Note,,Challenge - Up in Smoke,,
+
+questItemRing,items,Item,,[Q] Diamond Wedding Ring,,
+questItemRingDesc,items,Item,,[Quest Item] This is a brilliant and beautiful diamond ring and the only proof of a love that once was.,,
+questItemRing2,items,Item,,[Q] Wedding Band,,
+questItemRing2Desc,items,Item,,[Quest Item] This plain wedding band is all the remains of a once commited relationship.,,
+questItemWallet,items,Item,,[Q] Gatorskin Wallet,,
+questItemWalletDesc,items,Item,,[Quest Item] This gatorskin wallet was made to impress. Too bad all it holds is expires coupons.,,
+questItemBook,items,Item,,[Q] Classic Literature,,
+questItemBookDesc,items,Item,,"[Quest Item] This is a very old novel of writen tales. Too bad you don't have the time to really sit down and read through this - it'd take days!",,
+questItemTeddy,items,Item,,[Q] Teddy Bear,,
+questItemTeddyDesc,items,Item,,"[Quest Item] A stuffed teddy bear. A little dirty and roughed up but only cosmetic scars. It'd make a decent gift for a child.",,
+questItemToiletPaper,items,Item,,[Q] Toilet Paper,,
+questItemToiletPaperDesc,items,Item,,[Quest Item] An amazingly soft roll of untouched toilet paper, still in its wrapper.,,
+questItemGameboy,items,Item,,[Q] Gameboy,,
+questItemGameboyDesc,items,Item,,"[Quest Item] An old handheld video game system. Batteries are dead but the game cartridge is still inside! This would make a good gift for a child." ,,
+questItemWalkman,items,Item,,[Q] Walkman Cassette Player,,
+questItemWalkmanDesc,items,Item,,"[Quest Item] An old walkman audio cassette player. No batteries or tape to be found but someone might like it.",,
+questItemCondoms,items,Item,,[Q] Condoms,,
+questItemCondomsDesc,items,Item,,"[Quest Item] An unopened box of condoms. You don't yet have use for them yourself but someone might pay a good price for them.",,
+questItemBaseball,items,Item,,[Q] Autographed Baseball,,
+questItemBaseballDesc,items,Item,,"[Quest Item] This baseball has someone's signature writen on it. You're not sure who or if they were once someone important, but it might mean something to someone.",,
+questItemCards,items,Item,,[Q] Playing Cards,,
+questItemCardsDesc,items,Item,,"[Quest Item] An unsealed pack of playing cards. This is sure to make someone happy.",,
+questItemCigarettes,items,Item,,[Q] Carton of Cigarettes,,
+questItemCigarettesDesc,items,Item,,"[Quest Item] An unopened carton of cigarettes. They're extremely addicting and bad for your health. Someone out there might pay a high price for them, though...",,
+questItemArtSupplies,items,Item,,[Q] Art Supplies,,
+questItemArtSuppliesDesc,items,Item,,"[Quest Item] This set of art supplies is in surprisingly good shape. Someone might like these...",,
+questItemColoringBook,items,Item,,[Q] Coloring Book,,
+questItemColoringBookDesc,items,Item,,"[Quest Item] A coloring book with only a few of the pages already used. This would make a good gift for a child.",,
+questItemBong,items,Item,,[Q] Bong,,
+questItemBongDesc,items,Item,,"[Quest Item] Shocking this is in pretty good condition, though it shows clear signs that it recieved rigorous use. Used for tobacco paraphernalia. Someone might like this..",,
 
 fuelLog,items,Item,,Fuel Log,,
 fuelLogDesc,items,Item,,This log is coated with special chemicals to prolong its burn time.,,
@@ -5308,6 +5355,8 @@ peculiarTasteDesc,buffs,Buff,,"You're not sure what you just ate but it didn't t
 peculiarTasteTooltip,buffs,Buff,,A peculiar taste...,,
 mysteryMeat,items,Item,,Mystery Meat,,
 mysteryMeatDesc,items,Item,,"It doesn't smell terrible but you don't know how much faith you should put in Hotrod.",,
+mysteryMeatCrafted,items,Item,,Mystery Meat,,
+mysteryMeatCraftedDesc,items,Item,,"It's an aquired taste...",,
 
 bagChips,items,Item,,Bag of Chips,,
 bagChipsDesc,items,Item,,"A bag of crispy salted potato chips.",,
@@ -5489,4 +5538,68 @@ trapFallDesc,blocks,Traps,,This block looks solid but will give way the moment y
 
 concreteMixing2Desc,progression,Perk,,Unlocks the ability to make concrete and cement.,,
 
+theOutlawDesc2,progression,Perk,KgNone,"You're no Josey Wales, but your Magnum sure packs a punch.",,
+
+theGunman,progression,Perk,KgNone,The Gunman,,
+theGunmanDesc,progression,Perk,KgNone,You broke the laws of logic. Your pistol does more damage with every rank.,,
+
+deadShotDesc2,progression,Perk,KgNone,Shoot them dead with style!  Increase your handgun's chance to blow off heads and limbs with every rank.,Tuez-les avec classe ! Améliorez vos chances d'exploser des têtes et des membres avec votre pistolet au fil des rangs.,"Erschieße sie mit Stil! Erhöhe die Chance deiner Pistole, mit jedem Rang Köpfe und Gliedmaßen abzuschießen.",,¡Mátalos con estilo! Aumenta las posibilidades de que el revólver haga que los sesos y las extremidades de los enemigos salgan volando con nada nivel.
+
+sniper,progression,Skill,KgNone,Rifles,Fusils,Gewehre,,Sniper Rifle
+sniperDesc,progression,Perk,KgNone,Do more damage with Snipers. Gain skill by using items from this group.,,
+riflesDesc2,progression,Skill,KgNone,Do more damage with hunting or bolt rifles. Gain skill by using items from this group. Level up to 20 to be able to assemble them. Level 30 unlocks silencer.,Infligez davantage de dégâts avec les fusils et fusils d'assaut. Obtenez cette compétence en utilisant des objets de ce groupe.,"Verursache mehr Schaden mit Gewehren und Sturmgewehren. Erhalte die Fertigkeit, indem du Waffen aus dieser Kategorie benutzt.",,Inflige más daño con rifles y rifles de asalto. Mejora tu habilidad usando objetos de este grupo.
+hitman,progression,Perk,KgNone,The Hitman,,
+hitmanDesc,progression,Perk,GrChanged,"You're an aspiring hitman. Your sniper does more damage with every rank.",,
+
+assaultrifles,progression,Skill,KgNone,Rifles,Fusils,Gewehre,,Assault Rifles
+assaultriflesDesc,progression,Skill,KgNone,Do more damage with assault rifles.,,
+gijoe,progression,Perk,KgNone,"G.I. Joe",,
+gijoeDesc,progression,Perk,GrChanged,Your smg and assault rifle does more damage with every rank.,,
+
+smg,progression,Skill,KgNone,Rifles,Fusils,Gewehre,,Submachine Guns
+smgDesc,progression,Skill,KgNone,Do more damage with submachine guns.,,
+smgPerk,progression,Perk,KgNone,"Spray and Pray",,
+smgPerkDesc,progression,Perk,GrChanged,Your SMG does more damage with every rank. Level up to 20 to be able to assemble them. Level 30 unlocks silencer.,,
+
+lumberjack,progression,Perk,KgNone,"Lumberjack",,
+lumberjackDesc,progression,Perk,GrChanged,"Do 20% more block damage with axes and use 10% less stamina per swing per rank.",,
+
+ZombieRaveReaper,entityclasses,Entity,,Rave Reaper,,
+ZombieBigBitch,entityclasses,Entity,,Rotting Marge,,
+ZombieClarice,entityclasses,Entity,,Decayed Wife,,
+ZombieLibrarian,entityclasses,Entity,,Zombie Librarian,,
+ZombieVoodooFemale,entityclasses,Entity,,Infected Voodoo Cultist,,
+ZombieVoodooMale,entityclasses,Entity,,Infected Voodoo Cultist,,
+ZombieDan,entityclasses,Entity,,Festering Corpse,,
+ZombieLumberjack,entityclasses,Entity,,Undead Lumberjack,,
+ZombieSurvivorMale,entityclasses,Entity,,Infected Survivor,,
+ZombieSurvivorFemale,entityclasses,Entity,,Infected Survivor,,
+ZombieTrucker,entityclasses,Entity,,Undead Trucker,,
+ZombieKenny,entityclasses,Entity,,Undead Survivor,,
+ZombieRavager,entityclasses,Entity,,Ravager,,
+ZombieNerd,entityclasses,Entity,,Rotting Nerd,,
+ZombieInmate,entityclasses,Entity,,Infected Inmate,,
+ZombieInmateBlack,entityclasses,Entity,,Infected Inmate,,
+ZombieBrute,entityclasses,Entity,,Monsterous Brute,,
+ZombieCharred,entityclasses,Entity,,Charred Corpse,,
+ZombieChildFemale,entityclasses,Entity,,Infected Youth,,
+ZombieChildMale,entityclasses,Entity,,Infected Youth,,
 coldDrinkDesc,items,Food,KgNone,This drink has been chilled. Left-Click on a fridge or cooler to make it warmer.,,
+
+scrapIronShiv,items,Item Melee,,Scrap Iron Shiv,,
+scrapIronShivDesc,items,Item Melee,,"This crude shiv was craft from a random piece of scrap iron with its handle wrapped in duct tape. Hope you've had your tetanus shots...",,
+scrapIronShovel,items,Item Melee,,Scrap Iron Shovel,,
+scrapIronShovelDesc,items,Item Melee,,"This crude shovel was made by attaching some random scrap metal to the end of a smoothed wooden stick. It gets t he job done, but it degrades twice as fast.",,
+scrapIronPickaxe,items,Item Melee,,Scrap Iron Pickaxe,,
+scrapIronPickaxeDesc,items,Item Melee,,"This crude pickaxe was crafted with various scrap metal and wood. Serves its purpose but degrades twice as fast.",,
+scrapIronAxe,items,Item Melee,,Scrap Iron Axe,,
+scrapIronAxeDesc,items,Item Melee,,"This crude axe was crafted with scrap and wood. Its not as durable as stone but makes up for it by being a bit sharper.",,
+
+ironRingsRivets,items,Item,KgNone,Iron Rings and Rivets,,,
+ironRingsRivetsDesc,items,Item,KgNone,"These rings and rivets are required for crafting iron armor. You can craft these in the forge if you have a high enough Blacksmithing.",,
+steelRingsRivets,items,Item,KgNone,Steel Rings and Rivets,,,
+steelRingsRivetsDesc,items,Item,KgNone,"These rings and rivets are required for crafting steel armor. You can craft these in the forge if you have a high enough Blacksmithing.",,
+whetstoneDesc,items,Item,KgNone,"Used to repair weapons or tools that have sharp edges such as a hunting knife, axe or pickaxe.","Composant courant, les petites pierres servent notamment à fabriquer des haches de pierre, des feux de camp et des flèches. Elles peuvent aussi être jetées pour distraire les zombies et représentent une ressource de base pour forger.","Wird in vielen Rezepten benutzt, darunter Steinäxte, Lagerfeuer und Pfeile. Er kann geworfen werden, um Zombies abzulenken, und ist ein Grundrohstoff beim Schmieden.",,"Se usa en muchas recetas, como hachas de piedra, fogatas o flechas. También se pueden lanzar para distraer a los zombis y son un recurso de forja básico."
+
+canUnlabeled,items,Food,KgNone,Unlabeled Can,,,
+canUnlabeledDesc,items,Food,KgNone,"This can of food has long since lost its label, leaving the contents of the can a mystery. It could fill you up or it could make you sick. Are you hungry enough to chance it?",,,

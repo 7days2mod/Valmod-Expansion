@@ -37,6 +37,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="rockSmall" count="1" tooltip="ttScrapMetalBrass">
 	<wildcard_forge_category />
 </recipe>
+
 <recipe name="clayLump" count="1" craft_area="forge" material_based="true" craft_time = "1" craft_exp_gain="0">
 	<ingredient name="unit_clay" count="5"/>
 </recipe>
@@ -2812,6 +2813,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     </recipe>
 
 		<!-- Misc Recipes Mod -->
+<recipe name="steelPolish" count="1" craft_area="chemistryStation" craft_time="150">
+	<ingredient name="oil" count="5"/>
+</recipe>
+<recipe name="mysteryMeatCrafted" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="rottingFlesh" count="4"/>
+</recipe>
     <recipe name="workstationDecor" count="1" >
         <ingredient name="wood" count="30"/>
     </recipe>
@@ -2862,7 +2869,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="assortedVegetables" count="4"/>
 	<ingredient name="bowlWater" count="1"/>
 </recipe>
-<recipe name="Syringe" count="1" craft_area="forge" material_based="true" craft_exp_gain="0">
+<recipe name="Syringe" count="1" >
 	<ingredient name="scrapPlastics" count="1"/>
 </recipe>
 <recipe name="Lockpick" count="1" craft_time="20">
@@ -3347,7 +3354,26 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="scythe" count="1" craft_area="workbench">
 	<ingredient name="forgedIron" count="6"/>
 	<ingredient name="wood" count="10"/>
-</recipe>	
+</recipe>
+<recipe name="scrapIronAxe" count="1">
+	<ingredient name="ironFragment" count="10"/>
+	<ingredient name="yuccaFibers" count="2"/>
+	<ingredient name="wood" count="2"/>
+</recipe>
+<recipe name="scrapIronPickaxe" count="1">
+	<ingredient name="scrapIron" count="15"/>
+	<ingredient name="crudeNail" count="2"/>
+	<ingredient name="wood" count="20"/>
+</recipe>
+<recipe name="scrapIronShovel" count="1">
+	<ingredient name="scrapIron" count="15"/>
+	<ingredient name="crudeNail" count="2"/>
+	<ingredient name="wood" count="20"/>
+</recipe>
+<recipe name="scrapIronShiv" count="1">
+	<ingredient name="scrapIron" count="3"/>
+	<ingredient name="ductTape" count="1"/>
+</recipe>
 		<!--Survivor Notes Mod -->
 <recipe name="survivorNotes" count="1" tooltip="ttScrapVeggies" craft_time="0.5">
 	<wildcard_forge_category />
@@ -3362,9 +3388,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="Class - Builder (Locked)" count="1">
   <ingredient name="classSelection" count="1" />
   </recipe>
-	<recipe name="Class - Rifleman (Locked)" count="1">
-  <ingredient name="classSelection" count="1" />
-	</recipe>
 	<recipe name="Class - Veteran (Locked)" count="1">
   <ingredient name="classSelection" count="1" />
 	</recipe>
