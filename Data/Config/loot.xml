@@ -2927,7 +2927,6 @@
 	<item name="questItemColoringBook"/>
 </lootgroup>
 <lootgroup name="childrenBooks">
-	<item name="skillbookAxes"/>
 	<item name="skillbookArchery"/>
 	<item name="skillbookHunter"/>
 	<item name="skillbookKnight"/>
