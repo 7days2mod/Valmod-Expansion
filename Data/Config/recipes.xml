@@ -3362,12 +3362,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 <recipe name="scrapIronPickaxe" count="1">
 	<ingredient name="scrapIron" count="15"/>
-	<ingredient name="crudeNail" count="2"/>
 	<ingredient name="wood" count="20"/>
 </recipe>
 <recipe name="scrapIronShovel" count="1">
 	<ingredient name="scrapIron" count="15"/>
-	<ingredient name="crudeNail" count="2"/>
 	<ingredient name="wood" count="20"/>
 </recipe>
 <recipe name="scrapIronShiv" count="1">
