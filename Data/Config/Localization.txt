@@ -5117,7 +5117,7 @@ recipebookLockpick,items,Item Book,,Lockpicking,,
 recipebookLockpickDesc,items,Item Book,,"This book teaches you how to create and use lockpicks for safecracking.",,
 
 
-classHunterDesc,blocks,Block Building,,"Hunter's start off with an Bow and hide armor. Recipes: Hunting Knife, Traps, Animal Traps, Animal Hide Armor, Wooden Bow.",,
+classHunterDesc,blocks,Block Building,,"Hunter's start off with a rifle and knowledge in rifles, traps and leatherworking.",,
 
 classHunterDesc2,blocks,Block Building,,"Hunter's start off with a bow and skills in leather tanning, archery, animal traps and a hunting knife.",,
 
