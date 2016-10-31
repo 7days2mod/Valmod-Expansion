@@ -1236,7 +1236,7 @@
 		<recipe name="crossbowRepeater" unlock_level="3"/>
 	</perk>
 	
-	<perk name="Advance Traps" icon="misc_crafting" description_key="Max out this perk to learn how to craft stronger trap recipes such as trussing, steel and fire traps." title_key="Traps" max_level="10" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="crafting">
+	<perk name="Advance Traps" icon="misc_crafting" description_key="Max out this perk to learn how to craft stronger trap recipes such as trussing, steel and fire traps." title_key="Traps" max_level="10" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="tools">
 		<recipe name="trussingSpike" unlock_level="10"/>
 		<recipe name="trussingWallSpike" unlock_level="10"/>
 		<recipe name="trapSteelSpike" unlock_level="10"/>
