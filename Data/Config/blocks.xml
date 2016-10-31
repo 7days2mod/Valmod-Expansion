@@ -14384,14 +14384,13 @@ kind of free
 		<property name="Model" value="LootContainers/mailbox02" param1="main_mesh" />
 		<drop event="Destroy" name="woodDebris" count="0" />
 		<drop event="Fall" name="woodDebris" count="0" prob="1.0"  stick_chance=".75" />
-		<property name="Class" value="Workstation" />
-		<property class="Workstation">
-			<property name="Modules" value="output,input"/>
-		</property>
 		<property name="Group" value="Basics" />
 		<property class="RepairItems">
 			<property name="wood" value="10" />
 		</property>
+		<property name="Stacknumber" value="1" />
+		<property name="Class" value="VendingMachine" />
+		<property name="TraderID" value="20" />
 	</block>
 
 	<block id="1946" name="workstationArmory">

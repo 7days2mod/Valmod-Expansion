@@ -1103,7 +1103,7 @@
 		</effect>
 	</perk>
 
-	<player_skill name="Barter" exp_to_level="25" experience_multiplier="1.0606" icon="coin" description_key="barterDesc" title_key="barter" group="scavenging">
+	<player_skill name="Barter" exp_to_level="25" experience_multiplier="1.0606" icon="coin" description_key="Reduce the cost of goods and sell them for more Dukes by improving this skill. Level 20 unlocks the merchant deliver box." title_key="barter" group="scavenging">
 		<effect name="Bartering">
 			<add skill_level="1,10" value="0.00,0.15"/>	
 			<add skill_level="10,20" value="0.15,0.23"/>	
@@ -1116,6 +1116,7 @@
 			<add skill_level="80,90" value="0.52,0.56"/>	
 			<add skill_level="90,100" value="0.56,0.60"/>	
 		</effect>
+		<recipe name="workstationMerchant" unlock_level="20"/>
 	</player_skill>
 	
 	<perk name="Secret Stash" icon="safe" description_key="secretStashDesc" title_key="secretStash" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="scavenging">
