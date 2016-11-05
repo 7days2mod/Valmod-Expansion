@@ -3410,8 +3410,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	</recipe>
 
 	<!-- Dye Station -->
-	<recipe name="sprayPaint" count="1" craft_area="dyeStation">
-        <ingredient name="scrapIron" count="10"/>
+	<recipe name="sprayPaint" count="1" craft_area="workstationDecor">
+        <ingredient name="scrapIron" count="3"/>
     </recipe>
 	<!-- Valmod Temp Removed for Performance Issues
     <recipe name="dyeStation" count="1">
