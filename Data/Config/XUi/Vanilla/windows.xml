@@ -1,294 +1,20 @@
 <windows>
-<!-- <<< SMX v15b104e r08 START - BY SIRILLION >>> -->
-
-	<window name="SMX">
-
-		<!-- EDIT THE TEXTURE PART TO REMOVE THE SMX "LOGO" OR INSERT YOUR OWN LOGO IF YOU WISH. TO AVOID ISSUES, STICK TO THE SIZE. -->
-		<!-- EDIT THE TEXT PART OF THE LABEL SECTION TO SET A CUSTOM MESSAGE FOR YOUR DEDICATED SERVER - STANDARD COLOR IS GREEN, THIS CAN BE CHANGED IN THE COLOR PART. DON'T OVER-DO IT! -->
-
-		<texture name="Valmod" depth="0" size="53,35" texture="@http://i.imgur.com/pl91cRj.png" material="Materials/Transparent Colored" pos="-160,-6" /> <!-- Local Asset Equivalent: smxserverlogo.png -->
-		<label name="SMX" depth="0" size="53,35" text="SMX UI" font_size="20" effect="outline" color="[white]" justify="center" pos="-220,-15" overflow="resizeheight" />
-		<!-- Valmod Version -->
-		<label name="SMXServerInfo1" depth="0" size="53,35" text="VMO V4.15" font_size="20" effect="outline" color="[white]" justify="center" pos="-160,-15" overflow="resizeheight" />
-
-	</window>
-
-	<window name="SMXUnitFrame1" style="SMXUnitFrameWindow">
-
-		<grid name="SMXHSFrame" pos="0,145" rows="2" cols="1" width="240" cell_width="240" cell_height="35" repeat_content="false" side="left">
-			<rect width="240" height="35" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
-				<texture name="SMXStaminaBarBG" depth="1" size="240,54" texture="@http://i.imgur.com/1yE0DM5.png" material="Materials/Transparent Colored" pos="0,-75" /> <!-- Local Asset Equivalent: staminabarempty.png -->
-				<sprite name="BarContent" depth="2" height="15" width="220" atlas="itemiconatlas" sprite="smxuf1stamina" type="filled" fill="0" pos="8,-86" />
-		<!-- Uncomment this if oyu want percentages to show
-				<label depth="6" name="TextContent" pos="0,-83" font_size="20" effect="outline" color="[white]" justify="center" pivot="topleft" text="{statcurrent}" />
-				-->
-			</rect>
-
-			<rect width="240" height="35" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
-				<texture name="SMXHealthBarBG" depth="1" size="240,60" texture="@http://i.imgur.com/7IjrVvg.png" material="Materials/Transparent Colored" pos="0,-55" /> <!-- Local Asset Equivalent: healthbarempty.png -->
-				<sprite name="BarContent" depth="2" size="220,30" atlas="itemiconatlas" sprite="smxuf1health" type="filled" fill="0" pos="8,-67" />
-				<label depth="6" name="TextContent" pos="0,-66" font_size="32" effect="outline" color="[white]" justify="center" pivot="topleft" text="{statcurrent}" />
-			</rect>
-		</grid>
-
-		<grid name="SMXFWFrame" pos="-2,70" rows="1" cols="2" width="118" cell_width="118" cell_height="35" repeat_content="false" side="left">
-			<rect width="118" height="35" controller="HUDStatBar" stat_type="Food" visible="{statvisible}">
-				<texture name="SMXFoodBarBG" depth="1" size="120,27" texture="@http://i.imgur.com/bFzF5wF.png" material="Materials/Transparent Colored" pos="0,-55" /> <!-- Local Asset Equivalent: foodwaterempty.png -->
-				<sprite name="BarContent" depth="2" size="102,-10" color="64,214,109,200" type="filled" fill="0" pos="10,-75" />
-		<!-- Uncomment this if you want percentages to show		
-				<label depth="6" name="TextContent" pos="0,-58" font_size="22" effect="outline" color="[white]" justify="center" pivot="topleft" text="{playerfood} %" controller="PlayerStatsWindow" />
-		-->
-			</rect>
-
-			<rect width="118" height="35" controller="HUDStatBar" stat_type="Water" visible="{statvisible}">
-				<texture name="SMXWaterBarBG" depth="1" size="120,27" texture="@http://i.imgur.com/bFzF5wF.png" material="Materials/Transparent Colored" pos="0,-55" /> <!-- Local Asset Equivalent: foodwaterempty.png -->
-				<sprite name="BarContent" depth="2" size="102,-10" color="64,177,214,200" type="filled" fill="0" pos="10,-75" />
-		<!-- Uncomment this if you want percentages to show		
-				<label depth="6" name="TextContent" pos="0,-58" font_size="22" effect="outline" color="[white]" justify="center" pivot="topleft" text="{playerwater} %" controller="PlayerStatsWindow" />
-			-->
-			</rect>
-		</grid>
-
-	</window>
-	
-	<window name="SMXLevelXPUF1" style="SMXLevelXP.window">
-
-		<rect pos="0,0" controller="PlayerStatsWindow">
-			<sprite name="SMXLevelXPBG" pos="12,15" size="120,80" depth="1" atlas="itemiconatlas" sprite="smxxp1bg" />
-			<sprite name="SMXLevelXPFG" pos="17,13" size="110,76" depth="2" atlas="itemiconatlas" sprite="smxxp1fg" globalopacitymod="1.5" />
-			<sprite name="SMXLevelXPBar" pos="25,10" size="93,64" depth="3" atlas="itemiconatlas" sprite="smxxp1bar" color="255,255,255" type="filled" filldirection="radial360" fill="{playerlevelfill}" globalopacitymod="1.5" />
-			<label depth="4" width="50" pos="48,-7" font_size="32" text="{playerlevel}[-]" color="225,221,0" effect="outline" upper_case="true" justify="center"/>
-		</rect>
-
-	</window>
-	<window name="ZombieKillTracker" width="400" height="200" pos="135,92" controller="PlayerStatsWindow" anchor="LeftBottom">
-	<sprite depth="3" name="icon" size="45,45" style="icon32px" pos="112, -17" sprite="ui_game_symbol_knife" color="0, 0, 0, 125"/>
-	<sprite depth="3" name="icon" size="45,45" style="icon32px" pos="110, -15" sprite="ui_game_symbol_skull" color="[black]"/>
-	<sprite depth="3" name="icon" size="40,40" style="icon32px" pos="112, -17" sprite="ui_game_symbol_skull" color="237,231,206"/>
-
-	<label depth="4" name="TextContent" pos="154,-22" font_size="35" color="[black]" foregroundlayer="true" text="{playerzombiekills}[-]" effect="outline" upper_case="true"  />
-	<label depth="4" name="TextContent" pos="155,-23" font_size="30" color="[white]" foregroundlayer="true" text="{playerzombiekills}[-]" effect="outline" upper_case="true"  />
-	</window>
-
-	<window name="SMXToolbelt1" width="760" height="226" depth="0" pos="0,85" anchor="CenterBottom" backgroundcolor="[black]" controller="ToolbeltWindow" visible="{toolbeltvisible}">
-
-		<rect>
-			<texture name="SMXToolbeltBG" depth="0" size="760,120" pos="-380,30" texture="@http://i63.tinypic.com/29p6g6b.jpg" material="Materials/Transparent" /> <!-- Local Asset Equivalent: toolbeltbg.png -->
-
-			<grid name="SMXToolbelt" depth="1" rows="1" cols="8" pos="-340,20" cell_width="85" cell_height="85" controller="Toolbelt" repeat_content="true">
-				<SMX_tb_item_stack_uf1 name="0"/>
-			</grid>
-
-			<grid name="SMXToolbeltNumbers" depth="1" rows="1" cols="8" pos="-305,-65" cell_width="85" cell_height="85" repeat_content="false">
-				<label depth="10" size="12,22" text="1" font_size="20" effect="outline" color="[mediumGrey]" justify="center" />
-				<label depth="10" size="12,22" text="2" font_size="20" effect="outline" color="[mediumGrey]" justify="center" />
-				<label depth="10" size="12,22" text="3" font_size="20" effect="outline" color="[mediumGrey]" justify="center" />
-				<label depth="10" size="12,22" text="4" font_size="20" effect="outline" color="[mediumGrey]" justify="center" />
-				<label depth="10" size="12,22" text="5" font_size="20" effect="outline" color="[mediumGrey]" justify="center" />
-				<label depth="10" size="12,22" text="6" font_size="20" effect="outline" color="[mediumGrey]" justify="center" />
-				<label depth="10" size="12,22" text="7" font_size="20" effect="outline" color="[mediumGrey]" justify="center" />
-				<label depth="10" size="12,22" text="8" font_size="20" effect="outline" color="[mediumGrey]" justify="center" />
-			</grid>
-		</rect>
-	</window>
-
-	<window name="SMXHudOther">
-
-				<texture name="SMXHudOther" depth="0" size="165,355" pos="-230,-50" texture="@http://i.imgur.com/HzB8tJ3.png" material="Materials/Transparent" justify="right" rotation="90"/> <!-- Local Asset Equivalent: hudotherbg.png -->
-
-		<rect name="SMXCollector" pos="-90,31" side="right" controller="CollectedItemList" pivot="BottomLeft">
-			<panel width="168" height="43" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, 0">
-				<sprite depth="4" name="Icon" atlas="itemiconatlas"  size="36,32" pos="50,0" pivot="center" foregroundlayer="true" />
-				<label depth="6" name="TextContent" font_size="28" effect="outline" color="[white]" justify="center" height="30" pivot="center" />
-				<sprite depth="6" pos="0,16" width="32" height="32" name="Negative" sprite="ui_game_symbol_x" color="[red]" />
-			</panel>
-		</rect>
-
-		<grid name="SMXAmmoCounter" pos="-177,52" rows="2" cols="1" width="168" cell_width="168" cell_height="46" repeat_content="false" side="right">
-			<rect width="168" height="43" controller="HUDStatBar" stat_type="ActiveItem" visible="{statvisible}">
-				<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon}" size="70,50" pos="100,5" color="{staticoncolor}" foregroundlayer="true" />
-				<label depth="6" name="TextContent" pos="-70,10" font_size="32" effect="outline" color="[white]" justify="right" text="{statcurrentwithmax}" />
-			</rect>
-		</grid>
-
-		<grid name="SMXVehicle" pos="-177,147" rows="2" cols="1" width="168" cell_width="168" cell_height="46" repeat_content="false" side="right">
-			<rect width="168" height="43" controller="HUDStatBar" stat_type="VehicleBattery" visible="{statvisible}">
-				<sprite depth="3" pos="3,0"  name="BarContent" sprite="{statimage|once}" height="43" width="162" />
-				<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="130,-6" foregroundlayer="true" />
-				<label depth="6" name="TextContent" pos="15,-8" font_size="28" color="[white]" justify="center" text="{statcurrentwithmax}" height="30"/>
-			</rect>
-			<rect width="168" height="43" controller="HUDStatBar" stat_type="VehicleFuel" visible="{statvisible}">
-				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced"/>
-				<sprite depth="2" pos="3,-3"  name="background" height="37" width="162" color="64,64,64,100" type="sliced" />
-				<sprite depth="3" pos="3,-3"  name="BarContent" sprite="{statimage|once}" type="filled" height="37" width="162" flip="Horizontally" />
-				<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="130,-6" foregroundlayer="true" />
-				<label depth="6" name="TextContent" pos="15,-8" font_size="28" color="[white]" justify="center" text="{statcurrentwithmax}" height="30"/>
-			</rect>
-			<rect width="168" height="43" controller="HUDStatBar" stat_type="VehicleHealth" visible="{statvisible}">
-				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced"/>
-				<sprite depth="2" pos="3,-3"  name="background" height="37" width="162" color="64,64,64,100" type="sliced" />
-				<sprite depth="3" pos="3,-3"  name="BarContent" sprite="{statimage|once}" type="filled" height="37" width="162" flip="Horizontally" />
-				<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="130,-6" foregroundlayer="true" />
-				<label depth="6" name="TextContent" pos="15,-8" font_size="28" color="[white]" justify="center" text="{statcurrentwithmax}" height="30"/>
-			</rect>
-		</grid>
-
-	</window>
-
-	<window name="SMXQuestTracker" pos="-255, -88" width="300" height="100" anchor="RightTop" controller="QuestTrackerWindow" visible="{showquest}" depth="-20">
-
-		<texture name="SMXHudOther" depth="0" size="316,58" pos="-140,18" texture="@http://i.imgur.com/DmqKEqC.png" material="Materials/Transparent" /> <!-- Local Asset Equivalent: questsbg.png -->
-
-		<label depth="1" text="{questtitle}" font_size="26" effect="outline" justify="center" upper_case="true" pos="-100, -5" height="28" />
-		<sprite pos="-100,-8" depth="1" name="windowIcon" style="icon22px" sprite="{questicon}" justify="left" />
-
-		<grid name="objectiveList" rows="8" cols="1" pos="-60,-44" cell_width="300" cell_height="26" repeat_content="true" arrangement="vertical" controller="QuestTrackerObjectiveList"
-			complete_icon="ui_game_symbol_check" incomplete_icon="ui_game_symbol_x" complete_color="[green]" incomplete_color="[red]">
-			<SMX_quest_objective_tracker_entry_uf1 />
-		</grid>
-
-	</window>
-
-	<window name="SMXCompass1" style="SMXcompass.window" controller="CompassWindow">
-	<!--	<texture style="SMXcompass.window.background" />-->
-		<texture style="SMXcompass.window.indicator" />
-		<texture style="SMXcompass.window.compass.texture" name="compassTexture" depth="1" rect_size="0.25,1" rect_offset=".8,0">
-		</texture>
-	</window>
-
-	<window name="SMXBuffFrame1">
-
-		<rect name="hud" pos="93,195" side="left" controller="BuffPopoutList" pivot="BottomLeft">
-			<panel width="168" height="43" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, 0">
-				<sprite depth="3" pos="9999,9999"  name="Background" sprite="ui_game_popup" height="43" width="162" pivot="center" flip="Horizontally" color="[transparent]" />
-				<sprite depth="4" name="Icon" size="36,32" pos="-58,0" pivot="center" color="[transparent]" />
-				<label depth="6" name="TextContent" pos="0,0" font_size="28" color="[white]" justify="center" height="30" pivot="center" />
-			</panel>
-		</rect>
-
-	</window>
-
-<!--	<window name="SMXBuffFrame2">
-
-		<rect name="hud" pos="93,195" side="left" controller="BuffPopoutList" pivot="BottomLeft">
-			<panel width="168" height="26" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, 0">
-				<sprite depth="3" pos="9999,9999"  name="Background" sprite="ui_game_popup" height="26" width="162" pivot="center" flip="Horizontally" color="[transparent]" />
-				<sprite depth="4" name="Icon" style="icon22px" pos="-58,0" pivot="center" color="[transparent]" />
-				<label depth="6" name="TextContent" pos="0,0" font_size="22" color="[white]" effect="outline" justify="center" height="26" pivot="center" />
-			</panel>
-		</rect>
-
-	</window> -->
-	
-	<window name="SMXBuffFrame2">
-
-		<rect name="hud" pos="93,140" side="left" controller="BuffPopoutList" pivot="BottomLeft">
-			<panel width="168" height="33" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, 0">
-				<sprite depth="3" pos="9999,9999"  name="Background" sprite="ui_game_popup" height="26" width="162" pivot="center" flip="Horizontally" color="[transparent]" />
-				<sprite depth="4" name="Icon" height="30" width="30" style="icon22px" pos="-58,0" pivot="center" color="[transparent]" />
-				<label depth="6" name="TextContent" pos="0,0" font_size="30" color="[white]" effect="outline" justify="center" height="26" pivot="center" />
-			</panel>
-		</rect>
-
-	</window>
-
-	<window name="SMXBuffFrame3" Controller="ActiveBuffWindow" width="320" height="325" pos="9,520">
-
-		<panel name="content" depth="0" pos="0,-40" disableautobackground="true">
-			<rect height="43">
-				<sprite depth="8" name="backgroundMain" pos="9999,9999" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />
-				<sprite color="[mediumGrey]" pos="9999,9999" type="sliced" />
-				<panel pos="9999,9999" height="43" disableautobackground="true">
-					<button depth="4" name="pageDown" style="icon30px, press" pos="9999,9999" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]" />
-					<rect depth="4" pos="9999,9999">
-						<sprite name="background" pos="9999,9999" style="icon30px" color="[black]" type="sliced" />
-						<label depth="5" name="pageNumber" pos="9999, 9999" width="30" height="28" text="1" font_size="26" justify="center" />
-					</rect>
-					<button depth="4" name="pageUp" style="icon30px, press" pos="9999,9999" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]" />
-				</panel>
-			</rect>
-
-			<grid name="buffs" rows="6" cols="1" pos="3,-43" cell_width="168" cell_height="43" repeat_content="true" controller="ActiveBuffList">
-				<SMX_active_buff_entry1 />
-			</grid>
-		</panel>
-
-	</window>
-
-	<window name="SMXBuffFrame4" Controller="ActiveBuffWindow" width="320" height="325" pos="9,420">
-
-		<panel name="content" depth="0" pos="0,-40" disableautobackground="true">
-			<rect height="43">
-				<sprite depth="8" name="backgroundMain" pos="9999,9999" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />
-				<sprite color="[mediumGrey]" pos="9999,9999" type="sliced" />
-				<panel pos="9999,9999" height="43" disableautobackground="true">
-					<button depth="4" name="pageDown" style="icon30px, press" pos="9999,9999" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]" />
-					<rect depth="4" pos="9999,9999">
-						<sprite name="background" pos="9999,9999" style="icon30px" color="[black]" type="sliced" />
-						<label depth="5" name="pageNumber" pos="9999, 9999" width="30" height="28" text="1" font_size="26" justify="center" />
-					</rect>
-					<button depth="4" name="pageUp" style="icon30px, press" pos="9999,9999" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]" />
-				</panel>
-			</rect>
-
-			<grid name="buffs" rows="6" cols="1" pos="3,-43" cell_width="168" cell_height="26" repeat_content="true" controller="ActiveBuffList">
-				<SMX_active_buff_entry2 />
-			</grid>
-		</panel>
-
-	</window>
-
-	<window name="SMXDayTimeFrame" style="SMXDayTimeFrame.window" controller="CompassWindow">
-
-		<texture style="compass.window.compass.texture" name="compassTexture" rect_size="0.25,1" rect_offset=".8,0">
-
-		</texture>
-
-		<grid name="SMXDayTimeFrame" pos="85,-9" rows="1" cols="2" width="125" cell_width="60" cell_height="46" repeat_content="false">
-			<rect width="400" height="43">
-				<sprite name="SMXDayTimeBG" pos="-20,12" size="214,148" depth="1" atlas="itemiconatlas" sprite="smxuf1extra" globalopacitymod="1.0" />
-
-				<label depth="2" pos="25,-50" width="60" height="43" text="Day {day|always}" color="[white]" font_size="22" effect="outline" upper_case="true" justify="left" />
-			</rect>
-
-			<rect>
-				<label depth="2" pos="25,-50" width="60" height="43" text=" {time|always}" color="[white]" font_size="22" effect="outline" upper_case="true" justify="left" />
-			</rect>
-		</grid>
-
-	</window>
-
-	<window name="SMXTempFrameUF1" style="SMXTempFrame.window" controller="PlayerStatsWindow">
-
-		<grid name="SMXTempFrame" pos="85,-55" rows="1" cols="3" width="360" cell_width="70" cell_height="100" repeat_content="false">
-			<rect width="70" height="100">
-				<sprite name="SMXTempBG" pos="370,-65" size="324,148" depth="1" atlas="itemiconatlas" sprite="smxuf1extra" rotation="180" globalopacitymod="1.5" />
-
-				<label depth="2" width="100" pos="105,20" font_size="20" text=" {mapelevation}[-]  M" color="[white]" effect="outline" justify="center"  controller="MapStats" />
-			</rect>
-
-			<rect width="70" height="100">
-				<label depth="2" width="100" pos="105,20" font_size="20" text=" {maptemperature}[-]" color="[white]" effect="outline" justify="center" controller="MapStats" />
-			</rect>
-
-			<rect width="70" height="100">
-				<label depth="2" width="100" pos="105,20" font_size="20" text=" {playercoretemp}[-]" color="[white]" effect="outline" upper_case="true" justify="center" />
-			</rect>
-		</grid>
-
-	</window>
-
-<!-- <<< SMX v15b104e r08 END - BY SIRILLION >>> -->
 	<window name="HUDLeftStatBars">
 		<grid name="hud" pos="9,98" rows="2" cols="1" width="168" cell_width="168" cell_height="46" repeat_content="false" side="left" >
-			<rect width="168" height="18" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
-				<sprite depth="3" pos="3,-33"  name="BarContent" sprite="{statimage|once}" type="filled" height="18" width="162" fill="0"  />
+			<rect width="168" height="43" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
+				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced"/>
+				<sprite depth="2" pos="3,-3"  name="background" height="37" width="162" color="64,64,64,100" type="sliced" />
+				<sprite depth="3" pos="3,-3"  name="BarContent" sprite="{statimage|once}" type="filled" height="37" width="162" fill="0"  />
+				<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="8,-6" foregroundlayer="true"/>
+				<label depth="6" name="TextContent" pos="0,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{statcurrentwithmax}" height="30"/>
 			</rect>
 			
 			<rect width="168" height="43" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
+				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced" />
+				<sprite depth="2" pos="3,-3"  name="background" height="37" width="162" color="64,64,64,100" type="sliced" />
 				<sprite depth="3" pos="3,-3"  name="BarContent" sprite="{statimage|once}" type="filled" height="37" width="162" fill="0" />
-				<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="28,28" pos="8,-8" foregroundlayer="true"/>
-				<label depth="6" name="TextContent" pos="0,-10" font_size="24" color="[white]" justify="center" pivot="topleft" text="{statcurrentwithmax}" height="30"/>
+				<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="8,-6" foregroundlayer="true"/>
+				<label depth="6" name="TextContent" pos="0,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{statcurrentwithmax}" height="30"/>
 			</rect>
 		</grid>
 		
@@ -377,7 +103,13 @@
 	</window>
 	
 	<window name="windowCompass" style="compass.window" controller="CompassWindow">
-
+		<sprite style="compass.window.background.border"/>
+		<sprite style="compass.window.background"/>
+		
+		<sprite style="compass.window.compass.background">
+		
+			
+		</sprite>
 		<texture style="compass.window.compass.texture" name="compassTexture" rect_size="0.25,1" rect_offset=".8,0" >
 				
 		</texture>
@@ -385,152 +117,6 @@
 			<label depth="2" width="300" height="30" text="{daytitle}: {day|always}  {timetitle}: {time|always}" font_size="28" pivot="center" effect="outline" upper_case="true" justify="center"/>
 		</sprite>
 	</window>
-<!-- BEGIN_MOD: Red Eagle LXIX's Custom HUD : A15(b78) : v0.13 -->
-	<!-- Window that replaces the default compass adding the center marker and reformatting the time to match AirTemp/Wind/Elevation window.-->
-	<window name="windowCompassRELXIX" style="compass.window" controller="CompassWindow">
-		<texture style="compass.window.compass.texture" name="compassTexture" rect_size="0.25,1" rect_offset=".8,0" >
-		</texture>
-		<sprite sprite="ui_game_header_fill" depth="10" width="2" height="43" pos="199,0" type="sliced" fillcenter="false" color="255,255,0,35" /> <!-- This adds the center bar to the compass -->
-		<sprite depth="2" name="dayTimeIcon" size="20,20" pos="94,-48" sprite="ui_game_symbol_clock" color="*" foregroundlayer="true"/>
-		<label depth="2" width="172" pos="108,-42" height="172" text="  [DECEA3]{day|always}  {time|always}[-]" font_size="30" /> <!--pivot="center" effect="outline" justify="center"/>-->
-	</window> 
-	
-	<!-- Window that displays Air Temp, Wind Speed, Current Elevation -->
-	<window name="mapStatsHUD" width="400" height="32" pos="-200,-49" controller="MapStats" anchor="CenterTop">		
-			<sprite depth="2" name="tempIcon" size="20,20" pos="230,-6" sprite="ui_game_symbol_temperature" color="*" foregroundlayer="true"/>
-			<label depth="2" name="tempLabel" pos="250,-3" width="172" height="30" text=" [DECEA3]{maptemperature}[-]" font_size="27"/>
-	</window>
-	<!-- Window that displays Numbers on the tool belt for each slot -->
-<window name="windowToolbeltNumbersHUD" depth="20" width="603" height="22" pos="-313,98" anchor="CenterBottom" controller="ToolbeltWindow" visible="{ToolbeltVisible}">
-<label name="slot1" pos="-5,-9" width="22" height="22" text="  [DECEA3]1" font_size="20" justify="center"/>
-<label name="slot2" pos="70,-9" width="22" height="22" text="  [DECEA3]2" font_size="20" justify="center"/>
-<label name="slot3" pos="145,-9" width="22" height="22" text="  [DECEA3]3" font_size="20" justify="center"/>
-<label name="slot4" pos="220,-9" width="22" height="22" text="  [DECEA3]4" font_size="20" justify="center"/>
-<label name="slot5" pos="293,-9" width="22" height="22" text="  [DECEA3]5" font_size="20" justify="center"/>
-<label name="slot6" pos="370,-9" width="22" height="22" text="  [DECEA3]6" font_size="20" justify="center"/>
-<label name="slot7" pos="445,-9" width="22" height="22" text="  [DECEA3]7" font_size="20" justify="center"/>
-<label name="slot8" pos="520,-9" width="22" height="22" text="  [DECEA3]8" font_size="20" justify="center"/>
-</window>
-	<!-- Window that displays XP bar and level -->
-	<window name="playerXPHUD" width="603" height="24" depth="20" anchor="CenterBottom" pos="-313,116" controller="PlayerStatsWindow">
-			<sprite depth="2" pos="0, -14" width="603" height="10" type="sliced" color="0,0,0,150" />
-			<sprite depth="2" pos="-1, -15" width="601" height="8" type="sliced" color="64,64,64,150" />
-			<sprite depth="2" pos="-1, -15" width="601" height="8" type="filled" color="49,91,203,192" fill="{playerlevelfill}" />
-			<label depth="3" width="40" pos="279,-12" font_size="18" text=" [DECEA3]{playerlevel}[-]" justify="center"/>
-	</window>
-
-	<!-- Window that displays Bars behind Player Temp, Hunger % and Thirst % -->
-	<window name="playerStatsBarsHUD" width="400" height="200" pos="178,92" controller="PlayerStatsWindow" anchor="LeftBottom">
-			<sprite depth="1" pos="3, 0" width="105" height="24" type="sliced" color="0,0,0,100" />
-			<sprite depth="1" pos="4, -1" width="103" height="22" type="sliced" color="64,64,64,100" />
-			<sprite depth="1" pos="3, -27" width="105" height="24" type="sliced" color="0,0,0,100" />
-			<sprite depth="1" pos="4, -28" width="103" height="22" type="sliced" color="64,64,64,100" />
-			<sprite depth="1" pos="4, -28" width="103" height="22" type="filled" color="52,174,86,192" fill="{playerfoodfill}" />
-			<sprite depth="1" pos="3, -54" width="105" height="24" type="sliced" color="0,0,0,100" />
-			<sprite depth="1" pos="4, -55" width="103" height="22" type="sliced" color="64,64,64,100" />
-			<sprite depth="1" pos="4, -55" width="103" height="22" type="filled" color="52,137,167,192" fill="{playerwaterfill}" />
-	</window>
-
-	<!-- Window that displays Player Temp, Hunger % and Thirst % -->	
-	<window name="playerStatsHUD" width="400" height="200" pos="178,92" controller="PlayerStatsWindow" anchor="LeftBottom">
-			<sprite depth="2" name="windowIcon" style="icon22px" pos="4,-1" sprite="ui_game_symbol_cold"/>
-				<label depth="2" width="200" pos="26, -3"  font_size="20" text=" [DECEA3]{playercoretemp}[-]" />
-			<sprite depth="2" name="windowIcon" style="icon22px" pos="85,-1" sprite="ui_game_symbol_hot"/>
-
-			<sprite depth="2" name="windowIcon" style="icon22px" pos="4,-28" sprite="ui_game_symbol_fork"/>
-				<label depth="2" width="200" pos="35,-30" name="lblFood" font_size="20" text=" [DECEA3]{playerfood}%[-]" />
-			<sprite depth="2" name="windowIcon" style="icon22px" pos="85,-28" sprite="ui_game_symbol_hunger"/>
-
-			<sprite depth="2" name="windowIcon" style="icon22px" pos="4,-55" sprite="ui_game_symbol_water"/>
-				<label depth="2" width="200" pos="35,-57" name="lblWater" font_size="20" text=" [DECEA3]{playerwater}%[-]" />
-			<sprite depth="2" name="windowIcon" style="icon22px" pos="85,-55" sprite="ui_game_symbol_thirst"/>
-	</window>
-  <!-- Window that displays Player Coordinates and Bedroll Coordinates -->
-	<window name="mapCoordsHUD" width="600" height="44" pos="-151,-77" anchor="CenterTop" controller="MapArea">
-		<panel name="content" depth="0" pos="0,0" height="44" disableautobackground="true">
-			<rect depth="1" name="toolbar" width="600" height="24" pos="0,0">
-				<sprite depth="1" name="playerIcon" size="18,18" pos="0,0" color="255,255,255,128" sprite="ui_game_symbol_map_player_arrow" foregroundlayer="true" />
-				<label depth="1" name="playerPos" pos="27,0" width="150" height="20" color="222,206,163,208"  text="110 S" font_size="20"/>
-
-				<sprite depth="1" name="bedrollIcon" size="18,18" pos="167,0" color="255,255,255,128" sprite="ui_game_symbol_map_bed" foregroundlayer="true" />
-				<label depth="1" name="bedrollPos" pos="194,0" width="150" height="20" color="222,206,163,208" text="300 N" font_size="20"/>
-
-				<!-- Hacky workaround - we move everything that we're not using or doesn't work on main screen way off screen -->
-				<sprite depth="1" name="waypointIcon" style="icon32px, hover" on_press="true" pos="99999,99999" sprite="ui_game_symbol_map_waypoint_remove" tooltip="Remove Quick Waypoint"/>
-				<label depth="1" name="waypointDistance" pos="99999,99999" width="102" height="28" text="0.2 KILOMETERS" font_size="20"/>				
-				<sprite depth="1" name="cursorIcon" style="icon32px, press, hover" pos="99999,99999" sprite="ui_game_symbol_map_cursor" tooltip="Cursor Position" sound="[paging_click]"/>
-				<label depth="1" name="cursorPos" pos="99999,99999" width="50" height="28" text="300 N" font_size="20"/>
-			</rect>
-			<panel name="mapView" depth="1" width="1" height="1" pos="99999,99999" disableautobackground="true" > <!-- backgroundcolor="[darkGrey]" bordercolor="[black]" borderthickness="0" -->
-				<texture depth="2" name="mapViewTexture" width="1" height="1" pos="99999,99999" material="Materials/MaskableMainmap" /> <!--MaskableMainmap"/>			-->
-				<panel name="clippingPanel" depth="1" width="1" height="1" pos="99999,99999" disableautobackground="true" />
-				<rect name="content" depth="3" pos="99999,99999" height="239" controller="MapStats">
-					<sprite depth="2" name="dayTimeIcon" width="24" height="24" pos="99999,99999" sprite="ui_game_symbol_clock" color="[iconColor]" foregroundlayer="true"/>
-					<label depth="2" name="dayTimeLabel" pos="99999,99999" width="172" height="28" upper_case="true" text="{MapDayTimeTitle}: [DECEA3]{MapDayTime}[-]" font_size="26"/>
-					<sprite depth="2" name="tempIcon" width="24" height="24" pos="99999,99999" sprite="ui_game_symbol_temperature" color="[iconColor]" foregroundlayer="true"/>
-					<label depth="2" name="tempLabel" pos="99999,99999" width="172" height="28" text="{PlayerCoreTempTitle}: [DECEA3]{PlayerCoreTemp}[-]" font_size="26"/>
-					<sprite depth="2" name="windIcon" width="24" height="24" pos="99999,99999" sprite="ui_game_symbol_wind" color="[iconColor]" foregroundlayer="true"/>
-					<label depth="2" name="windLabel" pos="99999,99999" width="172" height="28" text="{MapWindTitle}: [DECEA3]{MapWind} MPH[-]" font_size="26"/>
-					<sprite depth="2" name="elevIcon" width="24" height="24" pos="99999,99999" sprite="ui_game_symbol_climb" color="[iconColor]" foregroundlayer="true"/>
-					<label depth="2" name="elevLabel" pos="99999,99999" width="172" height="28" text="{MapElevationTitle}: [DECEA3]{MapElevation} M[-]" font_size="26"/>
-				</rect>
-			</panel>
-		</panel>
-	</window>
-  <!-- RWG Previewer replacement window -->
-	<window name="windowRWGPreviewer" width="920" height="722" panel="Center">
-		<panel name="header" pos="-85,-20" height="43" width="920" depth="1" backgroundspritename="ui_game_panel_header" bordercolor="[black]" borderthickness="3" >
-			<label style="header.name" text="RANDOM GEN WORLD PREVIEWER" />
-			<button depth="1" name="close" width="24" height="24" defaultcolor="[white]" hoversprite="ui_game_symbol_x" hovercolor="[red]" pos="885, -12" sprite="ui_game_symbol_x" hoverscale="1.0"/>
-		</panel>
-		<panel pos="-85,-66" size="920,716" depth="2" backgroundcolor="[darkGrey]" bordercolor="[black]" borderthickness="3" style="hover, scroll, drag" controller="WorldGenerationPreviewWindow">
-			<label depth="104" name="Startup" text="Please press refresh or press Enter on either Seed or Size" pos="420, -336" size="920, 50" justify="center" font_size="28" color="[white]" pivot="center"/>
-			<label depth="104" name="Startup2" text="Generation of the data may take up to 2 minutes" pos="420, -366" size="920, 50" justify="center" font_size="28" color="[white]" pivot="center"/>
-			<texture depth="105" pos="6,-7" name="worldPreview" material="Materials/Transparent Colored" size="908,703" globalopacity="false"/>
-			<button depth="106" name="reload" pos="880,-724" sprite="server_refresh" style="icon32px,press,hover" tooltip="Reload Data" tooltip_key="lblReloadArchetypeXML" />
-			<panel depth="104" pos="3,-725" size="914,36" backgroundcolor="[darkGrey]" >
-			<rect depth="106" pos="0,0">
-				<in_rwg_previewname name="seedInput" tooltip="Seed"/>
-				<label depth="108" text="Seed" pos="608, -3" name="TextContent" font_size="28" color="[white]"/>
-			</rect>
-			<rect depth="106" pos="670,0">
-				<in_rwg_previewsize name="worldSizeInput" tooltip="Size (1-5)"/>
-				<label depth="108" text="Size (1-5)" pos="98, -3" name="TextContent" font_size="28" color="[white]"/>
-			</rect>
-			</panel>
-		</panel>
-		<panel pos="840,-66" size="140,310" depth="2" backgroundcolor="[darkGrey]">
-	  <!-- ff0000 = radiated, ffffff = snow, 00ff00 = plains, 008d00 = forest, 004000 = pine forest, ffe477 = desert, ba00ff = burned forest, ffa800 = wasteland -->
-			<panel pos="4,-4" size="132,30" depth="4" backgroundcolor="[black]">
-				<label depth="108" upper_case="true" text="    LEGEND    " pos="4, -1" name="TextContent" font_size="28" color="[white]"/>
-			</panel>
-			<panel pos="4,-38" size="132,30" depth="4" backgroundcolor="255,0,0">
-				<label depth="108" upper_case="false" text=" Radiated" pos="4, -1" name="TextContent" font_size="28" color="[black]"/>
-			</panel>
-			<panel pos="4,-72" size="132,30" depth="4" backgroundcolor="255,255,255">
-				<label depth="108" upper_case="false" text=" Snow" pos="4, -1" name="TextContent" font_size="28" color="[black]"/>
-			</panel>
-			<panel pos="4,-106" size="132,30" depth="4" backgroundcolor="0,255,0">
-				<label depth="108" upper_case="false" text=" Plains" pos="4, -1" name="TextContent" font_size="28" color="[black]"/>
-			</panel>
-			<panel pos="4,-140" size="132,30" depth="4" backgroundcolor="0,141,0">
-				<label depth="108" upper_case="false" text=" Forest" pos="4, -1" name="TextContent" font_size="28" color="[black]"/>
-			</panel>
-			<panel pos="4,-174" size="132,30" depth="4" backgroundcolor="00,64,00">
-				<label depth="108" upper_case="false" text=" Pine Forest" pos="4, -1" name="TextContent" font_size="28" color="[black]"/>
-			</panel>
-			<panel pos="4,-208" size="132,30" depth="4" backgroundcolor="255,228,119">
-				<label depth="108" upper_case="false" text=" Desert" pos="4, -1" name="TextContent" font_size="28" color="[black]"/>
-			</panel>
-			<panel pos="4,-242" size="132,30" depth="4" backgroundcolor="186,0,255">
-				<label depth="108" upper_case="false" text=" Burned Forest" pos="4, -1" name="TextContent" font_size="28" color="[black]"/>
-			</panel>
-			<panel pos="4,-276" size="132,30" depth="4" backgroundcolor="255,168,0">
-				<label depth="108" upper_case="false" text=" Wasteland" pos="4, -1" name="TextContent" font_size="28" color="[black]"/>
-			</panel>
-		</panel>
-	</window>
-<!-- END_MOD: Red Eagle LXIX's Custom HUD : A15(b105) : v0.16 -->
 	
 	<window name="windowCraftingList"  width="397" height="688" controller="CraftingListInfo" panel="Left">
 		
@@ -546,7 +132,7 @@
 			
 			<rect depth="2" name="categorySelector" width="390" height="44" pos="3,-6">
 				<sprite name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="396" height="49" color="[black]" type="sliced" fillcenter="false" />
-				<sprite color="[black]" type="sliced" />
+				<sprite color="[mediumGrey]" type="sliced" />
 				<grid name="categories" pos="2,-7" rows="1" cols="9" width="390" height="43" cell_width="43" cell_height="43" repeat_content="true" controller="CategoryList">
 					<category_icon />
 				</grid>
@@ -799,8 +385,8 @@
 			<button depth="3" name="btnSort" style="icon32px, press, hover" pivot="center" pos="21,-21" sprite="ui_game_symbol_backpack" tooltip_key="lblSortInventory" sound="[paging_click]" />
 			<label depth="3" name="windowName" pos="42,-6" width="250" height="32" text="INVENTORY" text_key="xuiInventory" font_size="32" />
 			
-			<label depth="2" pos="472,-8" width="100" height="28" text="{currencyamount}" color="[yellow]" justify="right" />
-			<sprite depth="4" name="costIcon" sprite="ui_game_symbol_coin" size="24,24" pos="577,-10" color="[gold]" foregroundlayer="true" />
+			<label depth="2" pos="472,-8" width="100" height="28" text="{currencyamount}" color="[mediumGrey]" justify="right" />
+			<sprite depth="4" name="costIcon" sprite="ui_game_symbol_coin" size="24,24" pos="577,-10" color="[white]" foregroundlayer="true" />
 		</panel>
 		
 		<panel name="content" width="100%" height="303" depth="0" pos="0,-46" disableautobackground="true">
@@ -809,11 +395,6 @@
 				<grid depth="1" name="inventory" rows="4" cols="8" pos="3,-3" cell_width="75" cell_height="75" controller="Backpack" repeat_content="true" >
 					<item_stack name="0"/>
 				</grid>
-			<!-- VALMOD remove if offline-->
-			<sprite depth="1" name="background" pos="0,0" color="[black]" type="sliced">
-				<texture depth="500" name="InventoryBackground" width="597" height="297" pos="3,-3" texture="@http://i.imgur.com/kpry8zm.png" material="Materials/Transparent Colored"/>
-			</sprite>
-			<!-- Valmod Remove if Offline-->
 		</panel>
 	</window>
 	
@@ -999,15 +580,13 @@
 		</rect>
 	</window>
 	
-	<window name="ValmodToolbelt" width="603" height="78" depth="5" anchor="CenterBottom" pos="-313, 90" backgroundcolor="[black]" controller="ToolbeltWindow" visible="{toolbeltvisible}">
+	<window name="windowToolbelt" width="603" height="78" depth="5" anchor="CenterBottom" pos="-313, 87" backgroundcolor="[black]" controller="ToolbeltWindow" visible="{toolbeltvisible}">
+		
 		<rect>
 			<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" on_press="true" />	
 			<grid depth="1" name="inventory" rows="1" cols="8" pos="3,-3" cell_width="75" cell_height="75" controller="Toolbelt" repeat_content="true">
 				<item_stack name="0"/>
 			</grid>
-						<sprite depth="1" pos="0,0">
-				<texture depth="500" name="ToolBeltBackground" width="854" height="145" pos="-125,45" texture="@http://i.imgur.com/L4BtVIj.png" material="Materials/Transparent Colored"/>
-			</sprite>
 		</rect>
 	</window>
 	
@@ -1016,7 +595,7 @@
 			<sprite depth="2" name="windowIcon" style="icon32px" pos="5,-5" sprite="ui_game_symbol_character"/>
 			<label depth="2" name="characterName" pos="42,-6" width="150" height="32" text="" font_size="32"/>
 			<sprite depth="2" name="windowIcon" width="26" height="26" pos="200,-8" sprite="ui_game_symbol_trophy" color="[mediumGrey]"/>
-			<label depth="2" name="levelNumber" pos="240,-10" width="80" height="28" text="" color="[mediumGrey]"/>
+			<label depth="2" name="levelNumber" pos="240,-10" width="80" height="28" text="" color="[lightGrey]"/>
 		</panel>
 		
 		<panel name="previewFrame" depth="0" pos="0,-46" width="257" on_press="true" on_hover="true" disableautobackground="true">
@@ -1214,7 +793,7 @@
 		<panel name="content" depth="0" pos="0,-43" height="770" disableautobackground="true"> <!-- backgroundcolor="[mediumGrey]" bordercolor="[black]" borderthickness="3" -->
 			<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="3,-3" width="718" height="761" color="[black]" type="sliced" fillcenter="false" />	
 			<rect depth="1" name="toolbar" width="712" height="43" pos="6,-6">
-				<sprite color="[darkGrey]" type="sliced" />
+				<sprite color="[lightGrey]" type="sliced" />
 				<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="-3,2" width="718" height="47" color="[black]" type="sliced" fillcenter="false" />	
 				<button depth="1" name="playerIcon" style="icon32px, press, hover" pivot="center" pos="20,-21" sprite="ui_game_symbol_map_player_arrow" tooltip="Center on Player" tooltip_key="lblCenterOnPlayer" sound="[paging_click]" />
 				<label depth="1" name="playerPos" pos="50,-12" width="160" height="28" text="110 S 769 W" font_size="26"/>
@@ -1379,91 +958,91 @@
 			<sprite color="[mediumGrey]" type="sliced" pos="6,-6" height="92" width="1122" />
 			<rect depth="1" name="steamId" width="154" height="86" pos="6,-6">
 				<sprite depth="0" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="160" height="92" color="[black]" type="sliced" fillcenter="false" />
-				<sprite color="[darkGrey]" type="sliced" />
+				
 				<sprite depth="1" name="icon" style="icon32px" pos="61,-6" sprite="ui_game_symbol_player" />
 				<label depth="1" name="text" pos="0,-50" height="28" text="STEAM ID" text_key="xuiSteamID" font_size="26" justify="center"/>
 			</rect>
 			
 			<rect depth="1" name="zombieKills" width="70" height="86" pos="163,-6">
 				<sprite depth="0" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="76" height="92" color="[black]" type="sliced" fillcenter="false" />
-				<sprite color="[darkGrey]" type="sliced" />
+				
 				<sprite depth="1" name="icon" style="icon32px" pos="19,-6" sprite="ui_game_symbol_zombie" />
 				<label depth="1" name="text" pos="0,-38" height="56" text="ZOMBIE KILLS" text_key="xuiZombieKills" font_size="24" justify="center"/>
 			</rect>
 			
 			<rect depth="1" name="playerKills" width="70" height="86" pos="236,-6">
 				<sprite depth="0" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="76" height="92" color="[black]" type="sliced" fillcenter="false" />
-				<sprite color="[darkGrey]" type="sliced" />
+				
 				<sprite depth="1" name="icon" style="icon32px" pos="19,-6" sprite="ui_game_symbol_knife" />
 				<label depth="1" name="text" pos="0,-38" height="56" text="PLAYER KILLS" text_key="xuiPlayerKills" font_size="24" justify="center"/>
 			</rect>
 			
 			<rect depth="1" name="deaths" width="70" height="86" pos="309,-6">
 				<sprite depth="0" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="76" height="92" color="[black]" type="sliced" fillcenter="false" />
-				<sprite color="[darkGrey]" type="sliced" />
+				
 				<sprite depth="1" name="icon" style="icon32px" pos="19,-6" sprite="ui_game_symbol_death" />
 				<label depth="1" name="text" pos="0,-50" height="28" text="DEATHS" text_key="xuiDeaths" font_size="26" justify="center"/>
 			</rect>
 			
 			<rect depth="1" name="level" width="80" height="86" pos="382,-6">
 				<sprite depth="0" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="86" height="92" color="[black]" type="sliced" fillcenter="false" />
-				<sprite color="[darkGrey]" type="sliced" />
+				
 				<sprite depth="1" name="icon" style="icon32px" pos="24,-6" sprite="ui_game_symbol_trophy" />
 				<label depth="1" name="text" pos="0,-50" height="28" text="LEVEL" text_key="xuiLevel" font_size="26" justify="center"/>
 			</rect>
 
 			<rect depth="1" name="score" width="80" height="86" pos="465,-6">
 				<sprite depth="0" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="86" height="92" color="[black]" type="sliced" fillcenter="false" />
-				<sprite color="[darkGrey]" type="sliced" />
+				
 				<sprite depth="1" name="icon" style="icon32px" pos="24,-6" sprite="ui_game_symbol_perk" />
 				<label depth="1" name="text" pos="0,-50" height="28" text="SCORE" text_key="xuiScore" font_size="26" justify="center"/>
 			</rect>
 			
 			<rect depth="1" name="ping" width="60" height="86" pos="548,-6">
 				<sprite depth="0" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="66" height="92" color="[black]" type="sliced" fillcenter="false" />
-				<sprite color="[darkGrey]" type="sliced" />
+				
 				<sprite depth="1" name="icon" style="icon32px" pos="14,-6" sprite="ui_game_symbol_ping" />
 				<label depth="1" name="text" pos="0,-50" height="28" text="PING" text_key="xuiPing" font_size="26" justify="center"/>
 			</rect>
 			
 			<rect depth="1" name="status" width="100" height="86" pos="611,-6">
 				<sprite depth="0" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="106" height="92" color="[black]" type="sliced" fillcenter="false" />
-				<sprite color="[darkGrey]" type="sliced" />
+				
 				<sprite depth="1" name="icon" style="icon32px" pos="34,-6" sprite="ui_game_symbol_invite" />
 				<label depth="1" name="text" pos="0,-50" height="28" text="STATUS" text_key="xuiStatus" font_size="26" justify="center"/>
 			</rect>
 			
 			<rect depth="1" name="allies" width="80" height="86" pos="714,-6">
 				<sprite depth="0" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="86" height="92" color="[black]" type="sliced" fillcenter="false" />
-				<sprite color="[darkGrey]" type="sliced" />
+				
 				<sprite depth="1" name="icon" style="icon32px" pos="24,-6" sprite="ui_game_symbol_allies" />
 				<label depth="1" name="text" pos="0,-50" height="28" text="ALLIES" text_key="xuiAllies" font_size="26" justify="center"/>
 			</rect>
 			
 			<rect depth="1" name="voice" width="80" height="86" pos="797,-6">
 				<sprite depth="0" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="86" height="92" color="[black]" type="sliced" fillcenter="false" />
-				<sprite color="[darkGrey]" type="sliced" />
+				
 				<sprite depth="1" name="icon" style="icon32px" pos="24,-6" sprite="ui_game_symbol_mic" />
 				<label depth="1" name="text" pos="0,-50" height="28" text="VOICE" text_key="xuiVoice" font_size="26" justify="center"/>
 			</rect>
 			
 			<rect depth="1" name="map" width="80" height="86" pos="880,-6">
 				<sprite depth="0" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="86" height="92" color="[black]" type="sliced" fillcenter="false" />
-				<sprite color="[darkGrey]" type="sliced" />
+				
 				<sprite depth="1" name="icon" style="icon32px" pos="24,-6" sprite="ui_game_symbol_map" />
 				<label depth="1" name="text" pos="0,-50" height="28" text="MAP" text_key="xuiMap" font_size="26" justify="center"/>
 			</rect>
 			
 			<rect depth="1" name="track" width="80" height="86" pos="963,-6">
 				<sprite depth="0" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="86" height="92" color="[black]" type="sliced" fillcenter="false" />
-				<sprite color="[darkGrey]" type="sliced" />
+				
 				<sprite depth="1" name="icon" style="icon32px" pos="24,-6" sprite="ui_game_symbol_compass" />
 				<label depth="1" name="text" pos="0,-50" height="28" text="TRACK" text_key="xuiTrack" font_size="26" justify="center"/>
 			</rect>
 			
 			<rect depth="1" name="km" width="80" height="86" pos="1046,-6">
 				<sprite depth="0" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="86" height="92" color="[black]" type="sliced" fillcenter="false" />
-				<sprite color="[darkGrey]" type="sliced" />
+				
 				<sprite depth="1" name="icon" style="icon32px" pos="24,-6" sprite="ui_game_symbol_run" />
 				<label depth="1" name="text" pos="0,-50" height="28" text="KM" text_key="xuiKM" font_size="26" justify="center"/>
 			</rect>
@@ -1477,7 +1056,7 @@
 		
 		<rect depth="3" width="1120" height="43" pos="3,-736">
 			<sprite depth="0" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="1126" height="49" color="[black]" type="sliced" fillcenter="false" />
-			<sprite name="pagingControls" color="[darkGrey]" type="sliced" />
+			<sprite name="pagingControls" color="[mediumGrey]" type="sliced" />
 			<panel pos="1020,0" width="104" height="43" disableautobackground="true">
 				<button depth="4" name="pageDown" style="icon30px, press" pos="0,-22" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]"/>
 				<rect depth="4" pos="27,-7">
@@ -2413,54 +1992,26 @@
 		</rect>
 	</window>
 	
-	<window name="windowRWGPreview" width="1400" height="900" panel="Left">
-		<panel name="header" pos="0,0" height="43" width="1400" depth="1" backgroundspritename="ui_game_panel_header" bordercolor="[black]" borderthickness="1" >
+	<window name="windowRWGPreview" width="840" height="702" panel="Center">
+		<panel name="header" pos="0,0" height="43" width="840" depth="1" backgroundspritename="ui_game_panel_header" bordercolor="[black]" borderthickness="3" >
 			<label style="header.name" text="RANDOM GEN WORLD PREVIEWER" />
-			<button depth="1" name="close" width="24" height="24" defaultcolor="[white]" hoversprite="ui_game_symbol_x" hovercolor="[red]" pos="1360, -12" sprite="ui_game_symbol_x" hoverscale="1.0"/>
+			<button depth="1" name="close" width="24" height="24" defaultcolor="[white]" hoversprite="ui_game_symbol_x" hovercolor="[red]" pos="805, -12" sprite="ui_game_symbol_x" hoverscale="1.0"/>
 		</panel>
-		<panel pos="0,-46" size="1400,857" depth="2" backgroundcolor="[darkGrey]" bordercolor="[black]" borderthickness="1" style="hover, scroll, drag" controller="WorldGenerationPreviewWindow">
+		<panel pos="0,-46" size="840,702" depth="2" backgroundcolor="[darkGrey]" bordercolor="[black]" borderthickness="3" style="hover, scroll, drag" controller="WorldGenerationPreviewWindow">
 			<label depth="104" name="Startup" text="Please press refresh or press Enter on either Seed or Size" pos="420, -336" size="840, 50" justify="center" font_size="28" color="[white]" pivot="center"/>
 			<label depth="104" name="Startup2" text="Generation of the data may take up to 2 minutes" pos="420, -366" size="840, 50" justify="center" font_size="28" color="[white]" pivot="center"/>
-			<texture depth="105" pos="6,-7" name="worldPreview" material="Materials/Transparent Colored" size="1388,843" globalopacity="false"/>
-			<button depth="106" name="reload" pos="1350,-6" sprite="server_refresh" style="icon32px,press,hover" tooltip="Reload Data" tooltip_key="lblReloadArchetypeXML" />
+			<texture depth="105" pos="6,-7" name="worldPreview" material="Materials/Transparent Colored" size="828,689" globalopacity="false"/>
+			<button depth="106" name="reload" pos="800,-6" sprite="server_refresh" style="icon32px,press,hover" tooltip="Reload Data" tooltip_key="lblReloadArchetypeXML" />
 			<rect depth="106">
 				<recipe_search name="seedInput" tooltip="Seed"/>
-				<label depth="108" text="Seed" pos="168, -8" name="TextContent" font_size="18" color="[white]"/>
+				<label depth="108" text="Seed" pos="168, -8" name="TextContent" font_size="28" color="[white]"/>
 			</rect>
 			<rect depth="106" pos="0,-46">
 				<recipe_search name="worldSizeInput" tooltip="Size (1-5)"/>
-				<label depth="108" text="Size (1-5)" pos="168, -8" name="TextContent" font_size="18" color="[white]"/>
-			</rect>
-			<rect depth="106" pos="1280,-46" >
-				<panel name="key_header" pos="0,0" height="20" width="110" depth="108" backgroundspritename="ui_game_panel_header">
-					<label depth="110" text="Biome Key" pos="3,-3" name="TextContent" font_size="18" color="[white]"/>
-				</panel>
-				<panel pos="0,-20" size="110,192" depth="108" backgroundcolor="[mediumGrey]">
-					<panel pos="0,-20" size="16,16" depth="110" backgroundcolor="[biome_burnt_forest]"/>
-					<label depth="110" text="Burnt Forest" pos="20,-20" name="TextContent" font_size="18" color="[biome_burnt_forest]"/>
-					<panel pos="0,-37" size="16,16" depth="110" backgroundcolor="[biome_desert]"/>
-					<label depth="110" text="Desert" pos="20,-37" name="TextContent" font_size="18" color="[biome_desert]"/>
-					<panel pos="0,-54" size="16,16" depth="110" backgroundcolor="[biome_forest]"/>
-					<label depth="110" text="Forest" pos="20,-54" name="TextContent" font_size="18" color="[biome_forest]"/>
-					<panel pos="0,-71" size="16,16" depth="110" backgroundcolor="[biome_pine_forest]"/>
-					<label depth="110" text="Pine Forest" pos="20,-71" name="TextContent" font_size="18" color="[biome_pine_forest]"/>
-					<panel pos="0,-88" size="16,16" depth="110" backgroundcolor="[biome_plains]"/>
-					<label depth="110" text="Plains" pos="20,-88" name="TextContent" font_size="18" color="[biome_plains]"/>
-					<panel pos="0,-105" size="16,16" depth="110" backgroundcolor="[biome_radiated]"/>
-					<label depth="110" text="Radiated" pos="20,-105" name="TextContent" font_size="18" color="[biome_radiated]"/>
-					<panel pos="0,-122" size="16,16" depth="110" backgroundcolor="[biome_snow]"/>
-					<label depth="110" text="Snow" pos="20,-122" name="TextContent" font_size="18" color="[biome_snow]"/>
-					<panel pos="0,-139" size="16,16" depth="110" backgroundcolor="[biome_wasteland]"/>
-					<label depth="110" text="Wasteland" pos="20,-139" name="TextContent" font_size="18" color="[biome_wasteland]"/>
-					<panel pos="0,-156" size="16,16" depth="110" backgroundcolor="[biome_wasteland_hub]"/>
-					<label depth="110" text="Wasteland Hub" pos="20,-156" name="TextContent" font_size="18" color="[biome_wasteland_hub]"/>
-					<panel pos="0,-173" size="16,16" depth="110" backgroundcolor="[biome_water]"/>
-					<label depth="110" text="Water" pos="20,-173" name="TextContent" font_size="18" color="[biome_water]"/>
-				</panel>
+				<label depth="108" text="Size (1-5)" pos="168, -8" name="TextContent" font_size="28" color="[white]"/>
 			</rect>
 		</panel>
 	</window>
-
 <!-- Armory Bench, this is only used to gain icons -->
 	<window name="windowToolsArmory" width="228" height="121" panel="Right">
 		<panel style="header.panel">			
@@ -2532,7 +2083,6 @@
 	</window>
 <!-- Cement Mixer Tools End-->
 <!-- Chemistry -->
-
 	<window name="windowToolsChemistry" width="228" height="121" panel="Right">
 		<panel style="header.panel">			
 			<sprite style="header.icon" sprite="ui_game_symbol_cookware"/>
@@ -2546,5 +2096,4 @@
 		</rect>
 	</window>
 <!-- Chemistry end -->
-	
 </windows>
