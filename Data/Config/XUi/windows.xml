@@ -17,7 +17,7 @@
 
 		<grid name="SMXHSFrame" pos="0,145" rows="2" cols="1" width="240" cell_width="240" cell_height="35" repeat_content="false" side="left">
 			<rect width="240" height="35" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
-				<texture name="SMXStaminaBarBG" depth="1" size="240,54" texture="@http://i.imgur.com/2q3G8Bv.png" material="Materials/Transparent Colored" pos="0,-75" /> <!-- Local Asset Equivalent: staminabarempty.png -->
+				<texture name="SMXStaminaBarBG" depth="1" size="240,54" texture="@http://i.imgur.com/1yE0DM5.png" material="Materials/Transparent Colored" pos="0,-75" /> <!-- Local Asset Equivalent: staminabarempty.png -->
 				<sprite name="BarContent" depth="2" height="15" width="220" atlas="itemiconatlas" sprite="smxuf1stamina" type="filled" fill="0" pos="8,-86" />
 		<!-- Uncomment this if oyu want percentages to show
 				<label depth="6" name="TextContent" pos="0,-83" font_size="20" effect="outline" color="[white]" justify="center" pivot="topleft" text="{statcurrent}" />
@@ -25,7 +25,7 @@
 			</rect>
 
 			<rect width="240" height="35" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
-				<texture name="SMXHealthBarBG" depth="1" size="240,60" texture="@http://i.imgur.com/3NWFNa7.png" material="Materials/Transparent Colored" pos="0,-55" /> <!-- Local Asset Equivalent: healthbarempty.png -->
+				<texture name="SMXHealthBarBG" depth="1" size="240,60" texture="@http://i.imgur.com/7IjrVvg.png" material="Materials/Transparent Colored" pos="0,-55" /> <!-- Local Asset Equivalent: healthbarempty.png -->
 				<sprite name="BarContent" depth="2" size="220,30" atlas="itemiconatlas" sprite="smxuf1health" type="filled" fill="0" pos="8,-67" />
 				<label depth="6" name="TextContent" pos="0,-66" font_size="32" effect="outline" color="[white]" justify="center" pivot="topleft" text="{statcurrent}" />
 			</rect>
@@ -61,6 +61,7 @@
 		</rect>
 
 	</window>
+	
 	<window name="ZombieKillTracker" width="400" height="200" pos="135,92" controller="PlayerStatsWindow" anchor="LeftBottom">
 	<sprite depth="3" name="icon" size="45,45" style="icon32px" pos="112, -17" sprite="ui_game_symbol_knife" color="0, 0, 0, 125"/>
 	<sprite depth="3" name="icon" size="45,45" style="icon32px" pos="110, -15" sprite="ui_game_symbol_skull" color="[black]"/>
@@ -279,6 +280,7 @@
 	</window>
 
 <!-- <<< SMX v15b104e r08 END - BY SIRILLION >>> -->
+
 	<window name="HUDLeftStatBars">
 		<grid name="hud" pos="9,98" rows="2" cols="1" width="168" cell_width="168" cell_height="46" repeat_content="false" side="left" >
 			<rect width="168" height="18" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
@@ -853,7 +855,7 @@
 		
 		<rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true" on_press="true">
 			
-			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="cookingPot,cookingGrill,beaker" required_tools_only="false">
+			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="cookingPot,cookingGrill,bowlWater" required_tools_only="true">
 				<required_item_stack name="0"/>
 			</grid>		
 			
@@ -2488,8 +2490,8 @@
 		
 		<rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true" on_press="true">
 			
-			<grid name="inventory" rows="1" cols="1" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false"
-			required_tools="paperRack" required_tools_only="true">
+			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false"
+			required_tools="handSaw,weldingTorch,paperRack" required_tools_only="true">
 				<required_item_stack name="0"/>
 			</grid>		
 
@@ -2532,15 +2534,14 @@
 	</window>
 <!-- Cement Mixer Tools End-->
 <!-- Chemistry -->
-
 	<window name="windowToolsChemistry" width="228" height="121" panel="Right">
 		<panel style="header.panel">			
 			<sprite style="header.icon" sprite="ui_game_symbol_cookware"/>
 			<label style="header.name" text="TOOLS" text_key="xuiTools" />
 		</panel>
 		<rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true" on_press="true">
-			<grid name="inventory" rows="1" cols="1" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false"
-			required_tools="waterFilter" required_tools_only="true">
+			<grid name="inventory" rows="1" cols="2" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false"
+			required_tools="beaker,waterFilter" required_tools_only="true">
 				<required_item_stack name="0"/>
 			</grid>		
 		</rect>
