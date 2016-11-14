@@ -15098,6 +15098,9 @@ kind of free
 		<drop event="Destroy" count="0" prob="1" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob="1.0"  stick_chance="1" />
 		<property name="Group" value="Tools/Traps" />
+		<property class="RepairItems">
+			<property name="gasCan" value="20" />
+		</property>
 	</block>
 	<block id="1999" name="trapFireEmpty">
 		<property name="CustomIcon" value="trapFire" />
