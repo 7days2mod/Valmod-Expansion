@@ -2817,6 +2817,14 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 		<!-- Misc Recipes Mod -->
+<recipe name="butcherKnife" count="1">
+	<ingredient name="forgedIron" count="8"/>
+	<ingredient name="wood" count="8"/>
+</recipe>
+<recipe name="skinningKnife" count="1">
+	<ingredient name="forgedIron" count="8"/>
+	<ingredient name="wood" count="8"/>
+</recipe>
 <recipe name="steelPolish" count="1" craft_area="chemistryStation" craft_time="150">
 	<ingredient name="oil" count="5"/>
 </recipe>
