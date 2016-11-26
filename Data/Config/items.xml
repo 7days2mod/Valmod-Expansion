@@ -9745,6 +9745,24 @@ which does not exist, yet. -->
 			<property name="DismembermentBaseChance" value="5,5"/>
 		</property>
 	</item>
+	<item id="1665" name="Admin 25 Skillpoints">
+	<property name="CustomIcon" value="survivorNotes" />
+	<property name="CustomIconTint" value="172,33,50" />
+	<property name="Candrop" value="false" />
+	<property name="IsDeveloper" value="true" />
+	<property name="Stacknumber" value="5" />
+	<property name="Meshfile" value="Items/Misc/paper" />
+	<property name="HoldType" value="21" />
+	<property name="Material" value="Survivor Notes" />
+	<property name="Weight" value="1" />
+	<property name="FuelValue" value="20" />
+	<property name="Group" value="Survival" />
+	<property class="Action1">
+		<property name="Class" value="Quest" />
+		<property name="QuestGiven" value="adminskill" />
+		<property name="Delay" value="0" />
+	</property>
+	</item>
 
 	<!-- Expanded Clothes Mod -->
 	<item id="1694" name="pimpHat">
@@ -14712,6 +14730,15 @@ which does not exist, yet. -->
 </item>
 <item id="2706" name="questItemToiletPaper">
 	<property name="Extends" value="questItem" />
+	<property class="Action1">
+		<property name="Class" value="Eat" />
+		<property name="Delay" value="1.0" />
+		<property name="Use_time" value="..." />
+		<property name="Gain_health" value="0" />
+		<property name="Gain_food" value="0" />
+		<property name="Gain_water" value="0" />
+		<property name="Debuff" value="dysentery" />
+	</property>
 </item>
 <item id="2707" name="questItemGameboy">
 	<property name="Extends" value="questItem" />
