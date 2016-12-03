@@ -14606,6 +14606,7 @@ which does not exist, yet. -->
 </item>
 <item id="2638" name="challengeWedding">
 	<property name="Extends" value="challengeQuestMaster" />
+	<property name="EconomicValue" value="100" />
 	<property name="CustomIconTint" value="FFD900" />
 	<property class="Action1">
 	<property name="QuestGiven" value="challenge_weddingring" />
@@ -14613,6 +14614,7 @@ which does not exist, yet. -->
 </item>
 <item id="2639" name="challengeWallet">
 	<property name="Extends" value="challengeQuestMaster" />
+	<property name="EconomicValue" value="100" />
 	<property name="CustomIconTint" value="FFD900" />
 	<property class="Action1">
 	<property name="QuestGiven" value="challenge_wallet" />
@@ -14620,6 +14622,7 @@ which does not exist, yet. -->
 </item>
 <item id="2640" name="challengeBooks">
 	<property name="Extends" value="challengeQuestMaster" />
+	<property name="EconomicValue" value="100" />
 	<property name="CustomIconTint" value="FFD900" />
 	<property class="Action1">
 	<property name="QuestGiven" value="challenge_books" />
@@ -14627,6 +14630,7 @@ which does not exist, yet. -->
 </item>
 <item id="2641" name="challengeChildsHappiness">
 	<property name="Extends" value="challengeQuestMaster" />
+	<property name="EconomicValue" value="100" />
 	<property name="CustomIconTint" value="FFD900" />
 	<property class="Action1">
 	<property name="QuestGiven" value="challenge_childshappiness" />
@@ -14634,6 +14638,7 @@ which does not exist, yet. -->
 </item>
 <item id="2642" name="challengeToilet">
 	<property name="Extends" value="challengeQuestMaster" />
+	<property name="EconomicValue" value="100" />
 	<property name="CustomIconTint" value="FFD900" />
 	<property class="Action1">
 	<property name="QuestGiven" value="challenge_toilet" />
@@ -14641,6 +14646,7 @@ which does not exist, yet. -->
 </item>
 <item id="2643" name="challengeWalkman">
 	<property name="Extends" value="challengeQuestMaster" />
+	<property name="EconomicValue" value="100" />
 	<property name="CustomIconTint" value="FFD900" />
 	<property class="Action1">
 	<property name="QuestGiven" value="challenge_walkman" />
@@ -14648,6 +14654,7 @@ which does not exist, yet. -->
 </item>
 <item id="2644" name="challengeCondoms">
 	<property name="Extends" value="challengeQuestMaster" />
+	<property name="EconomicValue" value="100" />
 	<property name="CustomIconTint" value="FFD900" />
 	<property class="Action1">
 	<property name="QuestGiven" value="challenge_condoms" />
@@ -14655,6 +14662,7 @@ which does not exist, yet. -->
 </item>
 <item id="2645" name="challengeBaseball">
 	<property name="Extends" value="challengeQuestMaster" />
+	<property name="EconomicValue" value="100" />
 	<property name="CustomIconTint" value="FFD900" />
 	<property class="Action1">
 	<property name="QuestGiven" value="challenge_baseball" />
@@ -14662,6 +14670,7 @@ which does not exist, yet. -->
 </item>
 <item id="2646" name="challengeCards">
 	<property name="Extends" value="challengeQuestMaster" />
+	<property name="EconomicValue" value="100" />
 	<property name="CustomIconTint" value="FFD900" />
 	<property class="Action1">
 	<property name="QuestGiven" value="challenge_cards" />
@@ -14669,6 +14678,7 @@ which does not exist, yet. -->
 </item>
 <item id="2647" name="challengeCigarettes">
 	<property name="Extends" value="challengeQuestMaster" />
+	<property name="EconomicValue" value="100" />
 	<property name="CustomIconTint" value="FFD900" />
 	<property class="Action1">
 	<property name="QuestGiven" value="challenge_cigarettes" />
@@ -14676,6 +14686,7 @@ which does not exist, yet. -->
 </item>
 <item id="2648" name="challengeArtist">
 	<property name="Extends" value="challengeQuestMaster" />
+	<property name="EconomicValue" value="100" />
 	<property name="CustomIconTint" value="FFD900" />
 	<property class="Action1">
 	<property name="QuestGiven" value="challenge_artsupplies" />
@@ -14683,6 +14694,7 @@ which does not exist, yet. -->
 </item>
 <item id="2649" name="challengeSoap">
 	<property name="Extends" value="challengeQuestMaster" />
+	<property name="EconomicValue" value="100" />
 	<property name="CustomIconTint" value="FFD900" />
 	<property class="Action1">
 	<property name="QuestGiven" value="challenge_soap" />
@@ -14690,6 +14702,7 @@ which does not exist, yet. -->
 </item>
 <item id="2650" name="challengeBong">
 	<property name="Extends" value="challengeQuestMaster" />
+	<property name="EconomicValue" value="100" />
 	<property name="CustomIconTint" value="FFD900" />
 	<property class="Action1">
 	<property name="QuestGiven" value="challenge_bong" />
