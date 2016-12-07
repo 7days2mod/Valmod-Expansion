@@ -131,27 +131,27 @@
 	<property name="LootListOnDeath" value="15" />
 	<property name="CorpseBlock" value="GoreBlock1Prefab"/>
 	<property name="CorpseBlockChance" value="1"/>
-	<property name="ExperienceGain" value="1000"/>
+	<property name="ExperienceGain" value="850"/>
 	<property name="DeadBodyHitPoints" value="20" /> <!-- For harvesting -->
 	<property name="RootMotion" value="true" />
 	<property name="HasDeathAnim" value="true" />
 	<property name="HeadDismemberBaseChance" value="0"/>
-	<property name="HeadDismemberBonusChance" value="0.07"/>
-	<property name="HeadDismemberThreshold" value="0.25"/> <!-- if the total damage exceeds that value, there is a chance for dismemberment /> -->
-	<property name="LowerLegDismemberThreshold" value="0.5"/>
+	<property name="HeadDismemberBonusChance" value="0.08"/>
+	<property name="HeadDismemberThreshold" value="0.23"/> <!-- if the total damage exceeds that value, there is a chance for dismemberment -->
+	<property name="LowerLegDismemberThreshold" value="0.175"/>
 	<property name="LowerLegDismemberBaseChance" value="0"/>
-	<property name="LowerLegDismemberBonusChance" value="0.07"/>
-	<property name="UpperLegDismemberThreshold" value="0.5"/>
+	<property name="LowerLegDismemberBonusChance" value="0.9"/>
+	<property name="UpperLegDismemberThreshold" value="0.175"/>
 	<property name="UpperLegDismemberBaseChance" value="0"/>
-	<property name="UpperLegDismemberBonusChance" value="0.07"/>
-	<property name="LowerArmDismemberThreshold" value="0.5"/>
+	<property name="UpperLegDismemberBonusChance" value="0.9"/>
+	<property name="LowerArmDismemberThreshold" value="0.105"/>
 	<property name="LowerArmDismemberBaseChance" value="0"/>
-	<property name="LowerArmDismemberBonusChance" value="0.07"/>
-	<property name="UpperArmDismemberThreshold" value="0.5"/>
+	<property name="LowerArmDismemberBonusChance" value="0.9"/>
+	<property name="UpperArmDismemberThreshold" value="0.105"/>
 	<property name="UpperArmDismemberBaseChance" value="0"/>
-	<property name="UpperArmDismemberBonusChance" value="0.07"/>
-	<property name="LegCrawlerThreshold" value="0"/>
-	<property name="LegCrippleThreshold" value="0.5"/>
+	<property name="UpperArmDismemberBonusChance" value="0.9"/>
+	<property name="LegCrawlerThreshold" value="0"/> <!-- at like .175 nearly every zombie knocked down from a leg hit turns into a crawler -->
+	<property name="LegCrippleThreshold" value="0.01"/>
 	<property name="KnockdownProneDamageThreshold" value="0.5"/>
 	<property name="KnockdownProneStunDuration" value="4,6"/>
 	<property name="KnockdownProneRefillRate" value="0.045,0.045"/>
@@ -178,9 +178,14 @@
 	<property name="NightApproachSpeed" value="1.35" />	
 	<property name="HandItem" value="handCopZombie" />
 	<property name="MaxHealth" value="750" />
-	<property name="ExperienceGain" value="5000"/>
+	<property name="ExperienceGain" value="4250"/>
 	<property name="LootListOnDeath" value="61" />
 	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="HeadDismemberThreshold" value="0.2"/>
+	<property name="LowerLegDismemberThreshold" value="0.105"/>
+	<property name="UpperLegDismemberThreshold" value="0.105"/>
+	<property name="LowerArmDismemberThreshold" value="0.063"/>
+	<property name="UpperArmDismemberThreshold" value="0.063"/>
 </entity_class>
 
 <entity_class name="zombieBoe" extends="zombie01">
@@ -194,7 +199,7 @@
 	<property name="AvatarController" value="AvatarZombie01Controller" />
 	<property name="ModelType" value="Standard" />
 	<property name="WalkType" value="2" />
-	<property name="ExperienceGain" value="1500"/>
+	<property name="ExperienceGain" value="1275"/>
 	<property name="MaxHealth" value="200" />
 	<property name="PhysicsBody" value="zombieStandardFemale" />
 	<property name="RootMotion" value="true" />
@@ -227,7 +232,7 @@
 	<property name="Weight" value="70" />
 	<property name="PushFactor" value="20" />
 	<property name="CanClimbLadders" value="true" />
-	<property name="ExperienceGain" value="2250"/>
+	<property name="ExperienceGain" value="1912"/>
 	<property name="PhysicsBody" value="zombieStandard" />
 	<property name="RootMotion" value="true" />
 	<property name="HasDeathAnim" value="true" />
@@ -363,7 +368,7 @@
 	<property name="SoundSense" value="Enemies/Snow_Zombie_Male/zombiemalesnowsense" />
 	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep" />
 	<property name="HandItem" value="handStrongZombie" />
-	<property name="ExperienceGain" value="3500"/>
+	<property name="ExperienceGain" value="2975"/>
 </entity_class>
 
 <entity_class name="spiderzombie" extends="zombie01">
@@ -387,7 +392,7 @@
 	<property name="NightWanderSpeed" value="0.08" />
 	<property name="NightApproachSpeed" value="1.1" />
 	<property name="PanicSpeed" value="1.2" />
-	<property name="ExperienceGain" value="1700"/>
+	<property name="ExperienceGain" value="1445"/>
 	<property name="HeadDismemberThreshold" value="0"/> <!-- if the total damage exceeds that value, there is a chance for dismemberment /> -->
 	<property name="LowerLegDismemberThreshold" value="0"/>
 	<property name="UpperLegDismemberThreshold" value="0"/>
@@ -412,7 +417,7 @@
 	<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep" />
 	<property name="HandItem" value="handBurningZombie" />
 	<property name="MaxHealth" value="80" />
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1020"/>
 </entity_class>
 
 <entity_class name="zombieNurse" extends="zombie01">
@@ -471,7 +476,7 @@
 	<property name="Explosion.BlockDamage" value="500" />
 	<property name="Explosion.EntityDamage" value="150" />
 	<property name="Explosion.DamageBonus.earth" value="0" />
-	<property name="ExperienceGain" value="4000"/>
+	<property name="ExperienceGain" value="3400"/>
 	<property name="HeadDismemberBonusChance" value="0.08"/>
 	<property name="HeadDismemberThreshold" value="0"/> <!-- if the total damage exceeds that value, there is a chance for dismemberment /> -->
 	<property name="LowerLegDismemberThreshold" value="0"/>
@@ -482,6 +487,10 @@
 	<property name="LegCrippleThreshold" value="0"/>
 	<property name="KnockdownProneDamageThreshold" value="0"/>
 	<property name="KnockdownKneelDamageThreshold" value="0"/>
+	<property name="LegsExplosionDamageMultiplier" value="2"/> <!-- volatile so vulnerable to land mines/explosives -->
+	<property name="ArmsExplosionDamageMultiplier" value="2"/>
+	<property name="HeadExplosionDamageMultiplier" value="2"/>
+	<property name="ChestExplosionDamageMultiplier" value="2"/>
 </entity_class>
 
 <entity_class name="hornet">
@@ -542,7 +551,7 @@
 	<property name="SoundSense" value="Enemies/Hornets/hornetsense" />
 	<!-- <property name="LootListOnDeath" value="24" /> -->
 	<property name="SpawnOnGround" value="false" />
-	<property name="ExperienceGain" value="800"/>
+	<property name="ExperienceGain" value="680"/>
 	<property name="CorpseBlock" value="GoreBlock1Prefab"/>
 	<property name="CorpseBlockChance" value="0"/>
 	<property name="TimeStayAfterDeath" value="120" />
@@ -586,7 +595,7 @@
 	<property name="SoundAttack" value="Enemies/Zombie_Dogs/zombiedogattack" />
 	<property name="SoundSense" value="Enemies/Zombie_Dogs/zombiedogsense" />
 	<property name="SoundGiveUp" value="Enemies/Zombie_Dogs/zombiedoggiveup" />
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="1700"/>
 	<property name="Immunity" value="sickness;disease;bleeding;wellness" />
 	<property name="Weight" value="70" />
 	<property name="MaxViewAngle" value="180" />
@@ -654,7 +663,7 @@
 	<property name="TimeStayAfterDeath" value="300" />
 	<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 	<property name="IsEnemyEntity" value="false" />
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="425"/>
 	<property name="CorpseBlock" value="animalGore"/>
 	<property name="CorpseBlockChance" value="1"/>
 	<property name="DeadBodyHitPoints" value="150" /> <!-- For harvesting -->
@@ -725,7 +734,7 @@
 	<property name="TimeStayAfterDeath" value="300" />
 	<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 	<property name="IsEnemyEntity" value="true" />
-	<property name="ExperienceGain" value="3500"/>
+	<property name="ExperienceGain" value="2975"/>
 	<property name="CorpseBlock" value="animalGore"/>
 	<property name="CorpseBlockChance" value="1"/>
 	<property name="DeadBodyHitPoints" value="250" /> <!-- For harvesting -->
@@ -793,7 +802,7 @@
 	<property name="TimeStayAfterDeath" value="300" />
 	<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 	<property name="IsEnemyEntity" value="true" />
-	<property name="ExperienceGain" value="4000"/>
+	<property name="ExperienceGain" value="3400"/>
 	<property name="CorpseBlock" value="GoreBlock1Prefab"/>
 	<property name="CorpseBlockChance" value="0"/>
 	<!-- For harvesting -->
@@ -826,7 +835,7 @@
 	<property name="SoundDeath" value="Animals/rabbitdeath" />
 	<property name="PanicSpeed" value="1.5" />
 	<property name="CorpseBlockChance" value="0"/>
-	<property name="ExperienceGain" value="350"/>
+	<property name="ExperienceGain" value="300"/>
 	<property name="SwimOffset" value="2"/>
 	<!-- For harvesting -->
 	<property name="DeadBodyHitPoints" value="80" />
@@ -849,7 +858,7 @@
 	<property name="SoundDeath" value="Animals/Chicken/chickendeath" />
 	<property name="PanicSpeed" value="1" />
 	<property name="CorpseBlockChance" value="0"/>
-	<property name="ExperienceGain" value="350"/>
+	<property name="ExperienceGain" value="300"/>
 	<property name="SwimOffset" value="2"/>
 	<!-- For harvesting -->
 	<property name="DeadBodyHitPoints" value="80" />
@@ -870,7 +879,7 @@
 	<property name="SoundDeath" value="Animals/pigdeath" />
 	<property name="PanicSpeed" value="1.2" />
 	<property name="PhysicsBody" value="pig" />
-	<property name="ExperienceGain" value="350"/>
+	<property name="ExperienceGain" value="300"/>
 	<property name="SwimOffset" value="0.7"/>
 	<!-- For harvesting -->
 	<drop event="Harvest" name="rawMeat" count="4" />
@@ -977,11 +986,6 @@
 	<property name="WalkType" value="7" />
 	<property name="ModelType" value="ZombieUMA" />
 	<property name="RootMotion" value="true" />
-	<property name="WanderSpeed" value="0.08" />
-	<property name="ApproachSpeed" value="0.2" />
-	<property name="NightWanderSpeed" value="0.08" />
-	<property name="NightApproachSpeed" value="1.1" />
-	<property name="PanicSpeed" value="0.4" />
 	<property name="HasRagdoll" value="true" />
 	<property name="AvatarController" value="AvatarZombieUMAController" />
 	<property name="PhysicsBody" value="zombieUMA" />
@@ -990,33 +994,6 @@
 	<property name="LootListOnDeath" value="15" />
 	<property name="CorpseBlock" value="GoreBlock1Prefab"/>
 	<property name="CorpseBlockChance" value="1"/>
-	<property name="HeadDismemberBaseChance" value="0"/>
-	<property name="HeadDismemberBonusChance" value="0.07"/>
-	<property name="HeadDismemberThreshold" value="0.25"/> <!-- if the total damage exceeds that value, there is a chance for dismemberment /> -->
-	<property name="LowerLegDismemberThreshold" value="0.5"/>
-	<property name="LowerLegDismemberBaseChance" value="0"/>
-	<property name="LowerLegDismemberBonusChance" value="0.07"/>
-	<property name="UpperLegDismemberThreshold" value="0.5"/>
-	<property name="UpperLegDismemberBaseChance" value="0"/>
-	<property name="UpperLegDismemberBonusChance" value="0.07"/>
-	<property name="LowerArmDismemberThreshold" value="0.5"/>
-	<property name="LowerArmDismemberBaseChance" value="0"/>
-	<property name="LowerArmDismemberBonusChance" value="0.07"/>
-	<property name="UpperArmDismemberThreshold" value="0.5"/>
-	<property name="UpperArmDismemberBaseChance" value="0"/>
-	<property name="UpperArmDismemberBonusChance" value="0.07"/>
-	<property name="LegCrawlerThreshold" value="0"/>
-	<property name="LegCrippleThreshold" value="0.5"/>
-	<property name="KnockdownProneDamageThreshold" value="0.5"/>
-	<property name="KnockdownProneStunDuration" value="4,6"/>
-	<property name="KnockdownProneRefillRate" value="0.045,0.045"/>
-	<property name="KnockdownKneelDamageThreshold" value="0.4"/>
-	<property name="KnockdownKneelStunDuration" value="5,7"/>
-	<property name="KnockdownKneelRefillRate" value="0.045,0.045"/>
-	<property name="LegsExplosionDamageMultiplier" value="1"/>
-	<property name="ArmsExplosionDamageMultiplier" value="1"/>
-	<property name="HeadExplosionDamageMultiplier" value="1"/>
-	<property name="ChestExplosionDamageMultiplier" value="1"/>
 </entity_class>
 
 <entity_class name="ZombieFemaleUMA" extends="zombieUMA" >
@@ -1036,14 +1013,14 @@
 <entity_class name="zombieMaleHazmat" extends="zombieUMA" >
 	<property name="Archetype" value="ZombieMaleHazmat"/>
 	<property name="HandItem" value="handZombieHazMat" />
-	<property name="ExperienceGain" value="1500"/>
+	<property name="ExperienceGain" value="1275"/>
 	<property name="LootListOnDeath" value="65" />
 </entity_class>
 
 <entity_class name="zombieFemaleHazmat" extends="ZombieFemaleUMA" >
 	<property name="Archetype" value="ZombieFemaleHazmat"/>
 	<property name="HandItem" value="handZombieHazMat" />
-	<property name="ExperienceGain" value="1500"/>
+	<property name="ExperienceGain" value="1275"/>
 	<property name="LootListOnDeath" value="65" />
 </entity_class>
 
@@ -1051,7 +1028,8 @@
 	<property name="Archetype" value="ZombieFemaleFatUMA"/>
 	<property name="MaxHealth" value="300" />
 	<property name="WalkType" value="1" />
-	<property name="ExperienceGain" value="1500"/>
+	<property name="HandItem" value="handStrongZombie" />
+	<property name="ExperienceGain" value="1275"/>
 	<property name="LootListOnDeath" value="85" /> <!-- used to be 15 -->
 </entity_class>
 
@@ -1059,21 +1037,22 @@
 	<property name="Archetype" value="ZombieSoldier"/>
 	<property name="LootListOnDeath" value="73" />
 	<property name="MaxHealth" value="500" />
-	<property name="ExperienceGain" value="3500"/>
+	<!-- <property name="Immunity" value="sickness;disease;bleeding;wellness;ArmorUp" /> probable but does not work -->
+	<property name="ExperienceGain" value="2975"/>
 	<property name="WalkType" value="7" />
 </entity_class>
 
 <entity_class name="ZombieUtilityWorker" extends="zombieUMA" >
 	<property name="Archetype" value="ZombieUtilityWorker"/>
 	<property name="HandItem" value="handZombieWorker" />
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="1700"/>
 	<property name="LootListOnDeath" value="74" />
 </entity_class>
 
 <entity_class name="ZombieMiner" extends="zombieUMA" >
 	<property name="Archetype" value="ZombieMiner"/>
 	<property name="HandItem" value="handZombieWorker" />
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="1700"/>
 	<property name="LootListOnDeath" value="82" />
 </entity_class>
 
@@ -1085,7 +1064,8 @@
 	<property name="ApproachSpeed" value="1.15" />
 	<property name="NightWanderSpeed" value="0.75" />
 	<property name="NightApproachSpeed" value="1.15" />	
-	<property name="ExperienceGain" value="4000"/>
+	<!-- <property name="Immunity" value="sickness;disease;bleeding;wellness;ArmorUp" /> probable but does not work -->
+	<property name="ExperienceGain" value="3400"/>
 	<property name="LootListOnDeath" value="78" />
 </entity_class>
 
@@ -1109,7 +1089,7 @@
 	<property name="Archetype" value="ZombieBiker"/>
 	<property name="HandItem" value="handStrongZombie" />
 	<property name="MaxHealth" value="600" />
-	<property name="ExperienceGain" value="3000"/>
+	<property name="ExperienceGain" value="2550"/>
 	<property name="LootListOnDeath" value="83" />
 	<property name="WalkType" value="7" />
 </entity_class>
@@ -1118,7 +1098,7 @@
 	<property name="Archetype" value="ZombieFarmer"/>
 	<property name="HandItem" value="handStrongZombie" />
 	<property name="MaxHealth" value="450" />
-	<property name="ExperienceGain" value="3500"/>
+	<property name="ExperienceGain" value="2975"/>
 	<property name="LootListOnDeath" value="85" />
 	<property name="WalkType" value="7" />
 </entity_class>
@@ -1272,7 +1252,7 @@
 	<property name="LootListOnDeath" value="15" />
 	<property name="CorpseBlock" value="GoreBlock1Prefab"/>
 	<property name="CorpseBlockChance" value="1"/>
-	<property name="ExperienceGain" value="1000"/>
+	<property name="ExperienceGain" value="850"/>
 	<property name="DeadBodyHitPoints" value="20" /> <!-- For harvesting -->
 	<property name="HasDeathAnim" value="true" />
 </entity_class>
@@ -1334,7 +1314,7 @@
 	<property name="LootListOnDeath" value="71" />
 	<property name="CorpseBlock" value="GoreBlock1Prefab"/>
 	<property name="CorpseBlockChance" value="1"/>
-	<property name="ExperienceGain" value="1500"/>
+	<property name="ExperienceGain" value="1275"/>
 	<property name="DeadBodyHitPoints" value="20" />
 	<property name="HasDeathAnim" value="true" />
 </entity_class>
