@@ -4449,7 +4449,7 @@ ledAviatorGoggles,items,Item Clothes,,Mole Goggles,,
 ledGoggles,items,Item Clothes,,LED Goggles,,
 LEDHelmetDesc,items,Item Clothes,,Wear this to be able to toggle on the LED light.,,
 
-bowlDesc,items,Item Food,,Use claw bowls for cooking stews and other various foods.,,
+bowlDesc,items,Item Food,,Use clay bowls for cooking stews and other various foods.,,
 bowl,items,Item Food,,Clay Bowl,,
 bowlMurkyDesc,items,Item Food,,This bowl is full of murky water. Boil it or use purification tablets to clean it.,,
 bowlMurkyWater,items,Item Food,,Bowl of Murky Water,,
@@ -5326,8 +5326,6 @@ workstationQuestDesc,blocks,Block Building,,This quest board can be used to purc
 
 soapDesc,items,Item,,"Depending on where you found this you might want to use it quickly to wash your hands.",,
 
-cabinetFiller2Block,blocks,Block,,Red Block,,
-
 aloeLotion,buffs,Buff,,Aloe Lotion,,
 aloeLotionDesc,buffs,Buff,,A nice layer of lotion helps keep your skin cool.,,
 aloeLotionTooltip,buffs,Buff,,You feel cooler.,,
@@ -5528,8 +5526,6 @@ recipebookNailgunDesc,items,Item Book,,"Pages from an nailgun manual. Most are i
 minibikesForDumbshitsDesc2,items,Book,KgNone,"Pages from an minibike manual. Most are illegible from oil stains but if you read enough you'll eventually be able to assemble an minibike.",Même les demeurés finis peuvent construire une mini-moto en suivant les étapes présentées dans ce guide... Vroum... Vroum !,"Selbst komplette Vollidioten können ein Taschenmotorrad bauen, wenn sie dieser einfachen Anleitung folgen … Brumm, brumm!",,"Hasta el más idiota puede construir una minimoto si sigue los pasos de esta sencilla guía. ¡Brum, brum!"
 skillbookBlades,items,Item Book,,"Halloween: The Myers Experience",,
 skillbookBladesDesc,items,Item Book,,"A horror story that sold many Kirk masks.",,
-recipebookSecurity,items,Item Book,,Security Measures,,
-recipebookSecurityDesc,items,Item Book,,"Reading this will give you levels in Security which will eventually let you craft secure chests, crates, iron doors and drawbridges.",,
 skillbookForgedArmor,items,Item Book,,Armorsmith,,
 skillbookForgedArmorDesc,items,Item Book,,"You're pretty sure this book was never meant to be taken seriously, given that it speaks of magic defenses, but there could be some practical real-world applications some of it's contents.",,
 recipebookGardenTools,items,Item Book,,"Garden Tools Schematics",,
