@@ -4364,7 +4364,7 @@ ironCrossbowDesc,items,Item Gun,,"This crossbow deals more damage, has further r
 ironBow,items,Item Gun,,Iron Bow,,
 ironBowDesc,items,Item Gun,,"This bow deals more damage, has further range and improved durability than a normal bow.",,
 combatAxe,items,Item Tool,,Combat Axe,,
-combatAxeDesc,items,Item Tool,,This axe was designed to be used as a weapon more than a tool.,,
+combatAxeDesc,items,Item Tool,,This axe was designed to be used as a weapon more than a tool. Unlocks from the The Decapitator perk.,,
 HealingDart,items,Item Gun,,Healing Dart,,
 HealingDartDesc,items,Item Gun,,When fired from a Tranquilizer this dart can heal other survivors.,,
 InfectionDart,items,Item Gun,,Infection Dart,,
