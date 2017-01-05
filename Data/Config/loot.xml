@@ -1375,7 +1375,6 @@
 	<item name="rebarFrameBlock" count="10,20" prob="0.1"/>
 	<item name="wood" count="50,250" prob="0.2"/>
 	<item name="ironDoor1_v1" prob="0.2"/>
-	<item name="carpenterKit" count="10,20" prob="0.2"/>
 	<item name="forgedIron" count="3,4" prob="0.05"/>
 	<item name="forgedSteel" count="3,4" prob="0.05"/>
 </lootgroup>
@@ -1727,7 +1726,6 @@
 	<item group="medicine"/>
 	<item group="pistol+ammo"/>
 	<item name="flashlight02"/>
-	<item name="sewingKit" />
 	<item name="Lightbulb" count="1,2"/>
 	<item name="tantalizingMagazine"/>	
 	<item group="nightstandQuestItems" prob="0.08" />
@@ -1923,7 +1921,6 @@
 		<item name="gravel" count="8,11"/>
 		<item name="oilShale" count="15,30"/>
         <item name="wood" count="100"/>
-		<item name="carpenterKit" count="10,15"/>
 	</lootgroup>
 	<lootgroup name="SupplyFood" >
 		<item name="canBeef" count="3,5"/>
