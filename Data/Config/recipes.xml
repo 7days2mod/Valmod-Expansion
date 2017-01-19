@@ -3356,12 +3356,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="yuccaFibers" count="3"/>
 	</recipe>
 	<recipe name="combatAxe" count="1" craft_area="workbench">
-        <ingredient name="forgedIron" count="8"/>
-        <ingredient name="wood" count="8"/>
+        <ingredient name="forgedIron" count="10"/>
+        <ingredient name="wood" count="10"/>
 	</recipe>
     <recipe name="machete" count="1" craft_area="workbench">
-        <ingredient name="forgedIron" count="4"/>
-        <ingredient name="wood" count="3"/>
+        <ingredient name="forgedIron" count="10"/>
+        <ingredient name="wood" count="10"/>
     </recipe>	
     <recipe name="weedCleaver" count="1" craft_area="workbench">
         <ingredient name="forgedIron" count="4"/>
