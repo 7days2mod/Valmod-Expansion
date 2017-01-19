@@ -14609,6 +14609,7 @@ kind of free
 		<property name="Class" value="SecureLoot" />
 		<property name="CustomIcon" value="cntMunitionsBox" />
 		<property name="LootList" value="101" />
+		<property class="RepairItems"> <property name="forgedIron" value="5" /> </property>
 	</block>
 	<block id="1957" name="cntEPSLockers">
 		<property name="Extends" value="cntLockers" />
@@ -14736,6 +14737,7 @@ kind of free
 			<property name="Modules" value="tools,output,input"/>
 			<property name="CraftingAreaRecipes" value="campfire" />
 		</property>
+		<property class="RepairItems"> <property name="forgedSteel" value="5" />	</property>
 	</block>
 	<block id="1971" name="workingGranitSink">
 	<property name="DescriptionKey" value="WorkingSinkDesc"/>
@@ -14751,6 +14753,7 @@ kind of free
 	<drop event="Harvest" name="shortMetalPipe" count="4" tool_category="Disassemble" />
 	<drop event="Harvest" name="scrapIron" count="2" tool_category="Disassemble" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property class="RepairItems"> <property name="scrapIron" value="10" /> </property>
 	</block>
 	<block id="1972" name="workingCabinetSink">
 		<property name="Extends" value="workingGranitSink" />
