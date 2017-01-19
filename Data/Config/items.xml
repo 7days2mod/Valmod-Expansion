@@ -2060,7 +2060,7 @@ which does not exist, yet. -->
 		<property name="BlockDamage" value="1,5" />
 	</property>
 	<property name="DescriptionKey" value="arrowDesc"/>
-	<property name="CraftingSkillGroup" value="Fletching"/>
+	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 </item>
 
 <item id="165" name="ironArrow">
@@ -2097,7 +2097,7 @@ which does not exist, yet. -->
 		<property name="EntityDamage" value="22,45" />
 		<property name="BlockDamage" value="5,10" />
 	</property>
-	<property name="CraftingSkillGroup" value="Fletching"/>
+	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 </item>
 
 <item id="166" name="steelArrow">
@@ -2134,7 +2134,7 @@ which does not exist, yet. -->
 		<property name="EntityDamage" value="22,55" />
 		<property name="BlockDamage" value="6,11" />
 	</property>
-	<property name="CraftingSkillGroup" value="Fletching"/>
+	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 </item>
 
 <item id="167" name="flamingArrow">
@@ -2170,7 +2170,7 @@ which does not exist, yet. -->
 		<property name="BlockDamage" value="6,11" />
 		<property name="ApplyBuff" value="1, 1" param1="burning" />
 	</property>
-	<property name="CraftingSkillGroup" value="Fletching"/>
+	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 </item>
 
 <!-- <item id="170" name="crossbowBolt">
@@ -2239,7 +2239,7 @@ which does not exist, yet. -->
 		<property name="BlockDamage" value="6,10" />
 	</property>
 	<property name="Group" value="Ammo/Weapons" />
-	<property name="CraftingSkillGroup" value="Fletching"/>
+	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 </item>
 
 <item id="172" name="steelCrossbowBolt">
@@ -2275,7 +2275,7 @@ which does not exist, yet. -->
 		<property name="BlockDamage" value="6,11" />
 	</property>
 	<property name="Group" value="Ammo/Weapons" />
-	<property name="CraftingSkillGroup" value="Fletching"/>
+	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 </item>
 
 <item id="173" name="explodingCrossbowBolt">
@@ -2316,7 +2316,7 @@ which does not exist, yet. -->
 		<property name="BlockDamage" value="6,11" />
 	</property>
 	<property name="Group" value="Ammo/Weapons" />
-	<property name="CraftingSkillGroup" value="Fletching"/>
+	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 </item>
 
 <!-- * * * * * * * * * * explosives / decoys / thrown items * * * * * * * * * * -->
@@ -6333,7 +6333,7 @@ which does not exist, yet. -->
 		<property name="Gain_food" value="10" />
 		<property name="Buff" value="eatFood_9_Trigger" />
 		<property name="Gain_water" value="-5" />
-		<property name="Gain_wellness" value="0.8" />
+		<property name="Gain_wellness" value="0.2" />
 		<property name="Sound_start" value="UseActions/player_eating" />
 	</property>
 	<property name="Smell" value="largeSmell" />
@@ -9312,7 +9312,7 @@ which does not exist, yet. -->
 		<property name="RepairTools" value="forgedIron" />
 		<property name="DescriptionKey" value="ironBowDesc"/>
 		<property class="Attributes">
-			<property name="EntityDamage" value="3,10" />
+			<property name="EntityDamage" value="5,10" />
 			<property name="DegradationRate" value="1,1" />
 			<property name="DegradationMax" value="100,850" />
 		</property>
@@ -12424,7 +12424,7 @@ which does not exist, yet. -->
 		<property name="DescriptionKey" value="skillbookCrossbowDesc"/>
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
-			<property name="Skills_to_gain" value="Archery,Archery,Fletching,Fletching,Crossbow,Crossbow" />
+			<property name="Skills_to_gain" value="Archery,Archery,Weapon Smithing,Weapon Smithing,Crossbow,Crossbow" />
 		</property>
 	</item>
 	<item id="2050" name="recipebookElectronics">
