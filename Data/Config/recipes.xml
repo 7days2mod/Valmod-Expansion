@@ -961,6 +961,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="concreteMix" count="10"/>
 </recipe>
 
+<recipe name="concreteBricksBlock" count="1">
+	<ingredient name="concreteMix" count="10"/>
+</recipe>
+
 <recipe name="concreteArrowSlitHalf" count="1">
 	<ingredient name="concreteMix" count="10"/>
 </recipe>
