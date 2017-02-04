@@ -9117,7 +9117,7 @@ which does not exist, yet. -->
 			<property name="Stock" value="gunSilencer" />
 		</property>
 		<property class="Action0">
-			<property name="Sound_start" value="metalhitcloth" />
+			<property name="Sound_start" value="bullethitcloth" />
 		</property>
 	</item>
 	<item id="1604" name="gun44MagnumSilenced">
@@ -9127,7 +9127,7 @@ which does not exist, yet. -->
 			<property name="Stock" value="gunSilencer" />
 		</property>
 		<property class="Action0">
-			<property name="Sound_start" value="metalhitcloth" />
+			<property name="Sound_start" value="bullethitcloth" />
 		</property>
 	</item>
 	<item id="1605" name="gunBoomstick">
@@ -9181,9 +9181,9 @@ which does not exist, yet. -->
 			<property name="Pump" value="gunSilencer" />
 		</property>
 		<property class="Action0">
-			<property name="Sound_start" value="metalhitcloth" />
-			<property name="Sound_repeat" value="metalhitcloth" />
-			<property name="Sound_end" value="metalhitcloth" />
+			<property name="Sound_start" value="bullethitcloth" />
+			<property name="Sound_repeat" value="bullethitcloth" />
+			<property name="Sound_end" value="weapon_empt" />
 		</property>
 	</item>
 	<item id="1607" name="gunSniperSilenced">
@@ -9194,7 +9194,7 @@ which does not exist, yet. -->
 			<property name="Stock" value="gunSilencer" />
 		</property>
 		<property class="Action0">
-			<property name="Sound_start" value="metalhitcloth" />
+			<property name="Sound_start" value="bullethitcloth" />
 		</property>
 	</item>
 	<item id="1608" name="gunPumpShotgunChoked">
@@ -9214,7 +9214,7 @@ which does not exist, yet. -->
 			<property name="Stock" value="gunSilencer" />
 		</property>
 		<property class="Action0">
-			<property name="Sound_start" value="metalhitcloth" />
+			<property name="Sound_start" value="bullethitcloth" />
 		</property>
 	</item>
 	<item id="1610" name="gunBoltRifle">
@@ -9242,7 +9242,7 @@ which does not exist, yet. -->
 			<property name="Stock" value="gunSilencer" />
 		</property>
 		<property class="Action0">
-			<property name="Sound_start" value="metalhitcloth" />
+			<property name="Sound_start" value="bullethitcloth" />
 		</property>
 	</item>
 	<item id="1612" name="gunAK47Silenced">
@@ -9253,9 +9253,9 @@ which does not exist, yet. -->
 			<property name="Stock" value="gunSilencer" />
 		</property>
 		<property class="Action0">
-			<property name="Sound_start" value="metalhitcloth" />
-			<property name="Sound_repeat" value="metalhitcloth" />
-			<property name="Sound_end" value="metalhitcloth" />
+			<property name="Sound_start" value="bullethitcloth" />
+			<property name="Sound_repeat" value="bullethitcloth" />
+			<property name="Sound_end" value="weapon_empt" />
 		</property>
 	</item>
 	<item id="1613" name="gunSniperRifleHPScope">
@@ -9284,7 +9284,7 @@ which does not exist, yet. -->
 			<property name="Receiver" value="gunScope" />
 		</property>
 		<property class="Action0">
-			<property name="Sound_start" value="metalhitcloth" />
+			<property name="Sound_start" value="bullethitcloth" />
 		</property>
 	</item>
 	<item id="1615" name="partsBoltRifle_parts">
