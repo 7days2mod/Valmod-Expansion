@@ -5635,11 +5635,13 @@ kind of free
 
 <block id="632" name="blueMetalRamp1">
 	<property name="Extends" value="scrapIronRamp" />
+	<property class="RepairItems"> <property name="scrapIron" value="20" /> </property>
 	<property name="Texture" value="435" />
 </block>
 
 <block id="633" name="blueMetalBlock">
 	<property name="Extends" value="metalNoUpgradeMaster" />
+	<property class="RepairItems"> <property name="scrapIron" value="20" /> </property>
 	<property name="Texture" value="435" />
 </block>
 
@@ -8138,6 +8140,7 @@ kind of free
 
 <block id="927" name="whiteMetalPillar100">
 	<property name="Extends" value="metalNoUpgradeMaster" />
+	<property class="RepairItems"> <property name="scrapIron" value="20" /> </property>
 	<property name="Shape" value="New" />
 	<property name="Model" value="Pole1m" />
 	<property name="Texture" value="312" />
@@ -8145,11 +8148,13 @@ kind of free
 
 <block id="928" name="whiteMetalBlock">
 	<property name="Extends" value="metalNoUpgradeMaster" />
+	<property class="RepairItems"> <property name="scrapIron" value="20" /> </property>
 	<property name="Texture" value="312" />
 </block>
 
 <block id="929" name="whiteMetalRamp">
 	<property name="Extends" value="metalNoUpgradeMaster" />
+	<property class="RepairItems"> <property name="scrapIron" value="20" /> </property>
 	<property name="Shape" value="WedgedBackFaces" /> <property name="Place" value="TowardsPlacer90" />
 	<property name="Texture" value="312" />
 </block>
@@ -10457,28 +10462,33 @@ kind of free
 
 <block id="1262" name="greenMetalRamp">
 	<property name="Extends" value="metalNoUpgradeMaster" />
+	<property class="RepairItems"> <property name="scrapIron" value="20" /> </property>
 	<property name="Shape" value="Wedged" /> <property name="Place" value="TowardsPlacer90" />
 	<property name="Texture" value="428" />
 </block>
 
 <block id="1263" name="greenMetalBlock">
 	<property name="Extends" value="metalNoUpgradeMaster" />
+	<property class="RepairItems"> <property name="scrapIron" value="20" /> </property>
 	<property name="Texture" value="428" />
 </block>
 
 <block id="1264" name="orangeMetalRamp">
 	<property name="Extends" value="metalNoUpgradeMaster" />
+	<property class="RepairItems"> <property name="scrapIron" value="20" /> </property>
 	<property name="Shape" value="Wedged" /> <property name="Place" value="TowardsPlacer90" />
 	<property name="Texture" value="429" />
 </block>
 
 <block id="1265" name="orangeMetalBlock">
 	<property name="Extends" value="metalNoUpgradeMaster" />
+	<property class="RepairItems"> <property name="scrapIron" value="20" /> </property>
 	<property name="Texture" value="429" />
 </block>
 
 <block id="1266" name="greenMetalCNRFull">
 	<property name="Extends" value="metalNoUpgradeMaster" />
+	<property class="RepairItems"> <property name="scrapIron" value="20" /> </property>
 	<property name="Shape" value="WedgedCornerFull" />
 	<property name="Texture" value="428" />
 </block>
@@ -13324,12 +13334,14 @@ kind of free
 
 <block id="1625" name="blueMetalCNRRound">
 	<property name="Extends" value="greenRustyMetalCNRRound" />
+	<property class="RepairItems"> <property name="scrapIron" value="20" /> </property>
 	<property name="Model" value="corner_round1m" />
 	<property name="Texture" value="435" />
 </block>
 
 <block id="1626" name="whiteMetalCNRRound">
 	<property name="Extends" value="greenRustyMetalCNRRound" />
+	<property class="RepairItems"> <property name="scrapIron" value="20" /> </property>
 	<property name="Texture" value="312" />
 </block>
 
@@ -13361,6 +13373,7 @@ kind of free
 
 <block id="1631" name="redMetalCNRRound">
 	<property name="Extends" value="greenRustyMetalCNRRound" />
+	<property class="RepairItems"> <property name="scrapIron" value="20" /> </property>
 	<property name="Texture" value="311" />
 </block>
 
