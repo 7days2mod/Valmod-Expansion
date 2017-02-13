@@ -2840,7 +2840,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <recipe name="workstationDecor" count="1" >
         <ingredient name="wood" count="30"/>
     </recipe>
-<recipe name="cntGarbageDisposal" count="1" craft_area="workbench" >
+<recipe name="cntGarbageDisposalEmpty" count="1" craft_area="workbench" >
 	<ingredient name="scrapIron" count="10"/>
 </recipe>
 <recipe name="trashbag" count="1" craft_area="workbench" >
