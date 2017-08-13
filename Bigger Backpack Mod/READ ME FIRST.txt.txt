@@ -6,3 +6,4 @@ How to Install Bigger Backpack:
 3. Be sure to launch the game without EAC.
 4. Done.
 
+Note: If you do this and launch a gamesave made before adding bigger backpack you will need to have your character die once for the storage to start saving itself.
