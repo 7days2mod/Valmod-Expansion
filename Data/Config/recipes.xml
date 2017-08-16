@@ -3605,6 +3605,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="cntDumpster" count="1" craft_area="workbench">
 	<ingredient name="forgedIron" count="25"/>
 </recipe>
+
+<recipe name="streetLightPlayer" count="1" craft_area="workbench">
+	<ingredient name="headlight" count="1"/>
+	<ingredient name="electricParts" count="8"/>
+	<ingredient name="ductTape" count="2"/>
+	<ingredient name="scrapIron" count="50"/>
+</recipe>
 </recipes>
 <!-- To do (maybe / later)
 <recipe name="steelArrowHead" count="1" craft_area="forge" craft_tool="calipers" material_based="true">
