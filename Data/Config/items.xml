@@ -12141,6 +12141,16 @@ Mesh files no longer used:
 		<property name="DegradationRate" value="0,0" />
 	</property>
 </item>
+<item id="1911" name="handSnake">
+	<property name="Extends" value="handMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property class="Action0">
+		<property name="DamageEntity" value="10"/>
+		<property name="DamageBlock" value="5"/>
+		<property name="Buff" value="bleeding,infection,stunned,sprainedLeg"/>
+		<property name="Buff_chance" value="0.08,0.08,0.3,0.3"/>
+	</property>
+</item>
 
 	<!-- Health Items -->
 	<item id="1920" name="Peroxide">
