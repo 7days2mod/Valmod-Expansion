@@ -11018,7 +11018,7 @@ Mesh files no longer used:
 			<property name="Pos" value="0.18,-0.15" />
 			<property name="Rot" value="0,-45,0" />
 		</property>
-		<property name="CraftingSkillGroup" value="Cooking"/>
+		
 	</item>
 	<item id="1774" name="canChunkyMeatStew">
 		<property name="Extends" value="canBeef" />
@@ -11058,7 +11058,7 @@ Mesh files no longer used:
 			<property name="Gain_food" value="50" />
 			<property name="Gain_wellness" value="1" />
 		</property>
-		<property name="CraftingSkillGroup" value="Cooking"/>
+		
 	</item>
 	<item id="1778" name="bowlFruit">
 		<property name="Meshfile" value="Items/Food/venison_stewPrefab" />
@@ -11084,7 +11084,7 @@ Mesh files no longer used:
 			<property name="Pos" value="0,-0.03" />
 			<property name="Rot" value="90,45,0" />
 		</property>
-		<property name="CraftingSkillGroup" value="Cooking"/>
+		
 	</item>
 	<item id="1779" name="cornbreadJam">
 		<property name="Extends" value="cornBread" />
@@ -11093,7 +11093,7 @@ Mesh files no longer used:
 			<property name="Gain_food" value="6" />
 			<property name="Gain_wellness" value="0.5" />
 		</property>
-		<property name="CraftingSkillGroup" value="Cooking"/>
+		
 	</item>
 	<item id="1780" name="soupChunkyBeef">
 		<property name="CraftingIngredientTime" value="15" />
@@ -11120,7 +11120,7 @@ Mesh files no longer used:
 			<property name="Pos" value="0,-0.03" />
 			<property name="Rot" value="90,45,0" />
 		</property>
-		<property name="CraftingSkillGroup" value="Cooking"/>
+		
 	</item>
 	<item id="1781" name="soupChicken">
 		<property name="Extends" value="soupChunkyBeef" />
@@ -11202,7 +11202,7 @@ Mesh files no longer used:
 			<property name="Pos" value="0,-0.03" />
 			<property name="Rot" value="90,45,0" />
 		</property>
-		<property name="CraftingSkillGroup" value="Cooking"/>
+		
 	</item>
 	<item id="1790" name="soupMushroom">
 		<property name="CraftingIngredientTime" value="15" />
@@ -11228,7 +11228,7 @@ Mesh files no longer used:
 			<property name="Pos" value="0,-0.03" />
 			<property name="Rot" value="90,45,0" />
 		</property>
-		<property name="CraftingSkillGroup" value="Cooking"/>
+		
 	</item>
 	<item id="1791" name="Mead">
 		<property name="Extends" value="beer" />
@@ -11381,7 +11381,7 @@ Mesh files no longer used:
 			<property name="Sound_start" value="UseActions/player_eating" />
 		</property>
 		<property name="Group" value="Food/Cooking" />
-		<property name="CraftingSkillGroup" value="Cooking"/>
+		
 	</item>
 	<item id="1804" name="Omelet">
 		<property name="Meshfile" value="Items/Food/blueberry_pie" />
@@ -11401,7 +11401,7 @@ Mesh files no longer used:
 		</property>
 		<property name="Group" value="Food/Cooking" />
 		<property name="Smell" value="smallSmell" />
-		<property name="CraftingSkillGroup" value="Cooking"/>
+		
 	</item>
 	<item id="1805" name="drinkEnergy">
 		<property name="Extends" value="foodHoney" />
@@ -11456,7 +11456,7 @@ Mesh files no longer used:
 			<property name="Pos" value="0,-0.05" />
 			<property name="Rot" value="90,45,0" />
 		</property>
-		<property name="CraftingSkillGroup" value="Cooking"/>
+		
 	</item>
 	<item id="1807" name="Apple">
 		<property name="CustomIcon" value="apple" />
@@ -11481,7 +11481,7 @@ Mesh files no longer used:
 		<property class="Action1">
 			<property name="Gain_food" value="15" />
 		</property>
-		<property name="CraftingSkillGroup" value="Cooking"/>
+		
 	</item>
 	<item id="1809" name="appleCider">
 		<property name="Extends" value="beer" />
@@ -11519,7 +11519,7 @@ Mesh files no longer used:
 		<property name="Sound_start" value="UseActions/player_eating" />
 	</property>
 	<property name="Group" value="Food/Cooking" />
-	<property name="CraftingSkillGroup" value="Cooking"/>
+	
 </item>
 <item id="1812" name="Hamburger">
 	<property name="Meshfile" value="Items/Misc/parcelPrefab" />
@@ -11538,7 +11538,7 @@ Mesh files no longer used:
 	</property>
 	<property name="Smell" value="exLargeSmell" />
 	<property name="Group" value="Food/Cooking" />
-	<property name="CraftingSkillGroup" value="Cooking"/>
+	
 </item>
 <item id="1813" name="Grapes">
 	<property name="Meshfile" value="Items/Food/blueberriesPrefab" />
@@ -11578,7 +11578,7 @@ Mesh files no longer used:
 	</property>
 	<property name="DropScale" value="4" />
 	<property name="Group" value="Food/Cooking" />
-	<property name="CraftingSkillGroup" value="Cooking"/>
+	
 </item>
 <item id="1815" name="biscuit">
 	<property name="Extends" value="cornBread" />
@@ -11605,7 +11605,7 @@ Mesh files no longer used:
 	</property>
 	<property name="Smell" value="exLargeSmell" />
 	<property name="Group" value="Food/Cooking" />
-	<property name="CraftingSkillGroup" value="Cooking"/>
+	
 	</item>
 <item id="1817" name="mealDinner">
 	<property name="Meshfile" value="Items/Misc/parcelPrefab" />
@@ -11625,7 +11625,7 @@ Mesh files no longer used:
 	</property>
 	<property name="Smell" value="exLargeSmell" />
 		<property name="Group" value="Food/Cooking" />
-	<property name="CraftingSkillGroup" value="Cooking"/>
+	
 	</item>
 <item id="1818" name="Wheat">
         <property name="Meshfile" value="Items/Misc/parcel" />
@@ -11760,7 +11760,7 @@ Mesh files no longer used:
 		<property name="Rot" value="90,45,0" />
 	</property>
 	<property name="Group" value="Resources" />
-	<property name="CraftingSkillGroup" value="Cooking"/>
+	
 	</item>
 <item id="1840" name="dinnerPlate">
 	<property name="DescriptionKey" value="dinnerPlateDesc"/>
@@ -11800,7 +11800,7 @@ Mesh files no longer used:
 	</property>
 	<property name="Smell" value="exLargeSmell" />
 	<property name="Group" value="Food/Cooking" />
-	<property name="CraftingSkillGroup" value="Cooking"/>
+	
 </item>
 <item id="1843" name="militaryRation">
 	<property name="DescriptionKey" value="militaryRationDesc"/>
@@ -11841,7 +11841,7 @@ Mesh files no longer used:
 	</property>
 	<property name="Smell" value="ExLargeSmell" />
 	<property name="Group" value="Food/Cooking" />
-	<property name="CraftingSkillGroup" value="Cooking"/>
+	
 </item>
 <item id="1845" name="tunaSandwich">
 	<property name="Meshfile" value="Items/Misc/parcelPrefab" />
@@ -11859,7 +11859,7 @@ Mesh files no longer used:
 		<property name="Sound_start" value="UseActions/player_eating" />
 	</property>
 	<property name="Group" value="Food/Cooking" />
-	<property name="CraftingSkillGroup" value="Cooking"/>
+	
 </item>
 <item id="1846" name="mysteryMeat">
 	<property name="Extends" value="rottingFlesh" />
@@ -11938,7 +11938,7 @@ Mesh files no longer used:
 		<property name="Pos" value="0,-0.03" />
 		<property name="Rot" value="90,45,0" />
 		</property>
-	<property name="CraftingSkillGroup" value="Cooking"/>
+	
 </item>
 <item id="1852" name="fishPie">
 	<property name="Extends" value="blueberryPie" />
