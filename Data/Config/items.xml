@@ -15649,6 +15649,7 @@ Mesh files no longer used:
 	<property name="Extends" value="challengeQuestMaster" />
 	<property name="CustomIcon" value="expGain" />
 	<property name="DescriptionKey" value="perkClassDesc"/>
+	<property name="Stacknumber" value="1"/>
 	<property class="Action1">
 	<property name="QuestGiven" value="perkSurvivor" />
 	</property>
@@ -15657,6 +15658,7 @@ Mesh files no longer used:
 	<property name="Extends" value="challengeQuestMaster" />
 	<property name="CustomIcon" value="expGain" />
 	<property name="DescriptionKey" value="perkClassDesc"/>
+	<property name="Stacknumber" value="1"/>
 	<property class="Action1">
 	<property name="QuestGiven" value="perkMiner" />
 	</property>
@@ -15665,6 +15667,7 @@ Mesh files no longer used:
 	<property name="Extends" value="challengeQuestMaster" />
 	<property name="CustomIcon" value="expGain" />
 	<property name="DescriptionKey" value="perkClassDesc"/>
+	<property name="Stacknumber" value="1"/>
 	<property class="Action1">
 	<property name="QuestGiven" value="perkHunter" />
 	</property>
@@ -15673,6 +15676,7 @@ Mesh files no longer used:
 	<property name="Extends" value="challengeQuestMaster" />
 	<property name="CustomIcon" value="expGain" />
 	<property name="DescriptionKey" value="perkClassDesc"/>
+	<property name="Stacknumber" value="1"/>
 	<property class="Action1">
 	<property name="QuestGiven" value="perkGunman" />
 	</property>
@@ -15681,6 +15685,7 @@ Mesh files no longer used:
 	<property name="Extends" value="challengeQuestMaster" />
 	<property name="CustomIcon" value="expGain" />
 	<property name="DescriptionKey" value="perkClassDesc"/>
+	<property name="Stacknumber" value="1"/>
 	<property class="Action1">
 	<property name="QuestGiven" value="perkMedic" />
 	</property>
@@ -15689,6 +15694,7 @@ Mesh files no longer used:
 	<property name="Extends" value="challengeQuestMaster" />
 	<property name="CustomIcon" value="expGain" />
 	<property name="DescriptionKey" value="perkClassDesc"/>
+	<property name="Stacknumber" value="1"/>
 	<property class="Action1">
 	<property name="QuestGiven" value="perkBruiser" />
 	</property>
@@ -15697,6 +15703,7 @@ Mesh files no longer used:
 	<property name="Extends" value="challengeQuestMaster" />
 	<property name="CustomIcon" value="expGain" />
 	<property name="DescriptionKey" value="perkClassDesc"/>
+	<property name="Stacknumber" value="1"/>
 	<property class="Action1">
 	<property name="QuestGiven" value="perkRifleman" />
 	</property>
@@ -15705,6 +15712,7 @@ Mesh files no longer used:
 	<property name="Extends" value="challengeQuestMaster" />
 	<property name="CustomIcon" value="expGain" />
 	<property name="DescriptionKey" value="perkClassDesc"/>
+	<property name="Stacknumber" value="1"/>
 	<property class="Action1">
 	<property name="QuestGiven" value="perkVeteran" />
 	</property>
@@ -15713,6 +15721,7 @@ Mesh files no longer used:
 	<property name="Extends" value="challengeQuestMaster" />
 	<property name="CustomIcon" value="expGain" />
 	<property name="DescriptionKey" value="perkClassDesc"/>
+	<property name="Stacknumber" value="1"/>
 	<property class="Action1">
 	<property name="QuestGiven" value="perkBuilder" />
 	</property>
@@ -15721,6 +15730,7 @@ Mesh files no longer used:
 	<property name="Extends" value="challengeQuestMaster" />
 	<property name="CustomIcon" value="expGain" />
 	<property name="DescriptionKey" value="perkClassDesc"/>
+	<property name="Stacknumber" value="1"/>
 	<property class="Action1">
 	<property name="QuestGiven" value="perkWildcard" />
 	</property>
