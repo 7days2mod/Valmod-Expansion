@@ -15840,7 +15840,6 @@ kind of free
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="Entities/Electrical/pressure_plate_longPrefab"/>  <property name="HandleFace" value="Bottom"/>
 	<property name="MultiBlockDim" value="5,1,1"/>
-
 	<property name="ImposterExchange" value="imposterPlate" param1="143"/>
 	<property name="Stacknumber" value="40"/>
 	<property name="CanPickup" value="false"/>
