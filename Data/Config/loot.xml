@@ -959,11 +959,9 @@
 	<item name="skillbookWasteland"/>
 	<item name="skillbookBlacksmith"/>
 	<item name="skillbookMedical"/>
-	<item name="skillbookChemistry"/>
 	<item name="skillbookGunsmoke"/>
 	<item name="skillbookRifles"/>
 	<item name="skillbookShotguns"/>
-	<item name="skillbookGunSmith"/>
 	<item name="skillbookArchery"/>
 	<item name="skillbookBlades"/>
 	<item name="skillbookKnight"/>
@@ -1611,7 +1609,6 @@
 	<item group="MedicineTier2" prob="0.3"/>
 	<item group="MedicineTier3" prob="0.1"/>
 	<item group="MedicineMisc" prob="0.1"/>
-	<item name="skillbookChemistry" prob="0.025"/>
 	<item name="skillbookMedical" prob="0.025"/>
 </lootgroup>
 
