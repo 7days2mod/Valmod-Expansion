@@ -1263,6 +1263,10 @@
 		<recipe name="ironCrossbow" unlock_level="2"/>
 		<recipe name="crossbowRepeater" unlock_level="3"/>
 	</perk>
+
+	<perk name="Compound Bow" icon="misc_crafting" description_key="Learn how to assemble a Compound Bow." title_key="Compound Bow" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="20" group="crafting">
+		<recipe name="compoundBow" unlock_level="1"/>
+	</perk>
 	
 	<perk name="Advance Traps" icon="misc_crafting" description_key="Max out this perk to learn how to craft stronger trap recipes such as trussing, steel and fire traps." title_key="Traps" max_level="10" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="tools">
 		<recipe name="trapFire" unlock_level="10"/>
