@@ -1268,6 +1268,10 @@
 		<recipe name="compoundBow" unlock_level="1"/>
 	</perk>
 	
+	<perk name="Nailgun" icon="misc_crafting" description_key="Learn how to assemble a Nailgun." title_key="Nailgun" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" group="crafting">
+		<recipe name="nailgun" unlock_level="1"/>
+	</perk>
+	
 	<perk name="Advance Traps" icon="misc_crafting" description_key="Max out this perk to learn how to craft stronger trap recipes such as trussing, steel and fire traps." title_key="Traps" max_level="10" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="tools">
 		<recipe name="trapFire" unlock_level="10"/>
 		<recipe name="trapFall" unlock_level="10"/>
