@@ -801,7 +801,7 @@ NOT the TextureNumber.
 <block id="56" name="imposterCTRPlate">
 	<property name="CustomIcon" value="woodBlock"/>
 	<property name="Shape" value="New"/>
-	<property name="Model" value="plate_centered"/>
+	<property name="Model" value="plate_centered"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Texture" value="52"/>
 	<property name="Material" value="dirt"/>
 	<property name="CreativeMode" value="None"/>
@@ -878,7 +878,7 @@ NOT the TextureNumber.
 <block id="64" name="imposterDontBlockCTRPlate">
 	<property name="CustomIcon" value="woodBlock"/>
 	<property name="Shape" value="New"/>
-	<property name="Model" value="plate_centered"/>
+	<property name="Model" value="plate_centered"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Texture" value="52"/>
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="Material" value="dirt"/>
@@ -1045,7 +1045,6 @@ group desc for stuff like metal siding
 
 <block id="119" name="cropsGrowingMaster">
 	<property name="CreativeMode" value="None"/>
-	<property name="DescriptionKey" value="devOnlyGroupDesc"/>
 	<property name="CustomIcon" value="blueberrySeed"/>
 	<property name="Material" value="plants"/>
 	<property name="LightOpacity" value="0"/>
@@ -1207,7 +1206,6 @@ group desc for stuff like metal siding
 	<property name="Tag" value="TreeTrunk"/>
 	<property name="IsPlant" value="true"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt"/>
-	<property name="ImposterExclude" value="true"/>
 	<drop event="Destroy" count="0"/>
 </block>
 
@@ -2532,7 +2530,6 @@ group desc for stuff like metal siding
 	<property name="ImposterExclude" value="true"/>
 	<property name="ImposterDontBlock" value="true"/>
 	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredRConcreteSupport"/> </property>
-	<property name="LightOpacity" value="0"/>
 </block>
 
 <block id="252" name="pouredRConcretePillar100">
@@ -2551,7 +2548,7 @@ group desc for stuff like metal siding
 	<property name="CustomIcon" value="pouredConcreteCTRPlate"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="Shape" value="New"/>
-	<property name="Model" value="plate_centered"/>
+	<property name="Model" value="plate_centered"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="UpgradeRated.ToBlock" value="rConcreteCTRPlate"/>
 </block>
 
@@ -3302,7 +3299,7 @@ group desc for stuff like metal siding
 	<property name="CreativeMode" value="Player"/>
 	<property name="Extends" value="pouredConcreteMaster"/>
 	<property name="Shape" value="New"/>
-	<property name="Model" value="plate_centered"/>
+	<property name="Model" value="plate_centered"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="UpgradeRated.ToBlock" value="concreteCTRPlate"/>
 </block>
 
@@ -3573,7 +3570,6 @@ group desc for stuff like metal siding
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="ImposterExchange" value="imposterSheet" param1="20"/>
 	<property name="Tag" value="Window"/>
-	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="FuelValue" value="150"/>
 	<drop event="Destroy" count="0"/>
 </block>
@@ -4002,7 +3998,7 @@ group desc for stuff like metal siding
 <block id="395" name="glassIndustrialCTRPlate">
 	<property name="Material" value="glass"/>
 	<property name="Shape" value="New"/>
-	<property name="Model" value="plate_centered"/>
+	<property name="Model" value="plate_centered"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Texture" value="320"/>
 	<property name="DescriptionKey" value="glassGroupDesc"/>
 	<property class="UpgradeBlock">
@@ -4095,7 +4091,7 @@ group desc for stuff like metal siding
 <block id="405" name="corrugatedMetalCTRPlate">
 	<property name="Extends" value="corrugatedMetalMaster"/>
 	<property name="Shape" value="New"/>
-	<property name="Model" value="plate_centered"/>
+	<property name="Model" value="plate_centered"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronCTRPlate"/> </property>
 </block>
 
@@ -4418,7 +4414,7 @@ group desc for stuff like metal siding
 <block id="432" name="mineHubcap">
 	<property name="Extends" value="mineCandyTin"/>
 	<property name="Model" value="Traps/trap_mine_hubcap" param1="main_mesh"/>
-	<property name="Stacknumber" value="20"/> <!-- STK explosives -->
+	<property name="Stacknumber" value="40"/> <!-- STK explosives -->
 	<property name="MaxDamage" value="5"/>
 	<property name="Explosion.RadiusBlocks" value="3"/>
 	<property name="Explosion.RadiusEntities" value="5"/>
@@ -4430,7 +4426,7 @@ group desc for stuff like metal siding
 <block id="433" name="mineAirFilter">
 	<property name="Extends" value="mineCandyTin"/>
 	<property name="Model" value="Traps/trap_mine_filter" param1="main_mesh"/>
-	<property name="Stacknumber" value="20"/> <!-- STK explosives -->
+	<property name="Stacknumber" value="40"/> <!-- STK explosives -->
 	<property name="MaxDamage" value="6"/>
 	<property name="Explosion.RadiusBlocks" value="4"/>
 	<property name="Explosion.RadiusEntities" value="5"/>
@@ -4704,7 +4700,7 @@ kind of free
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="Traps/dynamite_bundle" param1="main_mesh"/> <property name="HandleFace" value="Bottom"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="Stacknumber" value="10"/> <!-- STK explosives -->
+	<property name="Stacknumber" value="40"/> <!-- STK explosives -->
 	<property class="Explosion">
 		<property name="ParticleIndex" value="4"/>
 		<property name="RadiusBlocks" value="1"/> <!-- damage radius for blocks -->
@@ -5311,8 +5307,7 @@ kind of free
 
 <block id="541" name="glassBulletproofCTRPlate">
 	<property name="Extends" value="glassBulletproofMaster"/>
-	<property name="Model" value="plate_centered"/>
-	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Model" value="plate_centered"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property class="RepairItems"> <property name="glassBulletproofCTRPlate" value="1"/> </property>
 </block>
 
@@ -6568,7 +6563,7 @@ kind of free
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
 	<property name="DowngradeBlock" value="window02Frame"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="brokenGlass" count="1"/>
 	<property name="EconomicValue" value="20"/>
 </block>
 
@@ -6587,6 +6582,7 @@ kind of free
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property class="RepairItems"> <property name="forgedIron" value="5"/> </property>
 	<property name="TraderID" value="3"/>
+	<property name="Stacknumber" value="10"/>
 	<property name="EconomicValue" value="2000"/>
 	<property name="Buff" value="shockedBuff"/>
 	<drop event="Destroy" count="0"/>
@@ -6658,7 +6654,7 @@ kind of free
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="brokenGlass" count="1"/>
 	<property name="EconomicValue" value="6"/>
 </block>
 
@@ -6866,7 +6862,6 @@ kind of free
 	<property name="ModelOffset" value="0,-0.3,0"/>
 	<property name="MultiBlockDim" value="1,6,1"/>
 	<property name="BigDecorationRadius" value="6"/>
-	<property name="ParticleOnDeath" value="treeGib_birch"/>
 	<property name="PlantGrowing.Next" value="treePlantedMaple17mPlus"/>
 	<property name="PlantGrowing.GrowthRate" value="1"/>
 	<property name="PlantGrowing.FertileLevel" value="5"/>
@@ -7307,7 +7302,7 @@ kind of free
 	<property name="Extends" value="concreteMaster"/>
 	<property name="CustomIcon" value="rConcreteCTRPlate"/>
 	<property name="Shape" value="New"/>
-	<property name="Model" value="plate_centered"/>
+	<property name="Model" value="plate_centered"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredRConcreteCTRPlate"/> </property>
 </block>
 
@@ -7329,8 +7324,8 @@ kind of free
 </block>
 
 <block id="723" name="railingBlackSheet">
-	<property name="DescriptionKey" value="railingGroupDesc"/>
-	<property name="Material" value="Mmetal_thin"/>
+	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="MaxDamage" value="200"/>
 	<property name="Shape" value="New"/>
 	<property name="LightOpacity" value="0"/>
 	<property name="Model" value="billboard"/>
@@ -7339,8 +7334,7 @@ kind of free
 	<property name="Texture" value="49"/>
 	<property name="ImposterExclude" value="true"/>
 	<property name="ShapeMinBB" value="0.3,0,0.3"/>
-	<drop event="Destroy" name="scrapIron" count="1,15"/>
-	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="DescriptionKey" value="railingGroupDesc"/>
 </block>
 
 <block id="724" name="solidScrapIronFrameWedgeTipCNRFullTop">
@@ -7575,6 +7569,7 @@ kind of free
 	<drop event="Destroy" name="spring" count="4,12" prob="1" tool_category="Disassemble"/>
 	<drop event="Destroy" name="mechanicalParts" count="4,20" prob="1" tool_category="Disassemble"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Stacknumber" value="1"/>
 	<property name="DescriptionKey" value="drawBridgeGroupDesc"/>
 	<property name="ActivationDistance" value="14"/> <!-- This is how far away you can PLACE the block and how far away you can ACTIVATE it -->
 	<property name="Group" value="Science"/>
@@ -7734,7 +7729,7 @@ kind of free
 <block id="766" name="stainlessSteelCTRPlate">
 	<property name="Extends" value="stainlessSteelMaster"/>
 	<property name="Shape" value="New"/>
-	<property name="Model" value="plate_centered"/>
+	<property name="Model" value="plate_centered"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="DowngradeBlock" value="rConcreteCTRPlate"/>
 </block>
 
@@ -10087,7 +10082,7 @@ kind of free
 <block id="1108" name="plywoodOsbCTRPlate">
 	<property name="Material" value="wood_weak"/>
 	<property name="Shape" value="New"/>
-	<property name="Model" value="plate_centered"/>
+	<property name="Model" value="plate_centered"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Texture" value="65"/>
 	<property name="IsDecoration" value="true"/>
 	<property class="UpgradeBlock">
@@ -10573,24 +10568,7 @@ kind of free
 	<property name="DowngradeBlock" value="commercialDoor2_v2"/>
 </block>
 
-<block id="1170" name="commercialDoor3_v1Legacy">
-	<property name="Extends" value="commercialDoor2_v1"/>
-	<property name="CreativeMode" value="Dev"/>
-	<property name="DescriptionKey" value="legacyBlockDesc"/>
-	<property name="DowngradeBlock" value="Damaged Commercial Door" />
-</block>
-
-<block id="1171" name="commercialDoor3_v2Legacy">
-	<property name="Extends" value="commercialDoor2_v2"/>
-	<property name="CreativeMode" value="Dev"/>
-	<property name="DescriptionKey" value="legacyBlockDesc"/>
-</block>
-
-<block id="1172" name="commercialDoor3_v3Legacy">
-	<property name="Extends" value="commercialDoor2_v3"/>
-	<property name="CreativeMode" value="Dev"/>
-	<property name="DescriptionKey" value="legacyBlockDesc"/>
-</block>
+	<!-- 3 Free -->
 
 <block id="1173" name="commercialDoor4_v1">
 	<property name="Extends" value="commercialDoor1_v1"/>
@@ -10775,7 +10753,7 @@ kind of free
 	<property name="DescriptionKey" value="decorationBlockGroupDesc"/>
 	<property name="Material" value="wood_regular"/>
 	<property name="Shape" value="New"/>
-	<property name="Model" value="plate_centered"/>
+	<property name="Model" value="plate_centered"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Texture" value="302"/>
 	<property name="IsDecoration" value="true"/>
 	<property class="RepairItems"> <property name="wood" value="3"/> </property>
@@ -10816,13 +10794,15 @@ kind of free
 	<property name="LightOpacity" value="0"/>
 	<property name="Mesh" value="cutout"/>
 	<property name="Texture" value="410,410,409,410,409,410"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="plainWoodWindowPlug"/>
+	</property>
+	<property name="DowngradeBlock" value="window02Frame"/>
+	<drop event="Destroy" name="brokenGlass" count="1"/>
 </block>
 
 <block id="1197" name="window02Broken02CTRPlate">
-	<property name="Extends" value="sidingWhiteBurntCTRPlate"/>
-	<property name="Material" value="glass"/>
-	<property name="LightOpacity" value="0"/>
-	<property name="Mesh" value="cutout"/>
+	<property name="Extends" value="window02Broken01CTRPlate"/>
 	<property name="Texture" value="410,410,411,410,411,410"/>
 </block>
 
@@ -10836,12 +10816,10 @@ kind of free
 </block>
 
 <block id="1199" name="window02Broken03CTRPlate">
-	<property name="Extends" value="sidingWhiteBurntCTRPlate"/>
-	<property name="Material" value="glass"/>
-	<property name="LightOpacity" value="0"/>
-	<property name="Mesh" value="cutout"/>
+	<property name="Extends" value="window02Broken01CTRPlate"/>
 	<property name="Texture" value="410,410,412,410,412,410"/>
 	<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+	<property name="DowngradeBlock" value="window02Frame"/>
 </block>
 
 <block id="1200" name="window03Broke1">
@@ -10859,30 +10837,19 @@ kind of free
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="brokenGlass" count="1"/>
 </block>
 
 <block id="1201" name="window03Broke2">
-	<property name="Material" value="glass"/>
-	<property name="LightOpacity" value="0"/>
-	<property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
-	<property name="Mesh" value="models"/>
+	<property name="Extends" value="window03Broke1" param1="DowngradeBlock"/>
 	<property name="Model" value="Buildings/window03_broke2" param1="main_mesh"/>
-	<property name="Place" value="TowardsPlacer"/>
 	<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
-	<property class="UpgradeBlock">
-		<property name="ToBlock" value="plainWoodWindowPlug"/>
-		<property name="Item" value="wood"/>
-		<property name="ItemCount" value="4"/>
-		<property name="UpgradeHitCount" value="4"/>
-	</property>
-	<property name="CustomUpgradeSound" value="place_block_wood"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block id="1202" name="window03Broke3">
 	<property name="Extends" value="window03Broke2"/>
 	<property name="Model" value="Buildings/window03_broke3" param1="main_mesh"/>
+	<drop event="Destroy" count="0"/>
 </block>
 
 <block id="1203" name="window03Broke4">
@@ -10905,13 +10872,17 @@ kind of free
 <block id="1205" name="window03Frame">
 	<property name="Extends" value="window03Broke2"/>
 	<property name="Model" value="Buildings/window03_frame" param1="main_mesh"/>
+	<property name="Material" value="wood_regular"/>
+	<property name="MaxDamage" value="100"/>
+	<property class="RepairItems"> <property name="wood" value="2"/> </property>
+	<drop event="Destroy" count="0"/>
 </block>
 
 <block id="1206" name="glassIndustrial02CTRPlate">
 	<property name="Material" value="glass"/>
 	<property name="LightOpacity" value="1"/>
 	<property name="Shape" value="New"/>
-	<property name="Model" value="plate_centered"/>
+	<property name="Model" value="plate_centered"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Texture" value="410,410,413,410,413,410"/>
 	<property name="DescriptionKey" value="glassGroupDesc"/>
 	<property class="UpgradeBlock">
@@ -10921,7 +10892,7 @@ kind of free
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="brokenGlass" count="1"/>
 	<property name="EconomicValue" value="6"/>
 </block>
 
@@ -10959,13 +10930,14 @@ kind of free
 </block>
 
 <block id="1211" name="window04Frame">
-	<property name="Material" value="glass"/>
-	<property name="LightOpacity" value="0"/>
+	<property name="Material" value="wood_regular"/>
+	<property name="MaxDamage" value="100"/>
 	<property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
 	<property name="Mesh" value="models"/>
-	<property name="Model" value="Buildings/window04_frame" param1="main_mesh"/>
-	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="Buildings/window04_frame" param1="main_mesh"/> <property name="Place" value="TowardsPlacer"/>
+	<property name="LightOpacity" value="0"/>
 	<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+	<property class="RepairItems"> <property name="wood" value="2"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="plainWoodWindowPlug"/>
 		<property name="Item" value="wood"/>
@@ -10984,8 +10956,6 @@ kind of free
 	<property name="Model" value="Buildings/window04" param1="main_mesh"/>
 	<property name="Place" value="TowardsPlacer"/>
 	<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
-	<drop event="Destroy" count="0"/>
-	<property name="DowngradeBlock" value="window04Frame"/>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="plainWoodWindowPlug"/>
 		<property name="Item" value="wood"/>
@@ -10993,6 +10963,8 @@ kind of free
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
+	<property name="DowngradeBlock" value="window04Frame"/>
+	<drop event="Destroy" name="brokenGlass" count="1"/>
 </block>
 
 <block id="1213" name="doorFrameWhite1">
@@ -11713,13 +11685,13 @@ kind of free
 <block id="1295" name="scrapIronCTRPlate">
 	<property name="Extends" value="scrapIronMaster" param1="DowngradeBlock"/>
 	<property name="Shape" value="New"/>
-	<property name="Model" value="plate_centered"/>
+	<property name="Model" value="plate_centered"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property class="UpgradeBlock"> <property name="ToBlock" value="rScrapIronCTRPlate"/> </property>
 </block>
 <block id="1296" name="rScrapIronCTRPlate">
 	<property name="Extends" value="rScrapIronMaster"/>
 	<property name="Shape" value="New"/>
-	<property name="Model" value="plate_centered"/>
+	<property name="Model" value="plate_centered"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteCTRPlate"/> </property>
 	<property name="DowngradeBlock" value="scrapIronCTRPlate"/>
 </block>
@@ -12330,7 +12302,7 @@ kind of free
 <block id="1370" name="woodCTRPlate">
 	<property name="Extends" value="woodNoUpgradeMaster"/>
 	<property name="Shape" value="New"/>
-	<property name="Model" value="plate_centered"/>
+	<property name="Model" value="plate_centered"/> <property name="Place" value="TowardsPlacerInverted"/>
 </block>
 
 <block id="1373" name="cntMountainManStorageChest">
@@ -12362,7 +12334,7 @@ kind of free
 <block id="1377" name="plainWoodWindowPlug">
 	<property name="Material" value="wood_regular"/>
 	<property name="Shape" value="New"/>
-	<property name="Model" value="plate_centered"/>
+	<property name="Model" value="plate_centered"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Texture" value="408"/>
 	<property name="IsDecoration" value="true"/>
 	<property class="RepairItems"> <property name="wood" value="3"/> </property>
@@ -12682,7 +12654,7 @@ kind of free
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
 	<property name="DowngradeBlock" value="window03WoodFrame"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="brokenGlass" count="1"/>
 </block>
 
 <block id="1410" name="window03WoodBroke2">
@@ -12701,7 +12673,7 @@ kind of free
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="brokenGlass" count="1"/>
 </block>
 
 <block id="1411" name="window03WoodBroke3">
@@ -12732,7 +12704,7 @@ kind of free
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
 	<property name="DowngradeBlock" value="window03WoodBroke1"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="brokenGlass" count="1"/>
 	<property name="Group" value="Building"/>
 	<property name="EconomicValue" value="8"/>
 	<property name="EconomicBundleSize" value="20"/>
@@ -12743,6 +12715,8 @@ kind of free
 	<property name="Material" value="wood_regular"/>
 	<property name="MaxDamage" value="100"/>
 	<property name="Model" value="Buildings/window03_wood_frame" param1="main_mesh"/>
+	<property class="RepairItems"> <property name="wood" value="2"/> </property>
+	<drop event="Destroy" count="0"/>
 </block>
 
 <block id="1415" name="solidScrapIronFrameHalf">
@@ -13443,7 +13417,6 @@ kind of free
 	<!-- A15
 	<property name="BuffsWhenWalkedOn" value="sleepingBigBedTrigger"/>
 	-->
-	<property name="Group" value="Building"/>
 	<property class="RepairItems">
 		<property name="cloth" value="40"/>
 		<property name="cottonPlant" value="40"/>
@@ -13763,7 +13736,7 @@ kind of free
 <block id="1530" name="scrapIronWindowPlug05CTRPlate"> <!-- redundant? -->
 	<property name="Material" value="Mmetal_medium"/>
 	<property name="Shape" value="New"/>
-	<property name="Model" value="plate_centered"/>
+	<property name="Model" value="plate_centered"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Texture" value="307"/>
 	<property class="RepairItems"> <property name="scrapIron" value="40"/> </property>
 	<property class="UpgradeBlock">
@@ -13779,7 +13752,7 @@ kind of free
 <block id="1531" name="rScrapIronWindowPlug06CTRPlate"> <!-- redundant? -->
 	<property name="Material" value="Mmetal_medium"/>
 	<property name="Shape" value="New"/>
-	<property name="Model" value="plate_centered"/>
+	<property name="Model" value="plate_centered"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Texture" value="352"/>
 	<property class="RepairItems"> <property name="scrapIron" value="40"/> </property>
 	<property class="UpgradeBlock">
@@ -13796,7 +13769,7 @@ kind of free
 <block id="1532" name="rConcreteCTRPlate">
 	<property name="Extends" value="rConcreteMaster"/>
 	<property name="Shape" value="New"/>
-	<property name="Model" value="plate_centered"/>
+	<property name="Model" value="plate_centered"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property class="UpgradeBlock"> <property name="ToBlock" value="steelCTRPlate"/> </property>
 	<property name="DowngradeBlock" value="concreteCTRPlate"/>
 </block>
@@ -13805,7 +13778,7 @@ kind of free
 <block id="1536" name="steelCTRPlate">
 	<property name="Extends" value="steelMaster"/>
 	<property name="Shape" value="New"/>
-	<property name="Model" value="plate_centered"/>
+	<property name="Model" value="plate_centered"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Texture" value="356"/>
 	<property class="UpgradeBlock"> <property name="ToBlock" value="stainlessSteelCTRPlate"/> </property>
 	<property name="DowngradeBlock" value="rConcreteCTRPlate"/>
@@ -14645,6 +14618,7 @@ kind of free
 	<drop event="Harvest" name="scrapIron" count="10,40" prob="1"/>
 	<drop event="Destroy" count="0"/>
 
+	<property name="Stacknumber" value="10"/>
 	<property name="EconomicValue" value="3000"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="ImposterExchange" value="imposterBlock" param1="109"/>
@@ -14677,7 +14651,7 @@ kind of free
 	<property name="EconomicValue" value="2500"/>
 	<property name="PickupJournalEntry" value="cameraTip"/>
 </block>
-<!-- Free -->
+<!-- 94 Free -->
 
 <block id="1774" name="burningBarrelPlayer">
 	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
@@ -15067,6 +15041,7 @@ kind of free
 
 <block id="1926" name="cntVendingMachineTrader">
 	<property name="Extends" value="cntVendingMachine"/>
+	<property name="CreativeMode" value="Dev" />
 	<property name="Model" value="Entities/LootContainers/vending_machine_traderPrefab"/>
 	<property name="TraderID" value="5"/>
 </block>
@@ -15192,7 +15167,7 @@ kind of free
 
 <block id="1964" name="opaqueBusinessGlass">
 	<property name="Extends" value="glassBusinessCTRSheet" param1="Mesh"/>
-	<property name="Model" value="plate_centered"/>
+	<property name="Model" value="plate_centered"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Texture" value="532"/>
 	<property name="LightOpacity" value="8"/>
 </block>
@@ -15509,7 +15484,6 @@ kind of free
 	<property name="Class" value="Generator"/>
 	<property name="Material" value="Mmetal_medium"/>
 	<property name="StabilitySupport" value="false"/>
-	<property name="Stacknumber" value="1"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="Entities/Electrical/generatorPrefab"/> <property name="HandleFace" value="Bottom"/>
@@ -15553,7 +15527,6 @@ kind of free
 	<property class="RepairItems"> <property name="forgedIron" value="2"/> </property>
 	<drop event="Destroy" name="scrapIron" count="5" prob="1"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-	<property name="Stacknumber" value="250"/>
 	<property name="TakeDelay" value="5"/>
 	<property name="EconomicValue" value="50"/>
 </block>
@@ -15640,7 +15613,6 @@ kind of free
 	<drop event="Harvest" name="electricParts" count="1" prob="0.2" tool_category="Disassemble"/>
 	<drop event="Destroy" name="scrapIron" count="1,5" prob="1"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-	<property name="Stacknumber" value="250"/>
 	<property name="TakeDelay" value="5"/>
 	<property name="EconomicValue" value="28"/>
 </block>
@@ -15652,7 +15624,6 @@ kind of free
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="Entities/Electrical/pressure_platePrefab"/>  <property name="HandleFace" value="Bottom"/>
 	<property name="ImposterExchange" value="imposterPlate" param1="143"/>
-	<property name="Stacknumber" value="40"/>
 	<property name="CanPickup" value="false"/>
 	<property name="MultiBlockDim" value="1,1,1"/>
 	<property name="RequiredPower" value="0"/>
@@ -15667,7 +15638,6 @@ kind of free
 	<drop event="Harvest" name="mechanicalParts" count="0,1" tool_category="Disassemble"/>
 	<drop event="Destroy" name="scrapIron" count="5,20" prob="1"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-	<property name="Stacknumber" value="250"/>
 	<property name="TakeDelay" value="5"/>
 	<property name="EconomicValue" value="124"/>
 	<property name="PickupJournalEntry" value="triggerDelayDurationTip,passthroughTriggeringTip"/>
@@ -15691,9 +15661,7 @@ kind of free
 	<drop event="Harvest" name="electricParts" count="0,2" tool_category="Disassemble"/>
 	<drop event="Harvest" name="scrapIron" count="5,10"/>
 	<drop event="Destroy" count="0"/>
-	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-	<property name="Stacknumber" value="250"/>
 	<property name="TakeDelay" value="5"/>
 	<property name="EconomicValue" value="72"/>
 </block>
@@ -15720,7 +15688,6 @@ kind of free
 	<drop event="Harvest" name="scrapIron" count="5,10"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-	<property name="Stacknumber" value="250"/>
 	<property name="TakeDelay" value="5"/>
 	<property name="EconomicValue" value="119"/>
 </block>
@@ -15748,7 +15715,6 @@ kind of free
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="RequiredPower" value="20"/>
-	<property name="EconomicValue" value="444"/>
 	<property name="Group" value="Tools/Traps,Science"/>
 	<property name="ActivationDistance" value="6"/>
 	<property class="RepairItems">
@@ -15842,7 +15808,6 @@ kind of free
 	<property name="Model" value="Entities/Electrical/pressure_plate_longPrefab"/>  <property name="HandleFace" value="Bottom"/>
 	<property name="MultiBlockDim" value="5,1,1"/>
 	<property name="ImposterExchange" value="imposterPlate" param1="143"/>
-	<property name="Stacknumber" value="40"/>
 	<property name="CanPickup" value="false"/>
 	<property name="RequiredPower" value="0"/>
 	<property name="Group" value="Science"/>
@@ -15857,7 +15822,6 @@ kind of free
 	<drop event="Harvest" name="scrapIron" count="20,100"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-	<property name="Stacknumber" value="250"/>
 	<property name="TakeDelay" value="5"/>
 	<property name="EconomicValue" value="524"/>
 	<property name="DescriptionKey" value="pressureplateDesc"/>
@@ -15890,7 +15854,6 @@ kind of free
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="EconomicValue" value="310"/>
 	<property name="Group" value="Science"/>
-	<property name="Stacknumber" value="10"/>
 	<property name="TakeDelay" value="10"/>
 	<property name="PickupJournalEntry" value="cameraTip"/>
 </block>
@@ -15898,7 +15861,6 @@ kind of free
 <block id="2021" name="industrialLight01_player">
 	<property name="Extends" value="industrialLight01"/>
 	<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
-	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="industrialLight01"/>
 	<property name="RuntimeSwitch" value="true"/>
 	<property name="HandleFace" value="South"/>
@@ -15916,7 +15878,6 @@ kind of free
 <block id="2022" name="porchLight01_player">
 	<property name="Extends" value="porchLight01"/>
 	<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
-	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="porchLight01"/>
 	<property name="RuntimeSwitch" value="true"/>
 	<property name="HandleFace" value="West"/>
@@ -15926,7 +15887,6 @@ kind of free
 <block id="2023" name="ceilingLight01_player">
 	<property name="Extends" value="porchLight01"/>
 	<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
-	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="ceilingLight01"/>
 	<property name="RuntimeSwitch" value="true"/>
 	<property name="Material" value="glass"/>
@@ -15938,7 +15898,6 @@ kind of free
 <block id="2024" name="ceilingLight02_player">
 	<property name="Extends" value="porchLight01"/>
 	<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
-	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="ceilingLight02"/>
 	<property name="RuntimeSwitch" value="true"/>
 	<property name="Model" value="Entities/Lighting/player_ceilingLight02Prefab"/>
@@ -15949,7 +15908,6 @@ kind of free
 <block id="2025" name="wallLight01_player">
 	<property name="Extends" value="porchLight01"/>
 	<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
-	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="wallLight01"/>
 	<property name="RuntimeSwitch" value="true"/>
 	<property name="Model" value="Entities/Lighting/player_wall_light01Prefab"/>
@@ -15960,7 +15918,6 @@ kind of free
 <block id="2026" name="ceilingLight07_player">
 	<property name="Extends" value="porchLight01"/>
 	<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
-	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="ceilingLight07"/>
 	<property name="RuntimeSwitch" value="true"/>
 	<property name="HandleFace" value="Top"/>
@@ -16426,7 +16383,7 @@ kind of free
 			<property name="UpgradeHitCount" value="2" />
 		</property>
 	</block>
-	<block id="1732" name="Damaged Commercial Door">
+<!--	<block id="1732" name="Damaged Commercial Door">
 	<property name="Extends" value="Busted Commercial Door" />
 		<property name="Model" value="Entities/Doors/commercial_door_3_v1Prefab" />
 		<property class="UpgradeBlock">
@@ -16435,7 +16392,7 @@ kind of free
 			<property name="ItemCount" value="4" />
 			<property name="UpgradeHitCount" value="4" />
 		</property>
-	</block>
+	</block>-->
 	
 <block id="1733" name="logCabinBlock">
 	<property name="Extends" value="woodWeakNoUpgradeMaster" />
