@@ -12845,6 +12845,7 @@ Mesh files no longer used:
 		<property name="ActionExp" value="2" />
 		<property name="ToolCategory.Butcher" value="0.5" />
 		<property name="ToolCategory.Lumberjack" value="0.5" />
+		<property name="ToolCategory.harvestingTools" value=".8" param1="1"/> <!-- value = harvest event multiplier, param1 = damage multiplier if matching harvest event present ont he block -->
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="6,14" />
@@ -15503,7 +15504,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Weapons/Melee/Chainsaw/chainsaw" />
 	<property name="Material" value="metal" />
 	<property name="HoldType" value="19" />
- 	<property name="SoundIdle" value="Weapons/Motorized/Chainsaw/chainsaw_idle" />
+	<property name="SoundIdle" value="chainsaw_idle"/>
 	<property class="Action0">
 		<property name="Class" value="Ranged" />
 		<property name="Auto_fire" value="true" />
@@ -15518,24 +15519,27 @@ Mesh files no longer used:
 		<property name="Magazine_item_ray_spreads" value="0" />
 		<property name="Bullet_material" value="metal" />
 		<property name="Reload_time" value="4.1" />
-		<property name="Sound_start" value="Weapons/Motorized/Chainsaw/chainsaw_fire_start" />
+		<property name="Sound_start" value="chainsaw_fire_start"/>
 		<property name="Sound_repeat" value="Weapons/Motorized/Chainsaw/chainsaw_fire_lp" />
 		<property name="Sound_end" value="Weapons/Motorized/Chainsaw/chainsaw_fire_end" />
-		<property name="Sound_empty" value="Weapons/Motorized/Chainsaw/chainsaw_empty" />
-		<property name="Sound_reload" value="Weapons/Motorized/Chainsaw/chainsaw_reload" />
-		<property name="Horde_meter_rate" value=".275" />
+		<property name="Sound_empty" value="chainsaw_empty"/>
+		<property name="Sound_reload" value="chainsaw_reload"/>
+		<property name="Horde_meter_rate" value="0.275" />
 		<property name="Horde_meter_distance" value="20" />
 		<property name="Particles_muzzle_smoke" value="nozzlesmoke_chainsaw" />
 		<property name="DamageBonus.wood" value="10" />
 		<property name="DamageBonus.head" value="5" />
-		<property name="DamageBonus.glass" value="25" />
+		<property name="DamageBonus.glass" value="1" />
 		<property name="SupportHarvesting" value="true" />
 		<property name="UseMeleeCrosshair" value="true" />
-		<property name="ActionExp" value="1" />
+		<property name="ToolCategory.harvestingTools" value="2" param1="1"/>
+		<property name="ToolCategory.Butcher" value="0" param1="20"/>
+		<property name="ActionExp" value="1"/>
+		<property name="ToolCategory.Lumberjack" value="1"/>
 	</property>
 	<property name="Group" value="Tools/Traps" />
 	<property name="ActionSkillGroup" value="Mining Tools"/>
-	<property name="CraftingSkillGroup" value="Science"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property class="Attributes">
 		<property name="FalloffRange" value="2.35,2.35" />
 		<property name="DegradationRate" value="5,5" />
