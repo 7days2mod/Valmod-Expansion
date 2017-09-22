@@ -16034,7 +16034,7 @@ kind of free
 	<drop event="Harvest" name="electronicParts" count="1,2" tool_category="Disassemble"/>
 	<drop event="Harvest" name="scrapPlastics" count="1,2" tool_category="Disassemble"/>
 	<property name="TakeDelay" value="5"/>
-	<property name="CraftingSkillGroup" value="Mechanical"/>
+	
 </block>
 
 <block id="1700" name="trapFall">
@@ -16043,7 +16043,7 @@ kind of free
 	<property name="Texture" value="396,2,2,2,2,2" />
 	<property name="MaxDamage" value="1" />
 	<property name="Class" value="Mine" />
-	<property name="CraftingSkillGroup" value="Traps"/>
+	
 </block>
 
 
@@ -16092,7 +16092,7 @@ kind of free
 			<property name="UpgradeHitCount" value="1"/>
 		</property>
 		<property class="RepairItems"><property name="concreteMix" value="5" /></property>
-		<property name="CraftingSkillGroup" value="Mechanical"/>
+		
 	</block>
 	<block id="1714" name="hiddenConcreteDoor">
 		<property name="MaxDamage" value="6000" />
@@ -16110,7 +16110,7 @@ kind of free
 			<property name="UpgradeHitCount" value="1"/>
 		</property>
 		<property class="RepairItems"><property name="concreteMix" value="5" /></property>
-		<property name="CraftingSkillGroup" value="Mechanical"/>
+		
 	</block>
 	<block id="1715" name="hideBlockWood">
 		<property name="MaxDamage" value="800" />
@@ -16127,7 +16127,7 @@ kind of free
 			<property name="UpgradeHitCount" value="1"/>
 		</property>
 		<property class="RepairItems"> <property name="wood" value="10" /> </property>
-		<property name="CraftingSkillGroup" value="Mechanical"/>
+		
 	</block>
 	<block id="1716" name="hiddenWoodDoor">
 		<property name="MaxDamage" value="800" />
@@ -16144,7 +16144,7 @@ kind of free
 			<property name="UpgradeHitCount" value="1"/>
 		</property>
 		<property class="RepairItems"> <property name="wood" value="10" /> </property>
-		<property name="CraftingSkillGroup" value="Mechanical"/>
+		
 	</block>
 	<block id="1717" name="AutoWall_Wood">
 		<property name="DescriptionKey" value="autoWallDesc"/>
@@ -16233,7 +16233,7 @@ kind of free
 		<property name="Class" value="SecureLoot" />
 		<property name="LootList" value="108" />
 		<drop event="Destroy" count="0" />
-		<property name="CraftingSkillGroup" value="Mechanical"/>
+		
 	</block>
 	<block id="1724" name="workstationMerchant">
 		<property name="Extends" value="cntMailbox" />
@@ -16411,7 +16411,7 @@ kind of free
 		<property name="Class" value="SecureLoot" />
 		<property name="CustomIcon" value="cntMunitionsBox" />
 		<property name="LootList" value="101" />
-		<property name="CraftingSkillGroup" value="Mechanical"/>
+		
 		<property class="RepairItems"> <property name="forgedIron" value="5" /> </property>
 	</block>
 	<block id="1735" name="cntEPSLockers">
@@ -16421,7 +16421,7 @@ kind of free
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="LootList" value="105" />
 		<drop event="Destroy" count="0" />
-		<property name="CraftingSkillGroup" value="Mechanical"/>
+		
 	</block>
 	<block id="1736" name="cntEPSFileCabinet">
 		<property name="Extends" value="cntFileCabinet" />
@@ -16429,7 +16429,7 @@ kind of free
 		<property name="CustomIcon" value="cntFileCabinet" />
 		<property name="LootList" value="103" />
 		<drop event="Destroy" count="0" />
-		<property name="CraftingSkillGroup" value="Mechanical"/>
+		
 	</block>
 	<block id="1737" name="cntEPSCardboardBox">
 		<property name="MaxDamage" value="100" />
@@ -16449,7 +16449,7 @@ kind of free
 		<property name="Class" value="SecureLoot" />
 		<property name="LootList" value="107" />
 		<drop event="Destroy" count="0" />
-		<property name="CraftingSkillGroup" value="Mechanical"/>
+		
 	</block>
 	<block id="1739" name="cntEPSFridgeBottom">
 		<property name="Extends" value="cntFridgeBottom" />
@@ -16458,7 +16458,7 @@ kind of free
 		<property name="LootList" value="102" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<drop event="Destroy" count="0" />
-		<property name="CraftingSkillGroup" value="Mechanical"/>
+		
 	</block>
 	<block id="1740" name="cntEPSFridgeTop">
 		<property name="Extends" value="cntFridgeTop" />
@@ -16467,7 +16467,7 @@ kind of free
 		<property name="LootList" value="102" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<drop event="Destroy" count="0" />
-		<property name="CraftingSkillGroup" value="Mechanical"/>
+		
 	</block>
 	<block id="1741" name="cntEPSPillCase">
 		<property name="Extends" value="cntPillCase" />
@@ -16509,7 +16509,7 @@ kind of free
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="LootList" value="108" />
 		<drop event="Destroy" count="0" />
-		<property name="CraftingSkillGroup" value="Mechanical"/>
+		
 	</block>
 	<block id="1746" name="cntEPSCoffin">
 		<property name="Extends" value="cntCoffin" />
@@ -16528,7 +16528,7 @@ kind of free
     <property name="Mesh" value="models" />
     <property name="Model" value="Industrial/gas_pump" param1="main_mesh" />
     <drop event="Destroy" count="0" />
-	<property name="CraftingSkillGroup" value="Mechanical"/>
+	
   </block>
 	<!-- Working Oven and Sink Mod -->
 	<block id="1748" name="workstationOven">
@@ -16551,7 +16551,7 @@ kind of free
 			<property name="Modules" value="tools,output,input"/>
 			<property name="CraftingAreaRecipes" value="campfire" />
 		</property>
-		<property name="CraftingSkillGroup" value="Mechanical"/>
+		
 		<property class="RepairItems"> <property name="forgedSteel" value="5" />	</property>
 	</block>
 	<block id="1749" name="workingGranitSink">
@@ -16572,7 +16572,7 @@ kind of free
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="80"/> <!-- disassemble value -->
 	<property name="ImposterExchange" value="imposterBlock" param1="116"/>
-	<property name="CraftingSkillGroup" value="Mechanical"/>
+	
 	<property class="RepairItems"> <property name="scrapIron" value="10" /> </property>
 	</block>
 	<block id="1750" name="workingCabinetSink">
@@ -16902,7 +16902,7 @@ kind of free
 		<property name="wood" value="10" />	
 	</property>	
 	<drop event="Destroy" count="0" />
-	<property name="CraftingSkillGroup" value="Traps"/>
+	
   </block>
 	<block id="1770" name="chickenCoop2">
 	<property name="CustomIcon" value="chickenCoop" />
@@ -16948,7 +16948,7 @@ kind of free
 		<property name="Class" value="UpgradeRated" />
 		<property name="UpgradeRated.ToBlock" value="animalbaitedsnare" />
 		<property name="UpgradeRated.Rate" value="1" />
-		<property name="CraftingSkillGroup" value="Traps"/>
+		
 	</block>
 	<block id="1773" name="animalbaitedsnare">
 		<property name="CustomIcon" value="animalSnare" />
@@ -16989,7 +16989,7 @@ kind of free
 	<property class="Explosion">
 	<property name="RadiusBlocks" value="10" /> <!-- damage radius for blocks -->
 	</property>
-	<property name="CraftingSkillGroup" value="Traps"/>
+	
 	</block>
 	<block id="1780" name="trapSteelFireSpike">		
 	<property name="MaxDamage" value="5000" />
@@ -17009,7 +17009,7 @@ kind of free
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
 	<property name="EconomicValue" value="160" />
 	<property name="Group" value="Tools/Traps" />
-	<property name="CraftingSkillGroup" value="Traps"/>
+	
 	<property class="RepairItems">
 		<property name="gasCan" value="5" />
 	</property>
@@ -17029,7 +17029,7 @@ kind of free
 		<property name="DropScale" value="3" />
 		<drop event="Destroy" count="0" />
 		<property name="Group" value="Tools/Traps" />
-		<property name="CraftingSkillGroup" value="Traps"/>
+		
 	</block>
 
 	<block id="1782" name="Class - Wildcard (Locked)">
@@ -17230,7 +17230,7 @@ kind of free
 		<drop event="Destroy" count="0" prob="1" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob="1.0"  stick_chance="1" />
 		<property name="Group" value="Tools/Traps" />
-		<property name="CraftingSkillGroup" value="Traps"/>
+		
 		<property class="RepairItems">
 			<property name="gasCan" value="5" />
 		</property>
@@ -17260,7 +17260,7 @@ kind of free
 		<drop event="Destroy" count="0" />
 		<property name="Group" value="Building" />
 		<drop event="Fall" count="0"/>
-		<property name="CraftingSkillGroup" value="Traps"/>
+		
 	</block>
 	<block id="1797" name="trapAdhesiveSpike">
 		<property name="DescriptionKey" value="trapAdhesiveSpikeDesc"/>
@@ -17268,7 +17268,7 @@ kind of free
 		<property name="Material" value="MbarbedFence" />
 		<property name="Texture" value="245" />
 		<property name="MaxDamage" value="200" />
-		<property name="CraftingSkillGroup" value="Traps"/>
+		
 	</block>
 	<block id="1798" name="seedGrape">
     <property name="Class" value="PlantGrowing" />
