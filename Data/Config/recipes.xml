@@ -890,7 +890,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="unit_clay" count="5"/>
 </recipe>
 
-<recipe name="cornBread" count="1" craft_area="campfire" craft_tool="bottledWater">
+<recipe name="cornBread" count="1" craft_area="campfire" craft_tool="bowlWater">
 	<ingredient name="cornMeal" count="1"/>
 </recipe>
 
@@ -898,7 +898,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="corn" count="1"/>
 </recipe>
 
-<recipe name="cornOnTheCob" count="1" craft_area="campfire" craft_tool="bottledWater">
+<recipe name="cornOnTheCob" count="1" craft_area="campfire" craft_tool="bowlWater">
 	<ingredient name="corn" count="1"/>
 </recipe>
 
