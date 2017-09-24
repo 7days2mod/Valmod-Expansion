@@ -933,7 +933,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="paper" count="8"/>
 </recipe>
 
-<recipe name="eggboiled" count="1" craft_area="campfire" craft_tool="bottledWater">
+<recipe name="eggboiled" count="1" craft_area="campfire" craft_tool="bowlWater">
 	<ingredient name="egg" count="1"/>
 </recipe>
 
