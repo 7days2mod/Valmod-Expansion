@@ -1550,7 +1550,6 @@
 
 <lootgroup name="workingStiffsMisc" >
 	<item name="repairKit" count="1,4"/>
-	<item name="Lightbulb" count="1,3" />
 	<item name="nail" count="10,40"/>
 	<item name="electricParts" count="4,8" />
 	<item name="electronicParts" count="1,3" />
